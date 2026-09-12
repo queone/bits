@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.40.1 | AC51: adopt govna v0.55.0 Director addressing rules |
 | 0.40.0 | AC48+AC49+AC50: oidctok, Internet Archive how-to, zombie warning, Pinker link |
 | 0.39.0 | AC47: a note on The Sense of Style; five Pinker rules join the Voice section |
 | 0.38.0 | AC46: script links point at gkit scripts folder; fenced download URLs checked |
