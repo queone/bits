@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.41.0 | macOS page: keep config files in sync across Macs with macfit |
 | 0.40.2 | AC52: adopt govna v0.58.0 empty release batch rules |
 | 0.40.1 | AC51: adopt govna v0.55.0 Director addressing rules |
 | 0.40.0 | AC48+AC49+AC50: oidctok, Internet Archive how-to, zombie warning, Pinker link |

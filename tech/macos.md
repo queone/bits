@@ -45,7 +45,21 @@ curl -Lo ~/.bashrc https://github.com/queone/gkit/raw/main/scripts/bashrc_user.s
 sudo curl -Lo /var/root/.bashrc https://github.com/queone/gkit/raw/main/scripts/bashrc_root.sh
 ```
 
-The user file shows the current git branch in the prompt when `~/.gitbranch.sh` is installed, as described under [Show Branch in Shell Prompt](git/index.md#show-branch-in-shell-prompt). It ends by sourcing `~/.bashrc.local` when that file exists. Private settings such as tokens, tenant IDs, and account aliases go through that file and never enter a repo.
+The user file shows the current git branch in the prompt when `~/.gitbranch.sh` is installed, as described under [Show Branch in Shell Prompt](git/index.md#show-branch-in-shell-prompt). It ends by sourcing `~/.bashrc.local` when that file exists. Private settings such as tokens, tenant IDs, and account aliases go through that file and never enter a repo. Once both files are in place, macfit in the next section keeps them the same on every Mac.
+
+### Keep Config Files In Sync
+[macfit](https://github.com/queone/gkit/tree/main/cmd/macfit), another gkit utility, keeps the same config files on every Mac. It holds them in one encrypted store file. Put that file in a folder that iCloud Drive or another sync client carries to each Mac, and every Mac that sees the folder opens it with one passphrase. The store is the remote, as in git: `push` sends live files up, `pull` brings them down.
+
+```bash
+macfit init -N -s <synced-folder>/macfit.store   # first Mac: create the store and set a passphrase
+macfit add -g ~/.bashrc                          # register a file for every Mac and capture it
+macfit add ~/.bashrc.local                       # register a file for this Mac only
+macfit push                                      # send changed live files into the store
+macfit init -s <synced-folder>/macfit.store      # another Mac: unlock with the passphrase, once
+macfit pull                                      # plan the restore, nothing written
+macfit pull -f                                   # write it
+macfit                                           # status and drift
+```
 
 ### Network Quality
 Check network quality => `networkQuality -v`
