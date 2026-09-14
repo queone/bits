@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.40.2 | AC52: adopt govna v0.58.0 empty release batch rules |
 | 0.40.1 | AC51: adopt govna v0.55.0 Director addressing rules |
 | 0.40.0 | AC48+AC49+AC50: oidctok, Internet Archive how-to, zombie warning, Pinker link |
 | 0.39.0 | AC47: a note on The Sense of Style; five Pinker rules join the Voice section |
