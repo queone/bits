@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.41.2 | AC54: adopt govna v0.59.1 |
 | 0.41.1 | AC53: adopt govna v0.59.0; govna docs now point at AGENTS.md phase rules |
 | 0.41.0 | macOS page: keep config files in sync across Macs with macfit |
 | 0.40.2 | AC52: adopt govna v0.58.0 empty release batch rules |
