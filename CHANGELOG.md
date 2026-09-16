@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.41.4 | AC56: adopt govna v0.61.0 |
 | 0.41.3 | AC55: adopt govna v0.60.0 |
 | 0.41.2 | AC54: adopt govna v0.59.1 |
 | 0.41.1 | AC53: adopt govna v0.59.0; govna docs now point at AGENTS.md phase rules |
