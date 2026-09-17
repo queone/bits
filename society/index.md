@@ -1,6 +1,6 @@
 ## Society
 
-- [Activism](activism.md): Rules for matching effort to influence when trying to fix the world.
+- [Activism](activism.md): Rules for effective activism: match effort to influence, and work with imperfect allies.
 - [Constitutional Republic](constitutional-republic.md): Why "republic, not democracy" is a false choice, and what is actually contested.
 - [Confederate Monuments](monuments.md): Memorials to a myth, not to history.
 - [Dealing With Difficult Personalities](difficult-personalities.md): Handling people in power who cannot be reasoned with.
