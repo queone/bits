@@ -16,3 +16,5 @@ I find it useful to put wanting on one scale that runs from hatred to addiction.
 | 7 | Fixation | 4 | A focused desire that dominates attention but fits the context. |
 | 8 | Obsession | 5 | An intrusive, persistent desire that can cause distress. |
 | 9 | Addiction | 5 | An uncontrollable desire, often with negative consequences. |
+
+The scale runs separately in each of my [three realms](three-realms.md): the physical, the emotional, and the intellectual.

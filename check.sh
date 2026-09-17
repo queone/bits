@@ -45,6 +45,8 @@ ORG_RE='(github\.com|githubusercontent\.com)/kquo/'
 FP_RE="\\b(I|my|me|myself|I'm|I've|I'd)\\b"
 YEAR_RE='\b(19[0-9]{2}|20[0-9]{2})\b'
 PERSONAL_RE='\b(wife|husband|partner|kids?|children|daughter|son|mother|father|parents?|employer|my company|my job|my boss|my doctor|diagnos|my house|my apartment|I live in|my neighborhood|my hometown|my salary)\b'
+SELF_RE='\b(lonel(y|iness)|depress(ed|ion|ing)?|anxi(ety|ous)|panic attacks?|therap(y|ist)|counsell?ing|medicat(ed|ion)|antidepress[a-z]*|suicid[a-z]*|self-harm|trauma[a-z]*|burn(ed|t)? ?out|mental (health|illness|state)|patholog[a-z]*|detach(ed|ment)|aloof[a-z]*|out of place|my (moods?|feelings|emotions|insecurit[a-z]*|shame|grief))\b'
+SELF_OK='<!-- private-ok -->'
 MARKER_RE='NEEDS REWRITE|\(need link\)|\[Need sources\]|Needs clean up'
 MARKER_CS_RE='\b(TODO|FIXME|TBD)\b'
 HEADING_RE='^#{1,6}[[:space:]]*(Conclusion|Final Thoughts|Bottom Line|Key Insight|Summary|Question|Answer|My take|Opinion|My opinion|Thoughts|My thoughts|Verdict)[[:space:]]*:?[[:space:]]*$'
@@ -148,6 +150,7 @@ check_privacy() {
   fi
   rg -n -e "$FP_RE" "$f" | rg -e "$YEAR_RE" | cut -d: -f1 | while read -r l; do emit "$f" "$l" W-YEAR "exact year in a first-person sentence"; done
   rg -n -e "$FP_RE" "$f" | rg -i -e "$PERSONAL_RE" | cut -d: -f1 | while read -r l; do emit "$f" "$l" W-PERSONAL "personal detail keyword in a first-person sentence"; done
+  rg -n -e "$FP_RE" "$f" | rg -i -e "$SELF_RE" | rg -v -F -e "$SELF_OK" | cut -d: -f1 | while read -r l; do emit "$f" "$l" P-SELF "mental or emotional health keyword in a first-person sentence"; done
 }
 
 # ── links (every file) ──────────────────────────────────────────────────────
@@ -363,6 +366,7 @@ selftest() {
     printf 'org https://github.com/kquo/thing\n'
     printf 'the SecretWord appears\n'
     printf 'I first read it in 1992 and my wife agreed.\n'
+    printf 'I felt lonely and out of place that season.\n'
     printf 'see [broken](nowhere.md) and [anchor](#no-such-heading) and [abs](https://que.one/x) and [dead](https://nonexistent.invalid/x)\n'
     printf 'TODO fix\n## Conclusion\n### My take\n'
     printf 'No hay nada más viral que la enfermedad del pesimismo, y esto tiene que ver con la mente.\n'
@@ -376,6 +380,7 @@ selftest() {
   printf -- '---\ntype: note\n---\n## QA\n\nHow do I decrypt a disc?\n\nUse the app.\n\n- how does it work?\n\n**Q** Is it safe?\n' >"$fx/life/qa.md"
   printf -- '---\ntype: take\n---\n## Anchor\n\nI link a [missing anchor](https://en.wikipedia.org/wiki/Main_Page#no-such-anchor).\n' >"$fx/life/anchor.md"
   printf -- '---\ntype: note\n---\n## Zombie\n\nThe implementation of the utilization plan needs the consideration and determination of the organization, with documentation, evaluation, and verification of each modification and notification.\n' >"$fx/life/zombie.md"
+  printf -- '---\ntype: take\n---\n## Approved\n\nI call my detachment a choice. <!-- private-ok -->\n' >"$fx/life/selfok.md"
   printf -- '---\ntype: take\n---\n## Retry\n\nI link a [slow host](https://retry.example.test/x).\n' >"$fx/life/retry.md"
   mkdir -p "$TMP/bin"
   cat >"$TMP/bin/curl" <<'SHIM'
@@ -397,13 +402,14 @@ SHIM
   printf '## Life\n\n- [Clean](clean.md)\n' >"$clean/life/index.md"
   printf '# Register\n\n| # | Position | Owning entry | Status |\n|---|---|---|---|\n| 1 | X. | `life/clean.md` | settled |\n' >"$clean/govna/stance-register.md"
 
-  res=$( (CHECK_ROOT="$fx" BITS_DENYLIST="$TMP/deny.txt" "$SELF" life/dirty.md life/untyped.md life/initials.md life/spanish.md life/qa.md life/anchor.md life/zombie.md; CHECK_ROOT="$fx" "$SELF" --register) 2>&1 )
-  for c in P-GUID P-SSH P-HEX P-MAC P-EMAIL P-PATH P-ORG P-DENY W-YEAR W-PERSONAL B-TYPE B-WORDS B-FENCE L-REL L-ANCHOR L-ABS L-EXT X-MARKER X-HEADING X-LANG X-QA X-FENCE W-NAME W-PLAIN W-ZOMBIE W-ANCHOR W-STALE I-INDEX R-PATH; do
+  res=$( (CHECK_ROOT="$fx" BITS_DENYLIST="$TMP/deny.txt" "$SELF" life/dirty.md life/untyped.md life/initials.md life/spanish.md life/qa.md life/anchor.md life/zombie.md life/selfok.md; CHECK_ROOT="$fx" "$SELF" --register) 2>&1 )
+  for c in P-GUID P-SSH P-HEX P-MAC P-EMAIL P-PATH P-ORG P-DENY P-SELF W-YEAR W-PERSONAL B-TYPE B-WORDS B-FENCE L-REL L-ANCHOR L-ABS L-EXT X-MARKER X-HEADING X-LANG X-QA X-FENCE W-NAME W-PLAIN W-ZOMBIE W-ANCHOR W-STALE I-INDEX R-PATH; do
     if printf '%s\n' "$res" | rg -q -e " $c "; then printf 'PASS %s\n' "$c"; else printf 'FAIL %s\n' "$c"; ok=1; fi
   done
   if printf '%s\n' "$res" | rg -q -e "life/initials.md:1: W-PLAIN"; then printf 'PASS W-PLAIN-initials\n'; else printf 'FAIL W-PLAIN-initials\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/spanish.md:[0-9]+: X-LANG"; then printf 'PASS X-LANG-sentence\n'; else printf 'FAIL X-LANG-sentence\n'; ok=1; fi
   if [ "$(printf '%s\n' "$res" | rg -c -e "life/qa.md:[0-9]+: X-QA")" -ge 3 ]; then printf 'PASS X-QA-paragraph\n'; else printf 'FAIL X-QA-paragraph\n'; ok=1; fi
+  if printf '%s\n' "$res" | rg -q -e "life/selfok.md:[0-9]+: P-SELF"; then printf 'FAIL P-SELF-override\n'; ok=1; else printf 'PASS P-SELF-override\n'; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:11: P-PATH"; then printf 'PASS P-PATH-home\n'; else printf 'FAIL P-PATH-home\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:12: P-PATH"; then printf 'PASS P-PATH-icloud\n'; else printf 'FAIL P-PATH-icloud\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:[0-9]+: L-EXT dead \(404\): https://github.com/queone/no-such-repo"; then printf 'PASS L-EXT-fenced\n'; else printf 'FAIL L-EXT-fenced\n'; ok=1; fi

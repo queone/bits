@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.42.0 | Three Realms note; check.sh blocks private first-person lines; triage rules |
 | 0.41.8 | AC59 adopt Govna governance files v0.63.1 |
 | 0.41.7 | Publishing filter: triage raw thoughts into entries, with a verdict log |
 | 0.41.6 | AC58 adopt Govna governance files v0.63.0 |
