@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.41.6 | AC58 adopt Govna governance files v0.63.0 |
 | 0.41.5 | AC57 adopt Govna governance files v0.62.0 |
 | 0.41.4 | AC56: adopt govna v0.61.0 |
 | 0.41.3 | AC55: adopt govna v0.60.0 |
