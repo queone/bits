@@ -544,3 +544,7 @@ Note: `CLAUDE.md` is an example of an exempt identifier — it names a product-s
 - Host no executable code on the site.
 - Reference only the `queone` GitHub organization.
 - Record each filter gap found in a closure audit as an `IE<N>:` item in `plan.md` in the same completion report.
+- Apply `govna/publishing-filter.md` `## Triage` when the Director offers a raw thought as a candidate entry.
+- Write no entry during triage.
+- Log a triage verdict in `govna/triage-log.md` only after the Director confirms or overrides it.
+- Treat the Director's confirmation of a verdict as authorization to log that verdict.

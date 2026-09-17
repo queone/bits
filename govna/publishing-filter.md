@@ -5,6 +5,7 @@ Use this document as the owning rulebook for every entry published on the site. 
 ## Purpose
 
 - Apply this filter to every entry created or edited under `life/`, `mind/`, `society/`, or `tech/`, and to the root site pages `about.md` and `index.md`.
+- Apply `## Triage` to every raw thought the Director offers as a candidate entry.
 - Pass every rule below before an entry counts as implementation-complete.
 - Treat the site as how the author sees the world: a short first-person take supported by external references, or a practical how-to, never a full treatment.
 - Prefer removing text over explaining it when an entry exceeds its budget.
@@ -152,6 +153,29 @@ Note: the allowlist covers hosts that reject scripted requests: Stack Overflow a
 - Tag every fenced block with a language, or `text` for plain output.
 - Show a snippet inline only when reading it is the point of the entry.
 
+## Triage
+
+- Apply this section when the Director offers a raw thought as a candidate entry.
+- Judge one thought per pass.
+- Search the existing entries for an owner of the concept before judging the thought.
+- Test the thought against `## Purpose`, `## Entry Types And Budgets`, `## Linking And Repetition`, and `## Consistency And The Stance Register` as if the entry were already written.
+- Weigh whether the entry could meet `## Privacy`, `## Fairness And Corrections`, and `## Accuracy And Sourcing` with sources that exist.
+- Require the entry to tell a reader something an encyclopedia page or a first search result does not.
+- Require the entry to stay worth reading a year from now.
+- Return exactly one verdict: `Publish`, `Merge`, `Park`, or `Drop`.
+- Lead the reply with the verdict and the one reason that decided it.
+- Propose a directory, a `type`, and a working title for every `Publish`.
+- Name the target entry for every `Merge`.
+- State what would turn a `Park` into a `Publish`.
+- Write no entry during triage.
+- Log a verdict in `triage-log.md` only after the Director confirms or overrides it.
+- Log every confirmed verdict, including `Drop`.
+- Write each log label as a short neutral phrase that passes `## Privacy`.
+- Keep the raw thought out of the repository.
+- Fill a row's entry path when its entry ships.
+
+Note: triage is this filter run early, on a thought instead of a draft. The voice, link, code, and check rules need text, so they wait for the draft. The repository is public, which is why the log carries labels and the Director keeps the raw captures. A kept `Drop` row is how a repeated thought gets recognized weeks later.
+
 ## Check Command
 
 - Run `./check.sh` on every changed entry before Implement completion.
@@ -175,4 +199,5 @@ Detector codes. Privacy: `P-GUID`, `P-SSH`, `P-HEX`, `P-MAC`, `P-EMAIL`, `P-PATH
 - Add a detector to `check.sh` for every leak class found in an entry, in the same pass that fixes the entry.
 - Add the literal of every personal leak found to the private denylist.
 - Review this document at every Package for a rule that failed to prevent a finding.
+- Propose a triage rule change when the Director overrides a verdict for a reason `## Triage` lacks.
 - Retire a rule only through a Director decision.
