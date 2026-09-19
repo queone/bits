@@ -17,4 +17,4 @@ I lean toward the by-product, and I get there from the body. Pleasure is the use
 
 Pleasure and beauty are still not the same thing. [Kant](https://en.wikipedia.org/wiki/Critique_of_Judgment) drew the line long ago. The agreeable is a good steak. The beautiful is something we stop to contemplate, wanting nothing from it.
 
-So I part with Deutsch on one point. He thinks the standard is out there. I think it is in us, a by-product that works as a compass. It draws us to objects and ideas that sit in harmony with what we are. That is why I call it redeeming. It is a way of choosing that has nothing to do with winning. [Science](science.md) tells me what is true. Beauty helps me choose what is worth wanting.
+So I part with Deutsch on one point. He thinks the standard is out there. I think it is in us, a by-product that works as a compass. It draws us to objects and ideas that sit in harmony with what we are. That is why I call it redeeming. It is a way of choosing that has [nothing to do with winning](../life/legacy.md). [Science](science.md) tells me what is true. Beauty helps me choose what is worth wanting.

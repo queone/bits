@@ -56,6 +56,7 @@ Note: the two blood-pressure pages stay. A generic health how-to is not personal
 - Write each reflective entry as how the author sees the subject, not as a report on it.
 - Write every `take` and `note` in plain English: short sentences and common words.
 - Keep a `take` or `note` near 16 words per sentence or fewer.
+- Use profanity only where it carries the point.
 - Show the reader the thing itself instead of announcing that you will discuss it.
 - Prefer a concrete noun and an active verb over an abstract noun made from a verb.
 - Define each term and spell out each abbreviation where it first appears.

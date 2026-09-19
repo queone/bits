@@ -40,3 +40,4 @@ Use this table as the list of settled positions the site holds. One line per pos
 | 34 | The Dunning-Kruger finding is real but narrower than its popular form and covers everyone outside their own field; the label fits a claim, never a person, and an honest expert review is a gift. | `mind/dunning-kruger.md` | settled |
 | 35 | The U.S. rule of law has measurably weakened; it rests on restraint in using lawful powers, not only on legality, and the checks among the branches are worth defending. | `society/rule-of-law.md` | settled |
 | 36 | The sense of beauty is a by-product of the machinery of pleasure that works as a built-in human standard, not an objective one; it redeems us because it guides choice apart from winning. | `mind/beauty.md` | settled |
+| 37 | A personal legacy is ego, the wish for a name to last; posterity, the wish for the good thing to last without it, is the sense of beauty pointed forward and is worth keeping. | `life/legacy.md` | settled |

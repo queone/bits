@@ -2,6 +2,7 @@
 
 - [Growing Old](growing-old.md): Bertrand Russell's answer to the fear of death.
 - [Personal Growth](personal-growth.md): The handful of ideas I run my own life on.
+- [Legacy](legacy.md): Why wanting to be remembered is ego, and what is worth passing on anyway.
 - [Blood Pressure Diet](bp-diet.md): A DASH-style cheat-sheet of foods to favor and foods to limit.
 - [Kidneys and Blood Pressure](kidneys-bp.md): How the kidneys regulate blood pressure and what that means for diet.
 - [Chess](chess.md): Openings to master, and a PGN cleanup function.
