@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.44.0 | Oligarchy note; link checker retries 416 and allows CBO; triage evidence rule |
 | 0.43.0 | Activism: a fifth rule on working with imperfect allies, not purity tests |
 | 0.42.0 | Three Realms note; check.sh blocks private first-person lines; triage rules |
 | 0.41.8 | AC59 adopt Govna governance files v0.63.1 |

@@ -4,5 +4,6 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-19 | Publish | Concentrated wealth, not one politician, shapes the law | `society/`, `note`, "Oligarchy" | `society/oligarchy.md` |
 | 2026-09-17 | Merge | Activism: coalitions over purity policing | `society/activism.md` | `society/activism.md` |
 | 2026-09-17 | Publish | Three realms of mind; effort follows comfort | `mind/`, `note`, "Three Realms" | `mind/three-realms.md` |

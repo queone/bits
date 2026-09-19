@@ -36,3 +36,4 @@ Use this table as the list of settled positions the site holds. One line per pos
 | 30 | Classic style, prose as a window on something the reader can see, is this site's writing model, and the curse of knowledge is the main cause of unclear writing. | `mind/sense-of-style.md` | settled |
 | 31 | People split their effort across the physical, emotional, and intellectual realms by what each pays them, and the resulting ranking is temperament, not a flaw. | `mind/three-realms.md` | settled |
 | 32 | A cause moves by coalition with imperfect allies, not by purity tests; real wrongdoing on one's own side still gets named. | `society/activism.md` | settled |
+| 33 | Concentrated wealth, not one politician, shapes U.S. law; the evidence is who gains and who pays, and the remedy is rules, not a change of face. | `society/oligarchy.md` | settled |

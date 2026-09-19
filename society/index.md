@@ -10,6 +10,7 @@
 - [Libertarianism](libertarianism.md): Where body sovereignty stops serving people.
 - [Markets and Capitalism](markets-capitalism.md): Tools, not moral oracles; outcomes depend on the rules.
 - [Internet Monetization Model](monetization-model.md): How attention becomes revenue, and what recommendation systems optimize for.
+- [Oligarchy](oligarchy.md): Why the problem is concentrated wealth and not one man, with the ledger of who gains and who pays.
 - [Perception Management](perception-management.md): How narratives, not facts, shape mass belief.
 - [Politics](politics.md): Reason and Compassion as the real poles, plus three smaller convictions.
 - [U.S. Identity Politics](us-identity-politics.md): Identity first, policy rationalized afterward, and the way out.

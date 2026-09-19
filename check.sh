@@ -51,7 +51,7 @@ MARKER_RE='NEEDS REWRITE|\(need link\)|\[Need sources\]|Needs clean up'
 MARKER_CS_RE='\b(TODO|FIXME|TBD)\b'
 HEADING_RE='^#{1,6}[[:space:]]*(Conclusion|Final Thoughts|Bottom Line|Key Insight|Summary|Question|Answer|My take|Opinion|My opinion|Thoughts|My thoughts|Verdict)[[:space:]]*:?[[:space:]]*$'
 URL_SKIP='mydomain\.com|example\.(com|org|net)|somewhere\.com|contoso\.com|169\.254\.169\.254|://(10|192\.168|127)\.|localhost|\{|%s|<|\$|/\.default$|token\.actions\.githubusercontent\.com|management\.azure\.com/?$|graph\.microsoft\.com/?$'
-HOST_ALLOW='stackoverflow\.com|stackexchange\.com|medium\.com|congress\.gov|sagepub\.com|politico\.com|devgenius\.io|hrw\.org|grc\.com'
+HOST_ALLOW='cbo\.gov|stackoverflow\.com|stackexchange\.com|medium\.com|congress\.gov|sagepub\.com|politico\.com|devgenius\.io|hrw\.org|grc\.com'
 HOST_SHORT='youtu\.be|youtube\.com|a\.co|aka\.ms|bit\.ly|t\.co|amazon\.com'
 FENCE_MAX=40
 ZOMBIE_RE='(tion|sion|ment|ance|ence|ity|ness)s?$'
@@ -166,6 +166,7 @@ fetch_url() { # url -> "code final"
     if [ "$code" = 429 ] && [ "$try" -lt 2 ]; then :; elif [ "$code" = 000 ] && [ "$try" -lt 1 ]; then :; else break; fi
     try=$((try+1)); if [ "$try" -eq 1 ]; then sleep "$BACKOFF_1"; else sleep "$BACKOFF_2"; fi
   done
+  if [ "$code" = 416 ]; then hit=$(curl -sL -A "$UA" --max-time 20 -o /dev/null -w '%{http_code} %{url_effective}' "$1" 2>/dev/null || printf '000 -'); fi
   printf '%s\t%s\n' "$1" "$hit" >>"$URLCACHE"
   printf '%s' "$hit"
 }
@@ -389,6 +390,9 @@ n=$(cat "$COUNTFILE" 2>/dev/null || echo 0); n=$((n+1)); echo $n >"$COUNTFILE"
 for a in "$@"; do u="$a"; done
 if [ "${SHIM_MODE:-429}" = 000 ]; then
   if [ "$n" -le 1 ]; then printf "000 -"; else printf "200 %s" "$u"; fi
+elif [ "${SHIM_MODE:-429}" = 416 ]; then
+  r=0; for a in "$@"; do [ "$a" = "-r" ] && r=1; done
+  if [ "$r" = 1 ]; then printf "416 %s" "$u"; else printf "200 %s" "$u"; fi
 else
   if [ "$n" -le 2 ]; then printf "429 %s" "$u"; else printf "200 %s" "$u"; fi
 fi
@@ -417,6 +421,8 @@ SHIM
   if [ "$(cat "$TMP/count")" = 3 ] && ! printf '%s\n' "$res" | rg -q -e "W-EXT|L-EXT"; then printf 'PASS RETRY-429\n'; else printf 'FAIL RETRY-429\n'; ok=1; fi
   res=$( (COUNTFILE="$TMP/count0" SHIM_MODE=000 PATH="$TMP/bin:$PATH" CHECK_ROOT="$fx" "$SELF" life/retry.md) 2>&1 )
   if [ "$(cat "$TMP/count0")" = 2 ] && ! printf '%s\n' "$res" | rg -q -e "W-EXT|L-EXT"; then printf 'PASS RETRY-000\n'; else printf 'FAIL RETRY-000\n'; ok=1; fi
+  res=$( (COUNTFILE="$TMP/count416" SHIM_MODE=416 PATH="$TMP/bin:$PATH" CHECK_ROOT="$fx" "$SELF" life/retry.md) 2>&1 )
+  if [ "$(cat "$TMP/count416")" = 2 ] && ! printf '%s\n' "$res" | rg -q -e "W-EXT|L-EXT"; then printf 'PASS RETRY-416\n'; else printf 'FAIL RETRY-416\n'; ok=1; fi
   res=$( (CHECK_ROOT="$clean" BITS_DENYLIST="$TMP/deny.txt" "$SELF" --all; CHECK_ROOT="$clean" "$SELF" --register) 2>&1 )
   if printf '%s\n' "$res" | rg -q -e ': [A-Z]-'; then printf 'FAIL clean fixture produced findings:\n%s\n' "$res"; ok=1; else printf 'OK clean-fixture\n'; fi
   return $ok
