@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.49.0 | Domain-Specific Models note; a personal mantra; About says who is writing |
 | 0.48.0 | Legacy take: drop the legacy, keep the posterity; a rule on profanity |
 | 0.47.0 | Beauty note; new rule: the Director states a position before a take or note |
 | 0.46.0 | Rule of Law note; coinage rules in the filter; plan.md matches canon wording |

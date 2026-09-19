@@ -11,6 +11,7 @@
 - [Daniel Dennett](dennett.md): Gradualism, intuition pumps, and Darwin's dangerous idea.
 - [Desire](desire.md): A single scale from hatred to addiction.
 - [Detecting Baloney](detecting-baloney.md): Pointers for an intellectual self-defense toolkit.
+- [Domain-Specific Models](domain-specific-models.md): A belief system as a bundle of models, part inborn and part learned, kept because they satisfy, and how they get misapplied.
 - [Dunning-Kruger](dunning-kruger.md): What the effect does and does not show, and a public lesson in taking an honest review.
 - [Edge Website](edge-website.md): The best salon on the web, and its Epstein problem.
 - [Famous Lessons](famous-lessons.md): Razors and reminders for thinking.

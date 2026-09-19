@@ -4,6 +4,8 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-19 | Merge | A personal creed: simplicity, gradual improvement, four things to stand for | `life/personal-growth.md` and `about.md` | `life/personal-growth.md` |
+| 2026-09-19 | Publish | Belief systems as bundles of domain-specific models | `mind/`, `note`, "Domain-Specific Models" | `mind/domain-specific-models.md` |
 | 2026-09-19 | Publish | Legacy as ego, posterity as care | `life/`, `take`, "Legacy" | `life/legacy.md` |
 | 2026-09-19 | Publish | Beauty: why we have a sense of it, and why it redeems us | `mind/`, `note`, "Beauty" | `mind/beauty.md` |
 | 2026-09-19 | Publish | Rule of law: a measurable U.S. decline and the acts behind it | `society/`, `note`, "Rule of Law" | `society/rule-of-law.md` |
