@@ -7,6 +7,7 @@
 - [Azure](azure/index.md): Entra, management hierarchy, CLI install, VMs, and PowerShell.
 - [Containers](containers.md): Docker installation and the commands I reach for.
 - [Devops Documentation](devops-docs.md): The four kinds of documentation and how to write them.
+- [Dispositions](dispositions.md): The recorded decision on a finding, the common labels, and why none of them means fixed.
 - [DNS](dns.md): Record creation, cache flushing, NextDNS on OPNsense, and PowerShell DNS commands.
 - [Editors](editors.md): vi and VS Code settings I forget.
 - [Email](email.md): DMARC, SPF, and DKIM setup.
