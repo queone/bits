@@ -1,6 +1,7 @@
 ## Mind
 
 - [Answer Patterns](answer-patterns.md): Four dimensions for reading what an answer is doing.
+- [Beauty](beauty.md): Where our sense of beauty comes from, and why I think it redeems us.
 - [Noam Chomsky](chomsky.md): Where I follow him, where I part ways, and his point about the limits of intelligence.
 - [Cold Logic](cold-logic.md): Reasoning that follows a principle past the point where it serves people, and its warm opposite.
 - [Comfort and Biases](comfort-biases.md): Why comforting beliefs persist, and the one bias under all the others.

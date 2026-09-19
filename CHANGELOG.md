@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.47.0 | Beauty note; new rule: the Director states a position before a take or note |
 | 0.46.0 | Rule of Law note; coinage rules in the filter; plan.md matches canon wording |
 | 0.45.1 | AC60 adopt Govna governance files v0.64.0; config cleanup; checker digest fix |
 | 0.45.0 | Dunning-Kruger note with the Tyson review clip; triage reports only what matters |

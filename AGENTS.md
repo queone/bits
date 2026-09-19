@@ -542,5 +542,6 @@ Note: the Director triggers those actions; Ratify names what is pending.
 - Record each filter gap found in a closure audit as an `IE<N>:` item in `plan.md` in the same completion report.
 - Apply `govna/publishing-filter.md` `## Triage` when the Director offers a raw thought as a candidate entry.
 - Write no entry during triage.
+- Draft no `take` or `note` before the Director states a position on it.
 - Log a triage verdict in `govna/triage-log.md` only after the Director confirms or overrides it.
 - Treat the Director's confirmation of a verdict as authorization to log that verdict.

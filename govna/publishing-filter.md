@@ -175,14 +175,19 @@ Note: the allowlist covers hosts that reject scripted requests: the Congressiona
 - Propose a directory, a `type`, and a working title for every `Publish`.
 - Name the target entry for every `Merge`.
 - State what would turn a `Park` into a `Publish`.
+- Ask the Director for a position when a thought holds only a topic, a question, or another person's view.
+- Park a thought whose position the Director cannot yet state.
 - Write no entry during triage.
+- Draft no `take` or `note` before the Director states a position on it.
+- Draft no first-person claim the Director has not stated or confirmed.
+- List every first-person claim the Operator proposed in the draft report.
 - Log a verdict in `triage-log.md` only after the Director confirms or overrides it.
 - Log every confirmed verdict, including `Drop`.
 - Write each log label as a short neutral phrase that passes `## Privacy`.
 - Keep the raw thought out of the repository.
 - Fill a row's entry path when its entry ships.
 
-Note: triage is this filter run early, on a thought instead of a draft. The voice, link, code, and check rules need text, so they wait for the draft. The repository is public, which is why the log carries labels and the Director keeps the raw captures. A kept `Drop` row is how a repeated thought gets recognized weeks later.
+Note: triage is this filter run early, on a thought instead of a draft. The voice, link, code, and check rules need text, so they wait for the draft. The repository is public, which is why the log carries labels and the Director keeps the raw captures. A kept `Drop` row is how a repeated thought gets recognized weeks later. The position rules keep the site the author's own view and not a digest of what others have published. A `howto`, a `reference`, and a `quote` carry steps, lists, and other people's words, so they need no position.
 
 ## Check Command
 
