@@ -15,6 +15,6 @@ The [Federal Reserve](https://www.federalreserve.gov/releases/z1/dataviz/dfa/dis
 
 Supporters answer that growth and tariffs cover the cost. CBO's growth-adjusted estimate came out [higher](https://www.crfb.org/blogs/obbba-dynamic-score-comes-47-trillion), not lower, because more borrowing raises interest rates. The Supreme Court [struck down](https://en.wikipedia.org/wiki/Learning_Resources,_Inc._v._Trump) the emergency tariffs in February 2026, and CBO now projects a [$2.1 trillion](https://fortune.com/2026/08/10/how-big-deficit-national-debt-tariffs-cbo/) deficit for fiscal 2026.
 
-Whether "oligarchy" is the right word is still [argued](https://journals.sagepub.com/doi/10.1177/2053168015608896) among political scientists. The ledger is not. [Identity](us-identity-politics.md) sells the story, and money writes the law. [Markets](markets-capitalism.md) are tools, so the remedy is rules, not a change of face.
+Whether "oligarchy" is the right word is still [argued](https://journals.sagepub.com/doi/10.1177/2053168015608896) among political scientists. The ledger is not. [Identity](us-identity-politics.md) sells the story, and money writes the law. [Markets](markets-capitalism.md) are tools, so the remedy is [rules](rule-of-law.md), not a change of face.
 
 CBO's site turns away automated requests, so each CBO figure here also carries a second source.

@@ -38,3 +38,4 @@ Use this table as the list of settled positions the site holds. One line per pos
 | 32 | A cause moves by coalition with imperfect allies, not by purity tests; real wrongdoing on one's own side still gets named. | `society/activism.md` | settled |
 | 33 | Concentrated wealth, not one politician, shapes U.S. law; the evidence is who gains and who pays, and the remedy is rules, not a change of face. | `society/oligarchy.md` | settled |
 | 34 | The Dunning-Kruger finding is real but narrower than its popular form and covers everyone outside their own field; the label fits a claim, never a person, and an honest expert review is a gift. | `mind/dunning-kruger.md` | settled |
+| 35 | The U.S. rule of law has measurably weakened; it rests on restraint in using lawful powers, not only on legality, and the checks among the branches are worth defending. | `society/rule-of-law.md` | settled |

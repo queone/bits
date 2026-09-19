@@ -127,6 +127,8 @@ Note: the 2026-09-03 review found attention-economy mechanics explained in six e
 - Attribute every quotation to a person and a source.
 - Mark a quotation `attributed` when its source cannot be verified.
 - Remove a quotation that is documented as misattributed.
+- Claim no coinage of a term the author did not coin.
+- Search for prior use of a distinctive phrase before presenting it as the author's own.
 - State a consensus claim such as "most would say" only with a source.
 - Date a time-sensitive claim in text instead of using words like recently or nowadays.
 

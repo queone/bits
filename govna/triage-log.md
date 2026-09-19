@@ -4,6 +4,7 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-19 | Publish | Rule of law: a measurable U.S. decline and the acts behind it | `society/`, `note`, "Rule of Law" | `society/rule-of-law.md` |
 | 2026-09-19 | Publish | Dunning-Kruger: what holds up, with a public example of a dismissed review | `mind/`, `note`, "Dunning-Kruger" | `mind/dunning-kruger.md` |
 | 2026-09-19 | Publish | Concentrated wealth, not one politician, shapes the law | `society/`, `note`, "Oligarchy" | `society/oligarchy.md` |
 | 2026-09-17 | Merge | Activism: coalitions over purity policing | `society/activism.md` | `society/activism.md` |
