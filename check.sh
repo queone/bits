@@ -35,7 +35,7 @@ GUID_RE='[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]
 GUID_OK='1950a258-227b-4e31-a9cf-717495945fc2|00000000-0000-0000-0000-000000000000'
 SSH_RE='ssh-(ed25519|rsa|ecdsa|dss) AAAA[A-Za-z0-9+/]{20,}'
 HEX_RE='\b[0-9a-f]{40,}\b'
-HEX_OK='sha256|shasum|sha512|md5sum|\.(iso|gz|tgz|zip|tar|dmg|img|xz|7z|pem|crt)\b'
+HEX_OK='sha256|shasum|sha512|md5sum|SHA-?256|SHA-?512|\.(iso|gz|tgz|zip|tar|dmg|img|xz|7z|pem|crt)\b'
 MAC_RE='\b([0-9A-Fa-f]{2}:){5}[0-9A-Fa-f]{2}\b|\b0800[0-9A-F]{8}\b'
 EMAIL_RE='[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}'
 EMAIL_OK='@(example\.(com|org|net)|mydomain\.com|somewhere\.com|contoso\.com|users\.noreply\.github\.com|github\.com|tty[0-9])|YOUR-[A-Z-]*@'
@@ -381,6 +381,7 @@ selftest() {
   printf -- '---\ntype: note\n---\n## QA\n\nHow do I decrypt a disc?\n\nUse the app.\n\n- how does it work?\n\n**Q** Is it safe?\n' >"$fx/life/qa.md"
   printf -- '---\ntype: take\n---\n## Anchor\n\nI link a [missing anchor](https://en.wikipedia.org/wiki/Main_Page#no-such-anchor).\n' >"$fx/life/anchor.md"
   printf -- '---\ntype: note\n---\n## Zombie\n\nThe implementation of the utilization plan needs the consideration and determination of the organization, with documentation, evaluation, and verification of each modification and notification.\n' >"$fx/life/zombie.md"
+  printf -- '---\ntype: take\n---\n## Digest\n\nThe region keeps SHA-256 `0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef`.\n' >"$fx/life/digest.md"
   printf -- '---\ntype: take\n---\n## Approved\n\nI call my detachment a choice. <!-- private-ok -->\n' >"$fx/life/selfok.md"
   printf -- '---\ntype: take\n---\n## Retry\n\nI link a [slow host](https://retry.example.test/x).\n' >"$fx/life/retry.md"
   mkdir -p "$TMP/bin"
@@ -406,13 +407,14 @@ SHIM
   printf '## Life\n\n- [Clean](clean.md)\n' >"$clean/life/index.md"
   printf '# Register\n\n| # | Position | Owning entry | Status |\n|---|---|---|---|\n| 1 | X. | `life/clean.md` | settled |\n' >"$clean/govna/stance-register.md"
 
-  res=$( (CHECK_ROOT="$fx" BITS_DENYLIST="$TMP/deny.txt" "$SELF" life/dirty.md life/untyped.md life/initials.md life/spanish.md life/qa.md life/anchor.md life/zombie.md life/selfok.md; CHECK_ROOT="$fx" "$SELF" --register) 2>&1 )
+  res=$( (CHECK_ROOT="$fx" BITS_DENYLIST="$TMP/deny.txt" "$SELF" life/dirty.md life/untyped.md life/initials.md life/spanish.md life/qa.md life/anchor.md life/zombie.md life/selfok.md life/digest.md; CHECK_ROOT="$fx" "$SELF" --register) 2>&1 )
   for c in P-GUID P-SSH P-HEX P-MAC P-EMAIL P-PATH P-ORG P-DENY P-SELF W-YEAR W-PERSONAL B-TYPE B-WORDS B-FENCE L-REL L-ANCHOR L-ABS L-EXT X-MARKER X-HEADING X-LANG X-QA X-FENCE W-NAME W-PLAIN W-ZOMBIE W-ANCHOR W-STALE I-INDEX R-PATH; do
     if printf '%s\n' "$res" | rg -q -e " $c "; then printf 'PASS %s\n' "$c"; else printf 'FAIL %s\n' "$c"; ok=1; fi
   done
   if printf '%s\n' "$res" | rg -q -e "life/initials.md:1: W-PLAIN"; then printf 'PASS W-PLAIN-initials\n'; else printf 'FAIL W-PLAIN-initials\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/spanish.md:[0-9]+: X-LANG"; then printf 'PASS X-LANG-sentence\n'; else printf 'FAIL X-LANG-sentence\n'; ok=1; fi
   if [ "$(printf '%s\n' "$res" | rg -c -e "life/qa.md:[0-9]+: X-QA")" -ge 3 ]; then printf 'PASS X-QA-paragraph\n'; else printf 'FAIL X-QA-paragraph\n'; ok=1; fi
+  if printf '%s\n' "$res" | rg -q -e "life/digest.md:[0-9]+: P-HEX"; then printf 'FAIL P-HEX-digest-label\n'; ok=1; else printf 'PASS P-HEX-digest-label\n'; fi
   if printf '%s\n' "$res" | rg -q -e "life/selfok.md:[0-9]+: P-SELF"; then printf 'FAIL P-SELF-override\n'; ok=1; else printf 'PASS P-SELF-override\n'; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:11: P-PATH"; then printf 'PASS P-PATH-home\n'; else printf 'FAIL P-PATH-home\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:12: P-PATH"; then printf 'PASS P-PATH-icloud\n'; else printf 'FAIL P-PATH-icloud\n'; ok=1; fi

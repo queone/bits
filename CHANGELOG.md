@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.45.1 | AC60 adopt Govna governance files v0.64.0; config cleanup; checker digest fix |
 | 0.45.0 | Dunning-Kruger note with the Tyson review clip; triage reports only what matters |
 | 0.44.0 | Oligarchy note; link checker retries 416 and allows CBO; triage evidence rule |
 | 0.43.0 | Activism: a fifth rule on working with imperfect allies, not purity tests |

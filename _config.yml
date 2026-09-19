@@ -3,7 +3,6 @@ theme: jekyll-theme-primer
 
 exclude:
   - AGENTS.md
-  - CLAUDE.md
   - govna/
   - plan.md
   - CHANGELOG.md

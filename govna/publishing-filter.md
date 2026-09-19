@@ -195,6 +195,8 @@ Detector codes. Privacy: `P-GUID`, `P-SSH`, `P-HEX`, `P-MAC`, `P-EMAIL`, `P-PATH
 
 `P-PATH` covers an absolute home directory path, a home-folder layout (a non-default folder under `~` or `$HOME`), and an iCloud Drive path. Apple's default folders and `bin` are allowed.
 
+`P-HEX` skips a line that labels its value as a checksum, such as `sha256`, `shasum`, or `SHA-256`, because an audit-emitted AC carries such a digest.
+
 `P-SELF` blocks a line that holds both a first-person word and a keyword for mental or emotional health, such as a mood, a treatment, or a feeling of not belonging. A line that carries the `<!-- private-ok -->` marker is exempt. The detector matches vocabulary, not meaning, so a disclosure in plain words still needs a reader to catch it.
 
 `L-EXT` also covers bare `github.com/queone` and `raw.githubusercontent.com/queone` URLs inside fenced blocks and code spans, so download commands are checked too. The `github.com/<owner>/<repo>/raw/` redirect form is not reported as moved.
