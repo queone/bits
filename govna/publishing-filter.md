@@ -169,6 +169,7 @@ Note: the allowlist covers hosts that reject scripted requests: the Congressiona
 - Require the entry to stay worth reading a year from now.
 - Return exactly one verdict: `Publish`, `Merge`, `Park`, or `Drop`.
 - Lead the reply with the verdict and the one reason that decided it.
+- Report only the checks that bear on the verdict.
 - Propose a directory, a `type`, and a working title for every `Publish`.
 - Name the target entry for every `Merge`.
 - State what would turn a `Park` into a `Publish`.

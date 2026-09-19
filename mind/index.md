@@ -10,6 +10,7 @@
 - [Daniel Dennett](dennett.md): Gradualism, intuition pumps, and Darwin's dangerous idea.
 - [Desire](desire.md): A single scale from hatred to addiction.
 - [Detecting Baloney](detecting-baloney.md): Pointers for an intellectual self-defense toolkit.
+- [Dunning-Kruger](dunning-kruger.md): What the effect does and does not show, and a public lesson in taking an honest review.
 - [Edge Website](edge-website.md): The best salon on the web, and its Epstein problem.
 - [Famous Lessons](famous-lessons.md): Razors and reminders for thinking.
 - [Famous Quotes](famous-quotes.md): A few lines worth remembering, and how to use quotes well.
