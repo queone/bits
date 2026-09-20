@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.52.0 | Famous Lessons: the is-ought gap and the two errors that cross it |
 | 0.51.0 | Dispositions reference: the recorded decision on a finding, not the fix |
 | 0.50.0 | About: the entries are flash cards I write for myself |
 | 0.49.0 | Domain-Specific Models note; a personal mantra; About says who is writing |
