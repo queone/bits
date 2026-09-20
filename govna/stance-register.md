@@ -43,3 +43,4 @@ Use this table as the list of settled positions the site holds. One line per pos
 | 37 | A personal legacy is ego, the wish for a name to last; posterity, the wish for the good thing to last without it, is the sense of beauty pointed forward and is worth keeping. | `life/legacy.md` | settled |
 | 38 | A belief system is a bundle of domain-specific models, part inborn and shaped by learning, kept because they satisfy, not because they are accurate; everyone has sealed models in some domains, and the repair is gradual and reflexive. | `mind/domain-specific-models.md` | settled |
 | 39 | Keep life simple, accept reality, and stand for compassion, progress, reason, and oneself without surrendering them. | `life/personal-growth.md` | settled |
+| 40 | Hold identity labels lightly and values firmly; fewer labels keep the mind free to follow evidence and make conversation calmer. | `mind/identity-lightly.md` | settled |

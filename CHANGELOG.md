@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.53.0 | Hold Your Identity Lightly take: fewer labels, freer thinking, firm values |
 | 0.52.0 | Famous Lessons: the is-ought gap and the two errors that cross it |
 | 0.51.0 | Dispositions reference: the recorded decision on a finding, not the fix |
 | 0.50.0 | About: the entries are flash cards I write for myself |

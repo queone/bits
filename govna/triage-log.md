@@ -4,6 +4,7 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-20 | Publish | Holding identity lightly: fewer labels, freer thinking | `mind/`, `take`, "Hold Your Identity Lightly" | `mind/identity-lightly.md` |
 | 2026-09-20 | Merge | Descriptive versus normative claims: Hume's is–ought gap | `mind/famous-lessons.md` | `mind/famous-lessons.md` |
 | 2026-09-19 | Publish | Dispositions: the recorded decision on a finding, not the fix | `tech/`, `reference`, "Dispositions" | `tech/dispositions.md` |
 | 2026-09-19 | Merge | What the entries are for: flash cards for the author | `about.md` | `about.md` |

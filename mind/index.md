@@ -17,6 +17,7 @@
 - [Famous Lessons](famous-lessons.md): Razors and reminders for thinking.
 - [Famous Quotes](famous-quotes.md): A few lines worth remembering, and how to use quotes well.
 - [Free Will](free-will.md): The Harris and Dennett exchange, in three layers.
+- [Hold Your Identity Lightly](identity-lightly.md): Fewer labels, freer thinking, calmer conversations, and the values worth keeping anyway.
 - [Optimism](optimism.md): Lines and proverbs against pessimism.
 - [Roger Penrose](penrose.md): Provisional physics and non-algorithmic consciousness.
 - [Steven Pinker](pinker.md): My primary reference in psychology, with two reservations.
