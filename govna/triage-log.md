@@ -4,6 +4,8 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-21 | Publish | Smug pilots: how trust in experts wears down, and what experts owe the listener | `society/`, `take`, "Smug Pilots" | `society/smug-pilots.md` |
+| 2026-09-21 | Park | Engagement-driven media as a cause of radicalization | Restates existing entries; needs a non-medical frame and the one claim no entry covers | |
 | 2026-09-21 | Publish | John Tooby on the mental programs that write our reality | `mind/`, `quote`, "John Tooby" | `mind/tooby.md` |
 | 2026-09-21 | Publish | Rights need remedies: the maxim and the narrowing paths to enforce it | `society/`, `take`, "Rights and Remedies" | `society/rights-remedies.md` |
 | 2026-09-20 | Merge | Penrose on quantum reality: real but only confirmable, and incomplete | `mind/penrose.md` | `mind/penrose.md` |

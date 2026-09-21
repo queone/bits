@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.57.0 | Smug Pilots take: how trust in experts wears down, and what experts owe us |
 | 0.56.0 | John Tooby quote: the mental programs that write the reality we live in |
 | 0.55.0 | Rights and Remedies take: a right you cannot enforce is not a right |
 | 0.54.0 | Penrose: two kinds of reality, and why I side with him on quantum mechanics |

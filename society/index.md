@@ -15,5 +15,6 @@
 - [Politics](politics.md): Reason and Compassion as the real poles, plus three smaller convictions.
 - [Rights and Remedies](rights-remedies.md): A right you cannot enforce is not a right, and the paths to enforce them are narrowing.
 - [Rule of Law](rule-of-law.md): How far the U.S. has slipped, measured by an index and by acts the courts called unlawful.
+- [Smug Pilots](smug-pilots.md): How engagement media and bickering experts wore down trust in expertise, and what experts owe the listener.
 - [U.S. Identity Politics](us-identity-politics.md): Identity first, policy rationalized afterward, and the way out.
 - [Viral Truth](viral-truth.md): What truth can borrow from how lies spread, and what it must not.
