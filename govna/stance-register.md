@@ -45,3 +45,4 @@ Use this table as the list of settled positions the site holds. One line per pos
 | 39 | Keep life simple, accept reality, and stand for compassion, progress, reason, and oneself without surrendering them. | `life/personal-growth.md` | settled |
 | 40 | Hold identity labels lightly and values firmly; fewer labels keep the mind free to follow evidence and make conversation calmer. | `mind/identity-lightly.md` | settled |
 | 41 | Quantum mechanics is incomplete as a description of reality; Penrose's gravity-linked collapse is a minority idea whose simplest version has been ruled out. | `mind/penrose.md` | settled |
+| 42 | A right without an accessible remedy is not a right; the Constitution is sound on paper, and the test of it is who can still get relief, how fast, and at what cost. | `society/rights-remedies.md` | settled |

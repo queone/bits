@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.55.0 | Rights and Remedies take: a right you cannot enforce is not a right |
 | 0.54.0 | Penrose: two kinds of reality, and why I side with him on quantum mechanics |
 | 0.53.0 | Hold Your Identity Lightly take: fewer labels, freer thinking, firm values |
 | 0.52.0 | Famous Lessons: the is-ought gap and the two errors that cross it |

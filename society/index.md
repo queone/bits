@@ -13,6 +13,7 @@
 - [Oligarchy](oligarchy.md): Why the problem is concentrated wealth and not one man, with the ledger of who gains and who pays.
 - [Perception Management](perception-management.md): How narratives, not facts, shape mass belief.
 - [Politics](politics.md): Reason and Compassion as the real poles, plus three smaller convictions.
+- [Rights and Remedies](rights-remedies.md): A right you cannot enforce is not a right, and the paths to enforce them are narrowing.
 - [Rule of Law](rule-of-law.md): How far the U.S. has slipped, measured by an index and by acts the courts called unlawful.
 - [U.S. Identity Politics](us-identity-politics.md): Identity first, policy rationalized afterward, and the way out.
 - [Viral Truth](viral-truth.md): What truth can borrow from how lies spread, and what it must not.
