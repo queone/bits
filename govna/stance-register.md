@@ -48,3 +48,4 @@ Use this table as the list of settled positions the site holds. One line per pos
 | 42 | A right without an accessible remedy is not a right; the Constitution is sound on paper, and the test of it is who can still get relief, how fast, and at what cost. | `society/rights-remedies.md` | settled |
 | 43 | Evolved mental programs construct the version of reality we inhabit; understanding them is vital to keeping our models in check. | `mind/tooby.md` | settled |
 | 44 | Engagement media and public bickering among experts both wear down trust in expertise; experts must disagree, but civilly, with respect for the listener. | `society/smug-pilots.md` | settled |
+| 45 | Heavy news consumption goes with a more distorted picture of the other party; the cause is unproven, and cutting back on partisan news is a reasonable personal response. | `society/perception-gap.md` | settled |

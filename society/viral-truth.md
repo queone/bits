@@ -15,4 +15,4 @@ Five principles truth-tellers can borrow from the way lies travel, without borro
 | 4 | Repetition | Repetition builds memory and silence leaves room for lies; repeating truth is not propaganda. |
 | 5 | Asymmetry | Focus on the persuadable middle, strengthen allies who amplify, accept that not everyone can be reached. |
 
-What truth must not borrow is the rest of the playbook: manufactured anger, dehumanizing people, and social punishment for dissent. Those are the mechanics [perception management](perception-management.md) describes and the [Discourse Protocol](discourse.md) exists to refuse. Using them for a good cause still trains the audience to respond to outrage rather than evidence. Truth borrows distribution, not cruelty.
+What truth must not borrow is the rest of the playbook: manufactured anger, [dehumanizing people](perception-gap.md), and social punishment for dissent. Those are the mechanics [perception management](perception-management.md) describes and the [Discourse Protocol](discourse.md) exists to refuse. Using them for a good cause still trains the audience to respond to outrage rather than evidence. Truth borrows distribution, not cruelty.

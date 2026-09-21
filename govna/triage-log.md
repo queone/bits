@@ -4,6 +4,7 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-21 | Publish | The perception gap: more news, a more distorted picture of the other side | `society/`, `note`, "The Perception Gap" | `society/perception-gap.md` |
 | 2026-09-21 | Publish | Smug pilots: how trust in experts wears down, and what experts owe the listener | `society/`, `take`, "Smug Pilots" | `society/smug-pilots.md` |
 | 2026-09-21 | Park | Engagement-driven media as a cause of radicalization | Restates existing entries; needs a non-medical frame and the one claim no entry covers | |
 | 2026-09-21 | Publish | John Tooby on the mental programs that write our reality | `mind/`, `quote`, "John Tooby" | `mind/tooby.md` |
