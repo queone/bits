@@ -16,6 +16,7 @@
 - [Domain-Specific Models](domain-specific-models.md): A belief system as a bundle of models, part inborn and part learned, kept because they satisfy, and how they get misapplied.
 - [Dunning-Kruger](dunning-kruger.md): What the effect does and does not show, and a public lesson in taking an honest review.
 - [Edge Website](edge-website.md): The best salon on the web, and its Epstein problem.
+- [Emotions and Relational States](emotions.md): Emotions by intensity, other emotions by group, and the states that hold between people.
 - [Famous Lessons](famous-lessons.md): Razors and reminders for thinking.
 - [Famous Quotes](famous-quotes.md): A few lines worth remembering, and how to use quotes well.
 - [Free Will](free-will.md): The Harris and Dennett exchange, in three layers.

@@ -17,4 +17,4 @@ I find it useful to put wanting on one scale that runs from hatred to addiction.
 | 8 | Obsession | 5 | An intrusive, persistent desire that can cause distress. |
 | 9 | Addiction | 5 | An uncontrollable desire, often with negative consequences. |
 
-The scale runs separately in each of my [three realms](three-realms.md): the physical, the emotional, and the intellectual.
+The scale runs separately in each of my [three realms](three-realms.md): the physical, the emotional, and the intellectual. For the wider vocabulary, see [Emotions and Relational States](emotions.md).

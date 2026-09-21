@@ -4,6 +4,7 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-21 | Publish | A vocabulary of emotions and relational states, with intensity scales | `mind/`, `reference`, "Emotions and Relational States" | `mind/emotions.md` |
 | 2026-09-21 | Publish | The wealth exception: why skeptics go easy on concentrated money | `society/`, `note`, "The Money Exception" | `society/money-exception.md` |
 | 2026-09-21 | Merge | Pinker's remedy for distorted news: data over anecdotes | `society/perception-gap.md` | `society/perception-gap.md` |
 | 2026-09-21 | Merge | Pinker's reality mindset and mythology mindset | `mind/comfort-biases.md` | `mind/comfort-biases.md` |
