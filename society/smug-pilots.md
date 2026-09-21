@@ -11,4 +11,4 @@ The numbers are less dramatic but real. [Pew](https://www.pewresearch.org/scienc
 
 Experts share the blame. When they bicker in public, ordinary people hear noise, not a debate. One [study](https://pubmed.ncbi.nlm.nih.gov/24117281/) found that people exposed to contradictory nutrition news grew more confused and came to doubt dietary advice in general.
 
-Experts must disagree. That is how knowledge improves. But they ought to frame their disagreements more civilly, and say first what they agree on. Neil deGrasse Tyson's patient, line-by-line review of an amateur's physics, which I describe under [Dunning-Kruger](../mind/dunning-kruger.md), is the model. Respect for the listener is part of the expert's job.
+Experts must disagree. That is how knowledge improves. But they ought to frame their disagreements with more civility, and say first what they agree on. Neil deGrasse Tyson's patient, line-by-line review of an amateur's physics, which I describe under [Dunning-Kruger](../mind/dunning-kruger.md), is the model. Respect for the listener is part of the expert's job.
