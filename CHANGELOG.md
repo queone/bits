@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.60.0 | The Money Exception note: why skeptics go easy on wealth, and when to speak |
 | 0.59.0 | Consciousness note and Attention reference from Pinker lectures; two merges |
 | 0.58.0 | The Perception Gap note: more news, a more distorted view of the other side |
 | 0.57.0 | Smug Pilots take: how trust in experts wears down, and what experts owe us |

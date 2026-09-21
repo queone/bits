@@ -10,6 +10,7 @@
 - [Libertarianism](libertarianism.md): Where body sovereignty stops serving people.
 - [Markets and Capitalism](markets-capitalism.md): Tools, not moral oracles; outcomes depend on the rules.
 - [Internet Monetization Model](monetization-model.md): How attention becomes revenue, and what recommendation systems optimize for.
+- [The Money Exception](money-exception.md): Why even skeptics go easy on concentrated wealth, and when to speak up anyway.
 - [Oligarchy](oligarchy.md): Why the problem is concentrated wealth and not one man, with the ledger of who gains and who pays.
 - [The Perception Gap](perception-gap.md): Why heavy news consumers picture the other side as more extreme than it is, and what I did about it.
 - [Perception Management](perception-management.md): How narratives, not facts, shape mass belief.

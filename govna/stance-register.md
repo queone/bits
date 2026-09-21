@@ -50,3 +50,4 @@ Use this table as the list of settled positions the site holds. One line per pos
 | 44 | Engagement media and public bickering among experts both wear down trust in expertise; experts must disagree, but civilly, with respect for the listener. | `society/smug-pilots.md` | settled |
 | 45 | Heavy news consumption goes with a more distorted picture of the other party; the cause is unproven, and cutting back on partisan news is a reasonable personal response. | `society/perception-gap.md` | settled |
 | 46 | Consciousness will get a materialist explanation and there is no hard problem beyond the machinery; the limits on human understanding are real for the brain as it now is, until it is augmented. | `mind/consciousness.md` | settled |
+| 47 | Reforms that touch concentrated wealth face a higher bar of proof even among skeptics; some caution is sound, but thinkers ought to speak louder when the moment is consequential. | `society/money-exception.md` | settled |
