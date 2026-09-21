@@ -6,6 +6,7 @@
 - [Dealing With Difficult Personalities](difficult-personalities.md): Handling people in power who cannot be reasoned with.
 - [Discourse](discourse.md): A protocol for arguing with reasonable people, and a guide for the rest.
 - [Elite Rapture](elite-rapture.md): Apocalyptic framing from the very wealthy, and why the framing is the danger.
+- [Enlightenment Ideals](enlightenment-ideals.md): Reason in the service of human flourishing, its four rivals, and the realist objection.
 - [Israel and Hamas](israel-hamas.md): The legal and humanitarian framings of genocide and proportionality, with sources.
 - [Libertarianism](libertarianism.md): Where body sovereignty stops serving people.
 - [Markets and Capitalism](markets-capitalism.md): Tools, not moral oracles; outcomes depend on the rules.

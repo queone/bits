@@ -32,3 +32,4 @@
 - [The Sense of Style](sense-of-style.md): What Pinker's book argues, which popular tips are his, and how to use it.
 - [Three Realms](three-realms.md): Physical, emotional, and intellectual, and why effort flows to the one that pays.
 - [John Tooby](tooby.md): The mental programs that write the reality we live in, and why seeing them is the way out.
+- [Trust in Truth](trust-in-truth.md): Six habits for keeping trust in each other and in the institutions of knowledge.
