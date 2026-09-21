@@ -4,6 +4,10 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-21 | Merge | Pinker's remedy for distorted news: data over anecdotes | `society/perception-gap.md` | `society/perception-gap.md` |
+| 2026-09-21 | Merge | Pinker's reality mindset and mythology mindset | `mind/comfort-biases.md` | `mind/comfort-biases.md` |
+| 2026-09-21 | Publish | Attention: parallel and serial processing, feature integration, the global workspace | `mind/`, `reference`, "Attention" | `mind/attention.md` |
+| 2026-09-21 | Publish | Consciousness: the easy and hard problems, and a materialist answer | `mind/`, `note`, "Consciousness" | `mind/consciousness.md` |
 | 2026-09-21 | Publish | The perception gap: more news, a more distorted picture of the other side | `society/`, `note`, "The Perception Gap" | `society/perception-gap.md` |
 | 2026-09-21 | Publish | Smug pilots: how trust in experts wears down, and what experts owe the listener | `society/`, `take`, "Smug Pilots" | `society/smug-pilots.md` |
 | 2026-09-21 | Park | Engagement-driven media as a cause of radicalization | Restates existing entries; needs a non-medical frame and the one claim no entry covers | |

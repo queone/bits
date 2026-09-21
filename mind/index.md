@@ -1,11 +1,13 @@
 ## Mind
 
 - [Answer Patterns](answer-patterns.md): Four dimensions for reading what an answer is doing.
+- [Attention](attention.md): Parallel and serial processing, feature integration, the gorilla test, and the global workspace.
 - [Beauty](beauty.md): Where our sense of beauty comes from, and why I think it redeems us.
 - [Noam Chomsky](chomsky.md): Where I follow him, where I part ways, and his point about the limits of intelligence.
 - [Cold Logic](cold-logic.md): Reasoning that follows a principle past the point where it serves people, and its warm opposite.
 - [Comfort and Biases](comfort-biases.md): Why comforting beliefs persist, and the one bias under all the others.
 - [Computation](computation.md): Universal computation, computational irreducibility, and why paradigm shifts matter.
+- [Consciousness](consciousness.md): The easy problem, the hard problem, the answers on offer, and why I side with Dennett.
 - [Human Core Challenges](core-challenges.md): The biological, social, and entropy problems under every other problem.
 - [Cultural Cognition](cultural-cognition.md): Reading facts through group identity, and how societies move past it.
 - [Daniel Dennett](dennett.md): Gradualism, intuition pumps, and Darwin's dangerous idea.
