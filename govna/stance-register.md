@@ -53,3 +53,4 @@ Use this table as the list of settled positions the site holds. One line per pos
 | 47 | Reforms that touch concentrated wealth face a higher bar of proof even among skeptics; some caution is sound, but thinkers ought to speak louder when the moment is consequential. | `society/money-exception.md` | settled |
 | 48 | We should use reason to improve human flourishing; people are tribal in fact, and the ideal is an aim that holds anyway; defending markets calls for care about historical timing. | `society/enlightenment-ideals.md` | settled |
 | 49 | The communities that check their claims against reality, in science, journalism, government, and the courts, are a civic trust, to be kept and handed on. | `mind/trust-in-truth.md` | settled |
+| 50 | The more people a conspiracy claim needs to keep silent, the less plausible the claim is. | `mind/detecting-baloney.md` | settled |

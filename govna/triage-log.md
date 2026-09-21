@@ -4,6 +4,8 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-21 | Merge | Counting the secret-keepers a conspiracy claim needs, after Shermer and Grimes | `mind/detecting-baloney.md` | `mind/detecting-baloney.md` |
+| 2026-09-21 | Merge | Pluralistic ignorance: silence lets each doubter assume the rest believe | `society/viral-truth.md` | `society/viral-truth.md` |
 | 2026-09-21 | Merge | Talking with conspiracists: Socratic questions, dishonest moves, letting people be wrong | `society/discourse.md` | `society/discourse.md` |
 | 2026-09-21 | Publish | Six habits for rebuilding trust in truth, after Shermer and Rauch | `mind/`, `reference`, "Trust in Truth" | `mind/trust-in-truth.md` |
 | 2026-09-21 | Publish | The Enlightenment ideal, its rivals, and the realist objection | `society/`, `note`, "Enlightenment Ideals" | `society/enlightenment-ideals.md` |
