@@ -3,7 +3,7 @@ type: take
 ---
 ## Karl Popper
 
-In "Toleration and Intellectual Responsibility", collected in [After The Open Society](https://openlibrary.org/works/OL10445862W/After_The_Open_Society), [Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper) rests toleration on three principles. I keep them close:
+In "Toleration and Intellectual Responsibility", collected in [After The Open Society](https://www.routledge.com/After-The-Open-Society-Selected-Social-and-Political-Writings/Popper-Turner-Shearmur/p/book/9780415610230), [Karl Popper](https://en.wikipedia.org/wiki/Karl_Popper) rests toleration on three principles. I keep them close:
 
 1. I may be wrong and you may be right.
 2. Let us talk things over rationally.

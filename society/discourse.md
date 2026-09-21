@@ -22,7 +22,7 @@ How to argue with reasonable people, drawing on [Carl Rogers](https://en.wikiped
 
 ### Having Impossible Conversations
 
-[Peter Boghossian](https://en.wikipedia.org/wiki/Peter_Boghossian) and [James A. Lindsay](https://en.wikipedia.org/wiki/James_A._Lindsay) wrote [How to Have Impossible Conversations](https://openlibrary.org/works/OL20680751W/How_to_Have_Impossible_Conversations) in 2019, the source of most of these techniques. They rest on older and better documented practice: [motivational interviewing](https://en.wikipedia.org/wiki/Motivational_interviewing), the [Socratic method](https://en.wikipedia.org/wiki/Socratic_method), [street epistemology](https://en.wikipedia.org/wiki/Street_epistemology), and [Rapoport's rules](https://en.wikipedia.org/wiki/Rapoport%27s_rules). A brief and incomplete mnemonic:
+[Peter Boghossian](https://en.wikipedia.org/wiki/Peter_Boghossian) and [James A. Lindsay](https://en.wikipedia.org/wiki/James_A._Lindsay) wrote [How to Have Impossible Conversations](https://www.hachettebookgroup.com/titles/peter-boghossian/how-to-have-impossible-conversations/9780738285320/) in 2019, the source of most of these techniques. They rest on older and better documented practice: [motivational interviewing](https://en.wikipedia.org/wiki/Motivational_interviewing), the [Socratic method](https://en.wikipedia.org/wiki/Socratic_method), [street epistemology](https://en.wikipedia.org/wiki/Street_epistemology), and [Rapoport's rules](https://en.wikipedia.org/wiki/Rapoport%27s_rules). A brief and incomplete mnemonic:
 
 - **Model it.** Be and do what you want them to do. Admit ignorance.
 - **Watch words.** Be careful, and understand their definitions.
@@ -31,3 +31,13 @@ How to argue with reasonable people, drawing on [Carl Rogers](https://en.wikiped
 - **Do not blame.** Focus on contribution.
 - **Focus on epistemology.** How do they know what they claim to know?
 - **Learn what makes someone closed-minded.**
+
+### Talking With a Conspiracist
+
+[Michael Shermer](https://en.wikipedia.org/wiki/Michael_Shermer) gives a longer list in his 2022 book Conspiracy. It adds:
+
+- **Channel Socrates.** Use [Socratic questions](https://en.wikipedia.org/wiki/Socratic_questioning) about clarity ("How do you know that's true?"), sources ("What's your source for that?"), evidence ("Is that all the evidence, or a selection?"), and other views ("What is another way to look at it?").
+- **Ask for a number.** How certain are they, as a percentage?
+- **Avoid the dishonest moves yourself.** Questioning motives or authority, claiming a group's authority, changing the subject, and [sealioning](https://en.wikipedia.org/wiki/Sealioning), which buries a person in requests for evidence. Say "that idea", not "your idea".
+- **Separate facts from worldviews.** A changed fact need not mean a changed [identity](../mind/identity-lightly.md).
+- **Let people be wrong.** Friendship rests on respect, not agreement. [Jefferson](https://founders.archives.gov/documents/Jefferson/01-31-02-0445) wrote in 1800: "I never considered a difference of opinion in politics, in religion, in philosophy, as cause for withdrawing from a friend."

@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.63.0 | Discourse: talking with a conspiracist, after Shermer; 3 dead book links fixed |
 | 0.62.0 | Enlightenment Ideals note; Trust in Truth reference after Shermer and Rauch |
 | 0.61.0 | Emotions and Relational States reference, with Plutchik intensity scales |
 | 0.60.0 | The Money Exception note: why skeptics go easy on wealth, and when to speak |
