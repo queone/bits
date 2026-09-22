@@ -22,6 +22,7 @@
 - [Rule of Law](rule-of-law.md): How far the U.S. has slipped, measured by an index and by acts the courts called unlawful.
 - [Slow by Design](slow-by-design.md): A republic built to cool passions, how virality undoes it, and the remedies I would add.
 - [Smug Pilots](smug-pilots.md): How engagement media and bickering experts wore down trust, and what experts owe listeners.
+- [The Two-Front War](two-front-war.md): Illness in the U.S. means fighting the disease and the bill.
 - [U.S. Identity Politics](us-identity-politics.md): Identity first, policy rationalized afterward, and the way out.
 - [Viral Truth](viral-truth.md): What truth can borrow from how lies spread, and what it must not.
 - [Whose Problem](whose-problem.md): Real problems, and why no single donor should own them.
