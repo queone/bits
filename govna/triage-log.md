@@ -4,6 +4,12 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-22 | Publish | Whose problem: billionaire remedies versus society-owned ones; ownership, ego, continuity | `society/`, `note`, "Whose Problem" | `society/whose-problem.md` |
+| 2026-09-22 | Merge | The pseudo-problem test, after Hossenfelder, with DOGE as the contrast | `society/whose-problem.md` | `society/whose-problem.md` |
+| 2026-09-22 | Merge | Open source funding not tied to one patron | `society/whose-problem.md` | `society/whose-problem.md` |
+| 2026-09-22 | Publish | Two systems of thinking and what holds up, after Kahneman | `mind/`, `note`, "Two Systems" | `mind/two-systems.md` |
+| 2026-09-22 | Publish | AI as a volunteered mild Leviathan for self-governance | `society/`, `take`, "Mild Leviathan" | `society/mild-leviathan.md` |
+| 2026-09-22 | Drop | Billionaires as one political bloc | Answered by `society/oligarchy.md`: billionaires backed both 2024 candidates | |
 | 2026-09-21 | Publish | Several threads of consciousness as an intuition pump for how the mind works | `mind/`, `note`, "Threads of Mind" | `mind/threads-of-mind.md` |
 | 2026-09-21 | Publish | A republic built to cool passions, social media as the accelerant, and the remedies | `society/`, `note`, "Slow by Design" | `society/slow-by-design.md` |
 | 2026-09-21 | Merge | Counting the secret-keepers a conspiracy claim needs, after Shermer and Grimes | `mind/detecting-baloney.md` | `mind/detecting-baloney.md` |

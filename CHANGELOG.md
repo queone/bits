@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.68.0 | AC61 Two Systems note; Whose Problem, Mild Leviathan; triage rows; entry rule |
 | 0.67.0 | Index lines capped at 104 characters: 16 trimmed, checker detector added |
 | 0.66.0 | Threads of Mind note: an intuition pump on consciousness; shorter index line |
 | 0.65.0 | Slow by Design note: a republic built to cool passions; civility wording fix |

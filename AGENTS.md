@@ -545,3 +545,8 @@ Note: the Director triggers those actions; Ratify names what is pending.
 - Draft no `take` or `note` before the Director states a position on it.
 - Log a triage verdict in `govna/triage-log.md` only after the Director confirms or overrides it.
 - Treat the Director's confirmation of a verdict as authorization to log that verdict.
+
+### Entry Handling
+
+- Handle a confirmed triage verdict directly unless the Director selects Draft.
+- Keep the stated position, the publishing filter, the register update, the triage-log fill, and the same-pass proofread as the gates for a direct-handled entry.

@@ -10,6 +10,7 @@
 - [Israel and Hamas](israel-hamas.md): The legal and humanitarian framings of genocide and proportionality, with sources.
 - [Libertarianism](libertarianism.md): Where body sovereignty stops serving people.
 - [Markets and Capitalism](markets-capitalism.md): Tools, not moral oracles; outcomes depend on the rules.
+- [Mild Leviathan](mild-leviathan.md): AI as a volunteered mild Leviathan for self-governance.
 - [Internet Monetization Model](monetization-model.md): How attention becomes revenue, and what recommender systems optimize for.
 - [The Money Exception](money-exception.md): Why even skeptics go easy on concentrated wealth, and when to speak up anyway.
 - [Oligarchy](oligarchy.md): Why the problem is concentrated wealth, not one man, with a ledger of who gains and who pays.
@@ -22,3 +23,4 @@
 - [Smug Pilots](smug-pilots.md): How engagement media and bickering experts wore down trust, and what experts owe listeners.
 - [U.S. Identity Politics](us-identity-politics.md): Identity first, policy rationalized afterward, and the way out.
 - [Viral Truth](viral-truth.md): What truth can borrow from how lies spread, and what it must not.
+- [Whose Problem](whose-problem.md): Real problems, and why no single donor should own them.

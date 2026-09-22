@@ -34,3 +34,4 @@
 - [Three Realms](three-realms.md): Physical, emotional, and intellectual, and why effort flows to the one that pays.
 - [John Tooby](tooby.md): The mental programs that write the reality we live in, and why seeing them is the way out.
 - [Trust in Truth](trust-in-truth.md): Six habits for keeping trust in each other and in the institutions of knowledge.
+- [Two Systems](two-systems.md): Fast and slow thinking as a fiction, what survived, and the remedy.
