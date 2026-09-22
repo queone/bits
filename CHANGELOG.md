@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.72.0 | Flourishing take: six directions for the seeking drive, direction over arrival |
 | 0.71.0 | Reflexivity: the reflective mind, separate from intelligence, after Stanovich |
 | 0.70.0 | Cold at the Top take: traits, power, and incentives behind indifference |
 | 0.69.0 | Transcendence note: fear engine and appetite engine; misinformation parked |
