@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.70.0 | Cold at the Top take: traits, power, and incentives behind indifference |
 | 0.69.0 | Transcendence note: fear engine and appetite engine; misinformation parked |
 | 0.68.2 | Retire the local entry-handling rule that canon v0.65.0 now owns |
 | 0.68.1 | AC62 adopt Govna governance files v0.65.0 |
