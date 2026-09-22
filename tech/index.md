@@ -11,7 +11,7 @@
 - [DNS](dns.md): Record creation, cache flushing, NextDNS on OPNsense, and PowerShell DNS commands.
 - [Editors](editors.md): vi and VS Code settings I forget.
 - [Email](email.md): DMARC, SPF, and DKIM setup.
-- [git](git/index.md): Everyday git, branch cleanup, rebasing, squashing, OIDC to Azure and Vault, and GitHub App permissions.
+- [git](git/index.md): Everyday git, branch cleanup, rebase, squash, OIDC to Azure and Vault, and GitHub App permissions.
 - [Go](go.md): Install, local module overrides, build fixes, and snippets.
 - [iCloud Photos](icloud-photos.md): Exporting, backing up, and restoring a Photos library.
 - [Internet Archive](internet-archive.md): Account, keys, the ia command line, and what a login does and does not unlock.

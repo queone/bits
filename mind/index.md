@@ -1,10 +1,10 @@
 ## Mind
 
 - [Answer Patterns](answer-patterns.md): Four dimensions for reading what an answer is doing.
-- [Attention](attention.md): Parallel and serial processing, feature integration, the gorilla test, and the global workspace.
+- [Attention](attention.md): Two ways the mind processes, feature integration, the gorilla test, and the global workspace.
 - [Beauty](beauty.md): Where our sense of beauty comes from, and why I think it redeems us.
 - [Noam Chomsky](chomsky.md): Where I follow him, where I part ways, and his point about the limits of intelligence.
-- [Cold Logic](cold-logic.md): Reasoning that follows a principle past the point where it serves people, and its warm opposite.
+- [Cold Logic](cold-logic.md): Reasoning that follows a principle past where it serves people, and its warm opposite.
 - [Comfort and Biases](comfort-biases.md): Why comforting beliefs persist, and the one bias under all the others.
 - [Computation](computation.md): Universal computation, computational irreducibility, and why paradigm shifts matter.
 - [Consciousness](consciousness.md): The easy problem, the hard problem, the answers on offer, and why I side with Dennett.
@@ -13,24 +13,24 @@
 - [Daniel Dennett](dennett.md): Gradualism, intuition pumps, and Darwin's dangerous idea.
 - [Desire](desire.md): A single scale from hatred to addiction.
 - [Detecting Baloney](detecting-baloney.md): Pointers for an intellectual self-defense toolkit.
-- [Domain-Specific Models](domain-specific-models.md): A belief system as a bundle of models, part inborn and part learned, kept because they satisfy, and how they get misapplied.
+- [Domain-Specific Models](domain-specific-models.md): Beliefs as bundles of inborn and learned models, and how they get misapplied.
 - [Dunning-Kruger](dunning-kruger.md): What the effect does and does not show, and a public lesson in taking an honest review.
 - [Edge Website](edge-website.md): The best salon on the web, and its Epstein problem.
-- [Emotions and Relational States](emotions.md): Emotions by intensity, other emotions by group, and the states that hold between people.
+- [Emotions and Relational States](emotions.md): Emotions by intensity and by group, and the states between people.
 - [Famous Lessons](famous-lessons.md): Razors and reminders for thinking.
 - [Famous Quotes](famous-quotes.md): A few lines worth remembering, and how to use quotes well.
 - [Free Will](free-will.md): The Harris and Dennett exchange, in three layers.
-- [Hold Your Identity Lightly](identity-lightly.md): Fewer labels, freer thinking, calmer conversations, and the values worth keeping anyway.
+- [Hold Your Identity Lightly](identity-lightly.md): Fewer labels, freer thinking, calmer talk, and the values worth keeping.
 - [Optimism](optimism.md): Lines and proverbs against pessimism.
 - [Roger Penrose](penrose.md): Provisional physics and non-algorithmic consciousness.
 - [Steven Pinker](pinker.md): My primary reference in psychology, with two reservations.
 - [Karl Popper](popper.md): Three principles of toleration under every good argument.
 - [Pseudoscience](pseudoscience.md): Why it is bad, who is drawn to it, and what actually counters it.
-- [Reflexivity](reflexivity.md): Observing and revising your own thinking, its evolved limits, and how institutions extend it.
+- [Reflexivity](reflexivity.md): Observing and revising your thinking, its evolved limits, and how institutions extend it.
 - [Reflexivity Curriculum](reflexivity-curriculum.md): Norms, practices, and safeguards that make reflection the default.
 - [Science](science.md): The most important mental tool we have, and why it comes hard.
 - [The Sense of Style](sense-of-style.md): What Pinker's book argues, which popular tips are his, and how to use it.
-- [Threads of Mind](threads-of-mind.md): What several threads of consciousness would be like, why the mind already runs that way, and what a truly multi-threaded mind would need.
+- [Threads of Mind](threads-of-mind.md): An intuition pump: many threads of consciousness, and why the mind already has them.
 - [Three Realms](three-realms.md): Physical, emotional, and intellectual, and why effort flows to the one that pays.
 - [John Tooby](tooby.md): The mental programs that write the reality we live in, and why seeing them is the way out.
 - [Trust in Truth](trust-in-truth.md): Six habits for keeping trust in each other and in the institutions of knowledge.

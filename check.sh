@@ -54,6 +54,7 @@ URL_SKIP='mydomain\.com|example\.(com|org|net)|somewhere\.com|contoso\.com|169\.
 HOST_ALLOW='cbo\.gov|stackoverflow\.com|stackexchange\.com|medium\.com|congress\.gov|sagepub\.com|politico\.com|devgenius\.io|hrw\.org|grc\.com'
 HOST_SHORT='youtu\.be|youtube\.com|a\.co|aka\.ms|bit\.ly|t\.co|amazon\.com'
 FENCE_MAX=40
+INDEX_MAX=104
 ZOMBIE_RE='(tion|sion|ment|ance|ence|ity|ness)s?$'
 ZOMBIE_OK='institution institutions question questions evidence position positions consciousness attention sentence sentences intelligence decision decisions security reflexivity information education audience audiences reference references identity identities community communities business businesses argument arguments responsibility responsibilities humanity environment environments condition conditions compassion coalition coalitions consequence consequences curiosity science sciences conscience experience experiences difference differences existence essence silence violence presence absence independence confidence influence influences sequence sequences tradition traditions religion religions opinion opinions emotion emotions nation nations generation generations population populations society societies reality realities quality qualities ability abilities possibility possibilities opportunity opportunities authority authorities majority minority minorities university universities activity activities priority priorities moment moments element elements government governments treatment treatments agreement agreements department departments parliament happiness darkness kindness illness illnesses weakness weaknesses madness sadness fairness goodness richness loneliness witness witnesses wilderness fitness'
 ZOMBIE_MAX=50
@@ -289,6 +290,14 @@ check_index_dir() { # dir
     name="${f#$d/}"
     rg -q -F -e "]($name)" -e "]($name#" -e "href=\"$name\"" "$idx" || emit "$idx" 1 I-INDEX "missing entry $name"
   done
+  case "$d" in */*) return 0 ;; esac   # the length cap covers the four area indexes only
+  local n=0 l t rest len
+  while IFS= read -r l; do
+    n=$((n+1))
+    case "$l" in "- ["*"]("*"): "*) ;; *) continue ;; esac
+    t="${l#- [}"; t="${t%%]*}"; rest="${l#*): }"; len=$(( ${#t} + 2 + ${#rest} ))
+    [ "$len" -gt "$INDEX_MAX" ] && emit "$idx" "$n" I-LONG "index line is $len characters, cap $INDEX_MAX"
+  done <"$idx"
 }
 
 # ── stance register ─────────────────────────────────────────────────────────
@@ -400,7 +409,7 @@ fi
 SHIM
   chmod +x "$TMP/bin/curl"
   printf -- '---\ntype: take\n---\n## Initials\n\nAs J. J. C. Smart and E. O. Wilson argued, e.g. in the U.S. and the U.K., this sentence runs to twenty words. Dr. Smith, Mr. Jones, i.e. two people, vs. St. Paul, etc. wrote another sentence that also runs on to twenty words.\n' >"$fx/life/initials.md"
-  printf '## Life\n\n- [Dirty](dirty.md)\n' >"$fx/life/index.md"
+  printf '## Life\n\n- [Dirty](dirty.md)\n- [Long](dirty.md): A description that runs on and on, past the cap, so that the index line wraps on a phone and on a laptop alike.\n' >"$fx/life/index.md"
   printf '## Sub\n' >"$fx/life/sub/index.md"
   printf '# Register\n\n| # | Position | Owning entry | Status |\n|---|---|---|---|\n| 1 | X. | `life/missing.md` | settled |\n| 2 | Y. | `life/dirty.md` | bogus |\n| 3 | Markets reward innovation through price signals. | `life/dirty.md` | settled |\n' >"$fx/govna/stance-register.md"
   printf -- '---\ntype: note\n---\n## Clean\n\nA clean [entry](index.md) with one [ref](https://en.wikipedia.org/wiki/Main_Page).\n\nMicrosoft Graph accepts the token. Photos sit in ~/Pictures/x and settings in ~/.config/x.\n' >"$clean/life/clean.md"
@@ -408,7 +417,7 @@ SHIM
   printf '# Register\n\n| # | Position | Owning entry | Status |\n|---|---|---|---|\n| 1 | X. | `life/clean.md` | settled |\n' >"$clean/govna/stance-register.md"
 
   res=$( (CHECK_ROOT="$fx" BITS_DENYLIST="$TMP/deny.txt" "$SELF" life/dirty.md life/untyped.md life/initials.md life/spanish.md life/qa.md life/anchor.md life/zombie.md life/selfok.md life/digest.md; CHECK_ROOT="$fx" "$SELF" --register) 2>&1 )
-  for c in P-GUID P-SSH P-HEX P-MAC P-EMAIL P-PATH P-ORG P-DENY P-SELF W-YEAR W-PERSONAL B-TYPE B-WORDS B-FENCE L-REL L-ANCHOR L-ABS L-EXT X-MARKER X-HEADING X-LANG X-QA X-FENCE W-NAME W-PLAIN W-ZOMBIE W-ANCHOR W-STALE I-INDEX R-PATH; do
+  for c in P-GUID P-SSH P-HEX P-MAC P-EMAIL P-PATH P-ORG P-DENY P-SELF W-YEAR W-PERSONAL B-TYPE B-WORDS B-FENCE L-REL L-ANCHOR L-ABS L-EXT X-MARKER X-HEADING X-LANG X-QA X-FENCE W-NAME W-PLAIN W-ZOMBIE W-ANCHOR W-STALE I-INDEX I-LONG R-PATH; do
     if printf '%s\n' "$res" | rg -q -e " $c "; then printf 'PASS %s\n' "$c"; else printf 'FAIL %s\n' "$c"; ok=1; fi
   done
   if printf '%s\n' "$res" | rg -q -e "life/initials.md:1: W-PLAIN"; then printf 'PASS W-PLAIN-initials\n'; else printf 'FAIL W-PLAIN-initials\n'; ok=1; fi

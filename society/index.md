@@ -1,24 +1,24 @@
 ## Society
 
 - [Activism](activism.md): Rules for effective activism: match effort to influence, and work with imperfect allies.
-- [Constitutional Republic](constitutional-republic.md): Why "republic, not democracy" is a false choice, and what is actually contested.
+- [Constitutional Republic](constitutional-republic.md): Why "republic, not democracy" is a false choice, and what is contested.
 - [Confederate Monuments](monuments.md): Memorials to a myth, not to history.
 - [Dealing With Difficult Personalities](difficult-personalities.md): Handling people in power who cannot be reasoned with.
 - [Discourse](discourse.md): A protocol for arguing with reasonable people, and a guide for the rest.
 - [Elite Rapture](elite-rapture.md): Apocalyptic framing from the very wealthy, and why the framing is the danger.
-- [Enlightenment Ideals](enlightenment-ideals.md): Reason in the service of human flourishing, its four rivals, and the realist objection.
+- [Enlightenment Ideals](enlightenment-ideals.md): Reason in the service of flourishing, its four rivals, and the realist objection.
 - [Israel and Hamas](israel-hamas.md): The legal and humanitarian framings of genocide and proportionality, with sources.
 - [Libertarianism](libertarianism.md): Where body sovereignty stops serving people.
 - [Markets and Capitalism](markets-capitalism.md): Tools, not moral oracles; outcomes depend on the rules.
-- [Internet Monetization Model](monetization-model.md): How attention becomes revenue, and what recommendation systems optimize for.
+- [Internet Monetization Model](monetization-model.md): How attention becomes revenue, and what recommender systems optimize for.
 - [The Money Exception](money-exception.md): Why even skeptics go easy on concentrated wealth, and when to speak up anyway.
-- [Oligarchy](oligarchy.md): Why the problem is concentrated wealth and not one man, with the ledger of who gains and who pays.
-- [The Perception Gap](perception-gap.md): Why heavy news consumers picture the other side as more extreme than it is, and what I did about it.
+- [Oligarchy](oligarchy.md): Why the problem is concentrated wealth, not one man, with a ledger of who gains and who pays.
+- [The Perception Gap](perception-gap.md): Why heavy news users see the other side as more extreme than it is, and what I did.
 - [Perception Management](perception-management.md): How narratives, not facts, shape mass belief.
 - [Politics](politics.md): Reason and Compassion as the real poles, plus three smaller convictions.
-- [Rights and Remedies](rights-remedies.md): A right you cannot enforce is not a right, and the paths to enforce them are narrowing.
+- [Rights and Remedies](rights-remedies.md): A right you cannot enforce is not a right, and those paths are narrowing.
 - [Rule of Law](rule-of-law.md): How far the U.S. has slipped, measured by an index and by acts the courts called unlawful.
-- [Slow by Design](slow-by-design.md): Why the republic was built to cool passions, how social media undoes that, and the remedies I would add.
-- [Smug Pilots](smug-pilots.md): How engagement media and bickering experts wore down trust in expertise, and what experts owe the listener.
+- [Slow by Design](slow-by-design.md): A republic built to cool passions, how virality undoes it, and the remedies I would add.
+- [Smug Pilots](smug-pilots.md): How engagement media and bickering experts wore down trust, and what experts owe listeners.
 - [U.S. Identity Politics](us-identity-politics.md): Identity first, policy rationalized afterward, and the way out.
 - [Viral Truth](viral-truth.md): What truth can borrow from how lies spread, and what it must not.
