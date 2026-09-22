@@ -4,6 +4,8 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-22 | Merge | A rating of billionaire giving by outcome, not by amount given | `society/whose-problem.md` | `society/whose-problem.md` |
+| 2026-09-22 | Merge | Markets and humanistic progress: growth is not the whole of it, after Kenny | `society/markets-capitalism.md` | `society/markets-capitalism.md` |
 | 2026-09-22 | Publish | Flourishing in six directions, pursued as a loop where direction beats arrival | `life/`, `take`, "Flourishing" | `life/flourishing.md` |
 | 2026-09-22 | Merge | The reflective mind as the measurable core of reflexivity, after Stanovich; intelligent but unreflective | `mind/reflexivity.md` | `mind/reflexivity.md` |
 | 2026-09-22 | Publish | Indifference at the top as traits plus incentives, analysis not excuse, with the Left and Right counters | `society/`, `take`, "Cold at the Top" | `society/cold-at-the-top.md` |
