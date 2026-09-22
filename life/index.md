@@ -4,6 +4,7 @@
 - [Personal Growth](personal-growth.md): The handful of ideas I run my own life on.
 - [Flourishing](flourishing.md): Six directions for the seeking drive, and why direction beats arrival.
 - [Legacy](legacy.md): Why wanting to be remembered is ego, and what is worth passing on anyway.
+- [Engaging Strangers](engaging-strangers.md): Seven steps for opening a conversation with a stranger.
 - [Blood Pressure Diet](bp-diet.md): A DASH-style cheat-sheet of foods to favor and foods to limit.
 - [Kidneys and Blood Pressure](kidneys-bp.md): How the kidneys regulate blood pressure and what that means for diet.
 - [Chess](chess.md): Openings to master, and a PGN cleanup function.
