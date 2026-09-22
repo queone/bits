@@ -30,6 +30,7 @@
 - [Reflexivity Curriculum](reflexivity-curriculum.md): Norms, practices, and safeguards that make reflection the default.
 - [Science](science.md): The most important mental tool we have, and why it comes hard.
 - [The Sense of Style](sense-of-style.md): What Pinker's book argues, which popular tips are his, and how to use it.
+- [Threads of Mind](threads-of-mind.md): What several threads of consciousness would be like, why the mind already runs that way, and what a truly multi-threaded mind would need.
 - [Three Realms](three-realms.md): Physical, emotional, and intellectual, and why effort flows to the one that pays.
 - [John Tooby](tooby.md): The mental programs that write the reality we live in, and why seeing them is the way out.
 - [Trust in Truth](trust-in-truth.md): Six habits for keeping trust in each other and in the institutions of knowledge.

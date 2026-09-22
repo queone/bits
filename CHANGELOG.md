@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.66.0 | Threads of Mind note: an intuition pump on consciousness; shorter index line |
 | 0.65.0 | Slow by Design note: a republic built to cool passions; civility wording fix |
 | 0.64.0 | Baloney: count the secret-keepers; pluralistic ignorance; Popper essay title fix |
 | 0.63.0 | Discourse: talking with a conspiracist, after Shermer; 3 dead book links fixed |
