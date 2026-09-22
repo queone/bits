@@ -550,5 +550,4 @@ Note: the Director triggers those actions; Ratify names what is pending.
 
 ### Entry Handling
 
-- Handle a confirmed triage verdict directly unless the Director selects Draft.
 - Keep the stated position, the publishing filter, the register update, the triage-log fill, and the same-pass proofread as the gates for a direct-handled entry.

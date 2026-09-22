@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.68.2 | Retire the local entry-handling rule that canon v0.65.0 now owns |
 | 0.68.1 | AC62 adopt Govna governance files v0.65.0 |
 | 0.68.0 | AC61 Two Systems note; Whose Problem, Mild Leviathan; triage rows; entry rule |
 | 0.67.0 | Index lines capped at 104 characters: 16 trimmed, checker detector added |
