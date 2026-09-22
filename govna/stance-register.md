@@ -7,7 +7,7 @@ Use this table as the list of settled positions the site holds. One line per pos
 | 1 | Science is the most important mental tool humanity has. | `mind/science.md` | settled |
 | 2 | Pseudoscience is harmful, and countering it works through education and respectful engagement, not ridicule. | `mind/pseudoscience.md` | settled |
 | 3 | Bias is universal; what differs between people is the willingness to notice and correct it. | `mind/comfort-biases.md` | settled |
-| 4 | Human reflexivity is limited by evolved cognition and is best augmented through institutions and tools. | `mind/reflexivity.md` | settled |
+| 4 | Human reflexivity is limited by evolved cognition and is best augmented through institutions and tools; its measurable core is the reflective mind, separate from intelligence, so a very intelligent person can be unreflective. | `mind/reflexivity.md` | settled |
 | 5 | Markets are useful tools, not moral oracles; outcomes depend on rules, incentives, and institutions. | `society/markets-capitalism.md` | settled |
 | 6 | The United States is a democracy, a republic, and constitutional at once; "republic, not democracy" is a false dichotomy. | `society/constitutional-republic.md` | settled |
 | 7 | Disagreement follows the Discourse Protocol: understand first, state the strongest version, accept you may be wrong. | `society/discourse.md`, `mind/famous-lessons.md` | settled |

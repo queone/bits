@@ -4,6 +4,7 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-22 | Merge | The reflective mind as the measurable core of reflexivity, after Stanovich; intelligent but unreflective | `mind/reflexivity.md` | `mind/reflexivity.md` |
 | 2026-09-22 | Publish | Indifference at the top as traits plus incentives, analysis not excuse, with the Left and Right counters | `society/`, `take`, "Cold at the Top" | `society/cold-at-the-top.md` |
 | 2026-09-22 | Publish | Transcendence as an evolved by-product: terror management and the appetitive half it misses | `mind/`, `note`, "Transcendence" | `mind/transcendence.md` |
 | 2026-09-22 | Park | Misinformation: hardening individuals versus the majority who consume it, after Buttigieg | Needs a stated position on whether hardening individuals reaches the majority and on the turn toward the reader; the remedies are owned by `society/viral-truth.md` and `mind/trust-in-truth.md` | |
