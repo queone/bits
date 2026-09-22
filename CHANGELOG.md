@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.75.0 | Domain-Specific Models: childhood beliefs, unintended harm, the carrier a victim |
 | 0.74.0 | Two-Front War note: in U.S. illness you fight the disease and the bill |
 | 0.73.0 | Markets: growth is not all of progress; Whose Problem: grade what giving fixed |
 | 0.72.0 | Flourishing take: six directions for the seeking drive, direction over arrival |

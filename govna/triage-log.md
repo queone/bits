@@ -4,6 +4,7 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-22 | Merge | Harmful beliefs installed in childhood: an unintended consequence, the carrier a victim | `mind/domain-specific-models.md` | `mind/domain-specific-models.md` |
 | 2026-09-22 | Publish | US health care as a two-front war: the disease and the bill | `society/`, `note`, "The Two-Front War" | `society/two-front-war.md` |
 | 2026-09-22 | Merge | A rating of billionaire giving by outcome, not by amount given | `society/whose-problem.md` | `society/whose-problem.md` |
 | 2026-09-22 | Merge | Markets and humanistic progress: growth is not the whole of it, after Kenny | `society/markets-capitalism.md` | `society/markets-capitalism.md` |
