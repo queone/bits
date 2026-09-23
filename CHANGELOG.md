@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.86.2 | AC63 adopt Govna governance files v0.66.0 |
 | 0.86.1 | Checker: year warning matches by sentence and ignores link addresses |
 | 0.86.0 | Perception Management: anger spreads; planned campaigns ride the current |
 | 0.85.0 | Pseudoscience: rank it by the harm it does when acted on, not how wrong it is |
