@@ -14,7 +14,7 @@ Use this table as the list of settled positions the site holds. One line per pos
 | 8 | Progress is real, slow, and incomplete, and it can be undone if we let things slip. | `mind/pinker.md`, `mind/core-challenges.md` | settled |
 | 9 | The political poles are better understood as Reason and Compassion, and a hybrid stance is prudent. | `society/politics.md` | settled |
 | 10 | Confederate monuments memorialize myths rather than history. | `society/monuments.md` | settled |
-| 11 | Public belief is shaped by incentives and distribution more than by accuracy; ask who benefits from a framing. | `society/perception-management.md` | settled |
+| 11 | Public belief is shaped by incentives and distribution more than by accuracy; ask who benefits from a framing; anger spreads because it pays, and planned campaigns ride that current more than they create it. | `society/perception-management.md` | settled |
 | 12 | Quotations are prompts for reflection, not proof. | `mind/famous-quotes.md` | settled |
 | 13 | Natural selection bridged mechanism and meaning, and gradualism is the right frame for mind. | `mind/dennett.md` | settled |
 | 14 | Named living people are criticized for public positions and actions only, never for mental states. | `govna/publishing-filter.md` | settled |

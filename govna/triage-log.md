@@ -4,6 +4,7 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-23 | Merge | Mass delusions: selected more than conducted; anger spreads; planned campaigns ride the current | `society/perception-management.md` | `society/perception-management.md` |
 | 2026-09-23 | Merge | Ranking pseudoscience by the harm it does when acted on, not by how wrong it is | `mind/pseudoscience.md` | `mind/pseudoscience.md` |
 | 2026-09-23 | Merge | Offering opinions to provoke thought and curiosity, not to win anyone over | `about.md` | `about.md` |
 | 2026-09-23 | Publish | A quick reference to complexity terms, how settled each is, and the common traps | `mind/`, `reference`, "Complexity" | `mind/complexity.md` |
