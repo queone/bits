@@ -4,6 +4,7 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-23 | Publish | One world in levels, from particles to minds, closing into a loop | `mind/`, `note`, "The Ouroboros" | `mind/ouroboros.md` |
 | 2026-09-23 | Merge | The spiritual as the three realms at once, not a fourth realm | `mind/three-realms.md` | `mind/three-realms.md` |
 | 2026-09-23 | Publish | Four layered sources of motivation, after Dennett's tower, with reflection as the top floor | `mind/`, `note`, "Four Floors" | `mind/four-floors.md` |
 | 2026-09-23 | Publish | Whether an AGI counts as someone, and where the boundary falls | `mind/`, `take`, "Who Counts" | `mind/who-counts.md` |

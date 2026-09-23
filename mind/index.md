@@ -23,6 +23,7 @@
 - [Free Will](free-will.md): The Harris and Dennett exchange, in three layers.
 - [Hold Your Identity Lightly](identity-lightly.md): Fewer labels, freer thinking, calmer talk, and the values worth keeping.
 - [Optimism](optimism.md): Lines and proverbs against pessimism.
+- [The Ouroboros](ouroboros.md): One world in levels, from particles to minds, and how it folds back on itself.
 - [Roger Penrose](penrose.md): Provisional physics and non-algorithmic consciousness.
 - [Steven Pinker](pinker.md): My primary reference in psychology, with two reservations.
 - [Karl Popper](popper.md): Three principles of toleration under every good argument.
