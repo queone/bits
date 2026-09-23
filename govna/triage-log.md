@@ -4,6 +4,9 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-23 | Publish | A quick reference to complexity terms, how settled each is, and the common traps | `mind/`, `reference`, "Complexity" | `mind/complexity.md` |
+| 2026-09-23 | Publish | Rules and models: code fences and checks what a model proposes | `tech/`, `take`, "Rules and Models" | `tech/rules-and-models.md` |
+| 2026-09-23 | Drop | Three modes of behavior under descriptive and normative lenses | Already owned: `mind/famous-lessons.md` for is and ought, `mind/three-realms.md` and `mind/four-floors.md` for the modes; the grid makes no claim | |
 | 2026-09-23 | Publish | An order for science writers: build on each other's work under a short charter | `society/`, `note`, "Salomon's House" | `society/salomons-house.md` |
 | 2026-09-23 | Merge | Selection drives matter up the levels: assembly, function, and the edge of chaos | `mind/ouroboros.md` | `mind/ouroboros.md` |
 | 2026-09-23 | Publish | One world in levels, from particles to minds, closing into a loop | `mind/`, `note`, "The Ouroboros" | `mind/ouroboros.md` |

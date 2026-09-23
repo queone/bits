@@ -6,6 +6,7 @@
 - [Noam Chomsky](chomsky.md): Where I follow him, where I part ways, and his point about the limits of intelligence.
 - [Cold Logic](cold-logic.md): Reasoning that follows a principle past where it serves people, and its warm opposite.
 - [Comfort and Biases](comfort-biases.md): Why comforting beliefs persist, and the one bias under all the others.
+- [Complexity](complexity.md): Two fields that share one word, the key terms, how settled each is, and the traps.
 - [Computation](computation.md): Universal computation, computational irreducibility, and why paradigm shifts matter.
 - [Consciousness](consciousness.md): The easy problem, the hard problem, the answers on offer, and why I side with Dennett.
 - [Human Core Challenges](core-challenges.md): The biological, social, and entropy problems under every other problem.
