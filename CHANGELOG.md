@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.78.0 | Four Floors note: genes, reflection, other minds, and reflexivity |
 | 0.77.0 | Who Counts take: an AGI with the right machinery is someone |
 | 0.76.0 | Engaging Strangers how-to: seven steps for opening a conversation |
 | 0.75.0 | Domain-Specific Models: childhood beliefs, unintended harm, the carrier a victim |

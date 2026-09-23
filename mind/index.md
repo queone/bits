@@ -19,6 +19,7 @@
 - [Emotions and Relational States](emotions.md): Emotions by intensity and by group, and the states between people.
 - [Famous Lessons](famous-lessons.md): Razors and reminders for thinking.
 - [Famous Quotes](famous-quotes.md): A few lines worth remembering, and how to use quotes well.
+- [Four Floors](four-floors.md): Where motivation comes from: genes, reflection, other minds, and reflexivity.
 - [Free Will](free-will.md): The Harris and Dennett exchange, in three layers.
 - [Hold Your Identity Lightly](identity-lightly.md): Fewer labels, freer thinking, calmer talk, and the values worth keeping.
 - [Optimism](optimism.md): Lines and proverbs against pessimism.
