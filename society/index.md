@@ -20,6 +20,7 @@
 - [Politics](politics.md): Reason and Compassion as the real poles, plus three smaller convictions.
 - [Rights and Remedies](rights-remedies.md): A right you cannot enforce is not a right, and those paths are narrowing.
 - [Rule of Law](rule-of-law.md): How far the U.S. has slipped, measured by an index and by acts the courts called unlawful.
+- [Salomon's House](salomons-house.md): An order of science explainers, after Bacon, under a four-rule charter.
 - [Slow by Design](slow-by-design.md): A republic built to cool passions, how virality undoes it, and the remedies I would add.
 - [Smug Pilots](smug-pilots.md): How engagement media and bickering experts wore down trust, and what experts owe listeners.
 - [The Two-Front War](two-front-war.md): Illness in the U.S. means fighting the disease and the bill.

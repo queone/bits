@@ -4,6 +4,7 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-23 | Publish | An order for science writers: build on each other's work under a short charter | `society/`, `note`, "Salomon's House" | `society/salomons-house.md` |
 | 2026-09-23 | Merge | Selection drives matter up the levels: assembly, function, and the edge of chaos | `mind/ouroboros.md` | `mind/ouroboros.md` |
 | 2026-09-23 | Publish | One world in levels, from particles to minds, closing into a loop | `mind/`, `note`, "The Ouroboros" | `mind/ouroboros.md` |
 | 2026-09-23 | Merge | The spiritual as the three realms at once, not a fourth realm | `mind/three-realms.md` | `mind/three-realms.md` |

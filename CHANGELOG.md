@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.82.0 | Salomon's House note: an order of science explainers under a four-rule charter |
 | 0.81.0 | Ouroboros: selection drives matter up the levels, at the edge of chaos |
 | 0.80.0 | The Ouroboros note: one world in levels, from particles to minds, folding back |
 | 0.79.0 | Three Realms: the spiritual is the three at once, not a fourth realm |
