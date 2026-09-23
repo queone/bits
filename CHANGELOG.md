@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.85.0 | Pseudoscience: rank it by the harm it does when acted on, not how wrong it is |
 | 0.84.1 | About: mostly to provoke thought, sometimes to convince, openly either way |
 | 0.84.0 | About: opinions offered to provoke thought, not to win anyone over |
 | 0.83.0 | Rules and Models take; Complexity reference; one triage thought dropped |

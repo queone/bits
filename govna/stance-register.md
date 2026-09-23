@@ -5,7 +5,7 @@ Use this table as the list of settled positions the site holds. One line per pos
 | # | Position | Owning entry | Status |
 |---|----------|--------------|--------|
 | 1 | Science is the most important mental tool humanity has. | `mind/science.md` | settled |
-| 2 | Pseudoscience is harmful, and countering it works through education and respectful engagement, not ridicule. | `mind/pseudoscience.md` | settled |
+| 2 | Pseudoscience is harmful, and countering it works through education and respectful engagement, not ridicule; rank it by the harm it does when acted on, not by how wrong it is, since the worst kind displaces something that works. | `mind/pseudoscience.md` | settled |
 | 3 | Bias is universal; what differs between people is the willingness to notice and correct it. | `mind/comfort-biases.md` | settled |
 | 4 | Human reflexivity is limited by evolved cognition and is best augmented through institutions and tools; its measurable core is the reflective mind, separate from intelligence, so a very intelligent person can be unreflective. | `mind/reflexivity.md` | settled |
 | 5 | Markets are useful tools, not moral oracles; outcomes depend on rules, incentives, and institutions; growth is not all of progress, since health, schooling, and rights spread even where incomes stalled. | `society/markets-capitalism.md` | settled |
