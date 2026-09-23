@@ -4,6 +4,7 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-23 | Publish | Whether an AGI counts as someone, and where the boundary falls | `mind/`, `take`, "Who Counts" | `mind/who-counts.md` |
 | 2026-09-22 | Publish | Seven steps for opening a conversation with a stranger | `life/`, `howto`, "Engaging Strangers" | `life/engaging-strangers.md` |
 | 2026-09-22 | Merge | Harmful beliefs installed in childhood: an unintended consequence, the carrier a victim | `mind/domain-specific-models.md` | `mind/domain-specific-models.md` |
 | 2026-09-22 | Publish | US health care as a two-front war: the disease and the bill | `society/`, `note`, "The Two-Front War" | `society/two-front-war.md` |

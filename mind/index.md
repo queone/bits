@@ -36,3 +36,4 @@
 - [Transcendence](transcendence.md): Why we crave something larger: the fear half, the appetite half.
 - [Trust in Truth](trust-in-truth.md): Six habits for keeping trust in each other and in the institutions of knowledge.
 - [Two Systems](two-systems.md): Fast and slow thinking as a fiction, what survived, and the remedy.
+- [Who Counts](who-counts.md): Why an AGI with the right machinery is someone, and where the line falls.
