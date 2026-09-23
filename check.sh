@@ -116,6 +116,16 @@ prosesrc() { # file -> same line count with front matter, fenced blocks, and blo
        /^(```|~~~)/{fence=!fence; print ""; next} fence{print ""; next} /^>/{print ""; next} {print}' "$1"
 }
 
+sentences_of() { # file -> "line<TAB>sentence" per sentence, link addresses and bare URLs removed
+  awk '{ line=$0
+         gsub(/\]\([^)]*\)/, "]", line); gsub(/<https?:[^>]*>/, "", line); gsub(/https?:\/\/[^ )>]*/, "", line)
+         gsub(/e\.g\./, "eg", line); gsub(/i\.e\./, "ie", line); gsub(/U\.S\./, "US", line); gsub(/U\.K\./, "UK", line)
+         n=split("Dr Mr Mrs Ms Jr Sr St No vs etc", ab, " "); for (k=1;k<=n;k++) gsub(ab[k] "\\.", ab[k], line)
+         gsub(/[A-HJ-Z]\. /, "X ", line)
+         m=split(line, s, "[.!?]+[ \"\047)]*"); for (i=1;i<=m;i++) if (s[i] ~ /[A-Za-z0-9]/) printf "%d\t%s\n", NR, s[i] }' "$1"
+}
+
+
 plain_mean() { # file -> mean words per sentence over prose, in tenths
   prosesrc "$1" | awk '/^#/{next} /^\|/{next} /^[[:space:]]*$/{next} {print}' | sed -E 's/\]\([^)]*\)/]/g; s/`[^`]*`/x/g' | tr '\n' ' ' \
     | awk '{ n=split($0, tk, /[[:space:]]+/); out=""; for(i=1;i<=n;i++){ w=tk[i]; if (w ~ /^[A-Z]\.[,;:)]?$/ || w ~ /^(e\.g\.|i\.e\.|etc\.|vs\.|Dr\.|Mr\.|Mrs\.|Ms\.|Jr\.|Sr\.|St\.|No\.|U\.S\.|U\.K\.)[,;:)]?$/) gsub(/\./, "", w); out=out " " w }
@@ -149,7 +159,7 @@ check_privacy() {
   if [ -s "$DENY_ACTIVE" ]; then
     rg -n -i -F -f "$DENY_ACTIVE" "$f" | cut -d: -f1 | while read -r l; do emit "$f" "$l" P-DENY "denylisted literal"; done
   fi
-  rg -n -e "$FP_RE" "$f" | rg -e "$YEAR_RE" | cut -d: -f1 | while read -r l; do emit "$f" "$l" W-YEAR "exact year in a first-person sentence"; done
+  sentences_of "$f" | rg -e "$FP_RE" | rg -e "$YEAR_RE" | cut -f1 | sort -n -u | while read -r l; do emit "$f" "$l" W-YEAR "exact year in a first-person sentence"; done
   rg -n -e "$FP_RE" "$f" | rg -i -e "$PERSONAL_RE" | cut -d: -f1 | while read -r l; do emit "$f" "$l" W-PERSONAL "personal detail keyword in a first-person sentence"; done
   rg -n -e "$FP_RE" "$f" | rg -i -e "$SELF_RE" | rg -v -F -e "$SELF_OK" | cut -d: -f1 | while read -r l; do emit "$f" "$l" P-SELF "mental or emotional health keyword in a first-person sentence"; done
 }
@@ -392,6 +402,8 @@ selftest() {
   printf -- '---\ntype: note\n---\n## Zombie\n\nThe implementation of the utilization plan needs the consideration and determination of the organization, with documentation, evaluation, and verification of each modification and notification.\n' >"$fx/life/zombie.md"
   printf -- '---\ntype: take\n---\n## Digest\n\nThe region keeps SHA-256 `0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef`.\n' >"$fx/life/digest.md"
   printf -- '---\ntype: take\n---\n## Approved\n\nI call my detachment a choice. <!-- private-ok -->\n' >"$fx/life/selfok.md"
+  printf -- '---\ntype: take\n---\n## Year OK\n\nI read [it](https://example.com/2020/x) twice. I saw https://example.com/2019/y once.\n\nI read the book. It came out in 1998.\n' >"$fx/life/yearok.md"
+  printf -- '---\ntype: take\n---\n## Year Abbreviation\n\nI moved to the U.S. in 1999, e.g. for work.\n' >"$fx/life/yearabbr.md"
   printf -- '---\ntype: take\n---\n## Retry\n\nI link a [slow host](https://retry.example.test/x).\n' >"$fx/life/retry.md"
   mkdir -p "$TMP/bin"
   cat >"$TMP/bin/curl" <<'SHIM'
@@ -425,6 +437,10 @@ SHIM
   if [ "$(printf '%s\n' "$res" | rg -c -e "life/qa.md:[0-9]+: X-QA")" -ge 3 ]; then printf 'PASS X-QA-paragraph\n'; else printf 'FAIL X-QA-paragraph\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/digest.md:[0-9]+: P-HEX"; then printf 'FAIL P-HEX-digest-label\n'; ok=1; else printf 'PASS P-HEX-digest-label\n'; fi
   if printf '%s\n' "$res" | rg -q -e "life/selfok.md:[0-9]+: P-SELF"; then printf 'FAIL P-SELF-override\n'; ok=1; else printf 'PASS P-SELF-override\n'; fi
+  if printf '%s\n' "$res" | rg -q -e "life/dirty.md:15: W-YEAR"; then printf 'PASS W-YEAR-same-sentence\n'; else printf 'FAIL W-YEAR-same-sentence\n'; ok=1; fi
+  res2=$( (CHECK_ROOT="$fx" "$SELF" --no-net life/yearok.md life/yearabbr.md) 2>&1 )
+  if printf '%s\n' "$res2" | rg -q -e "life/yearok.md:[0-9]+: W-YEAR"; then printf 'FAIL W-YEAR-link-or-neighbor-ignored\n'; ok=1; else printf 'PASS W-YEAR-link-or-neighbor-ignored\n'; fi
+  if printf '%s\n' "$res2" | rg -q -e "life/yearabbr.md:[0-9]+: W-YEAR"; then printf 'PASS W-YEAR-abbreviation\n'; else printf 'FAIL W-YEAR-abbreviation\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:11: P-PATH"; then printf 'PASS P-PATH-home\n'; else printf 'FAIL P-PATH-home\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:12: P-PATH"; then printf 'PASS P-PATH-icloud\n'; else printf 'FAIL P-PATH-icloud\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:[0-9]+: L-EXT dead \(404\): https://github.com/queone/no-such-repo"; then printf 'PASS L-EXT-fenced\n'; else printf 'FAIL L-EXT-fenced\n'; ok=1; fi

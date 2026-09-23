@@ -208,6 +208,8 @@ Detector codes. Privacy: `P-GUID`, `P-SSH`, `P-HEX`, `P-MAC`, `P-EMAIL`, `P-PATH
 
 `P-SELF` blocks a line that holds both a first-person word and a keyword for mental or emotional health, such as a mood, a treatment, or a feeling of not belonging. A line that carries the `<!-- private-ok -->` marker is exempt. The detector matches vocabulary, not meaning, so a disclosure in plain words still needs a reader to catch it.
 
+`W-YEAR` warns a sentence that holds both a first-person word and an exact year. It ignores link addresses and bare URLs, and a year in a neighboring sentence does not count.
+
 `L-EXT` also covers bare `github.com/queone` and `raw.githubusercontent.com/queone` URLs inside fenced blocks and code spans, so download commands are checked too. The `github.com/<owner>/<repo>/raw/` redirect form is not reported as moved.
 
 `W-ZOMBIE` warns a `take` or `note` whose nominalization rate passes five per hundred prose words, lists the counted words, and never blocks.
