@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.84.0 | About: opinions offered to provoke thought, not to win anyone over |
 | 0.83.0 | Rules and Models take; Complexity reference; one triage thought dropped |
 | 0.82.0 | Salomon's House note: an order of science explainers under a four-rule charter |
 | 0.81.0 | Ouroboros: selection drives matter up the levels, at the edge of chaos |
