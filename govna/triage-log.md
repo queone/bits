@@ -4,6 +4,7 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-24 | Publish | Written with help: the double standard against LLM-assisted writing, and why this site discloses | `tech/`, `take`, "Written With Help" | `tech/written-with-help.md` |
 | 2026-09-24 | Merge | Borges, Sartre, and a Spanish proverb: originals in block quotes with English renderings and sources | `mind/famous-quotes.md` | `mind/famous-quotes.md` |
 | 2026-09-24 | Publish | After New Atheism: the case against God was made, belief barely moved, and the gap churches leave | `society/`, `note`, "After New Atheism" | `society/after-new-atheism.md` |
 | 2026-09-24 | Publish | A one-line index of the site's advice: what to avoid and what to practice | `mind/`, `reference`, "Avoid and Practice" | `mind/avoid-and-practice.md` |

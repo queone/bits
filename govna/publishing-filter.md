@@ -133,6 +133,7 @@ Note: the 2026-09-03 review found attention-economy mechanics explained in six e
 - Search for prior use of a distinctive phrase before presenting it as the author's own.
 - State a consensus claim such as "most would say" only with a source.
 - Date a time-sensitive claim in text instead of using words like recently or nowadays.
+- Test every claim in a changed entry against its other claims, as a hostile reader would, before it ships.
 
 ## Link Stability
 

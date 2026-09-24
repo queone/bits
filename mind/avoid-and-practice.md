@@ -28,6 +28,7 @@ Truth-seeking is a duty. Most entries on this site end in the same shape: stop d
 | Taking a framing at face value | Ask who benefits from it | [Perception Management](../society/perception-management.md) |
 | Believing a claim that needs many silent conspirators | Count the people who would have to keep the secret | [Detecting Baloney](detecting-baloney.md) |
 | Heavy partisan news | Cut back | [The Perception Gap](../society/perception-gap.md) |
+| Discounting help because a machine gave it | Judge the writing by its claims | [Written With Help](../tech/written-with-help.md) |
 
 ### Public life
 
