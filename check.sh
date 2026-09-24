@@ -51,7 +51,7 @@ MARKER_RE='NEEDS REWRITE|\(need link\)|\[Need sources\]|Needs clean up'
 MARKER_CS_RE='\b(TODO|FIXME|TBD)\b'
 HEADING_RE='^#{1,6}[[:space:]]*(Conclusion|Final Thoughts|Bottom Line|Key Insight|Summary|Question|Answer|My take|Opinion|My opinion|Thoughts|My thoughts|Verdict)[[:space:]]*:?[[:space:]]*$'
 URL_SKIP='mydomain\.com|example\.(com|org|net)|somewhere\.com|contoso\.com|169\.254\.169\.254|://(10|192\.168|127)\.|localhost|\{|%s|<|\$|/\.default$|token\.actions\.githubusercontent\.com|management\.azure\.com/?$|graph\.microsoft\.com/?$'
-HOST_ALLOW='cbo\.gov|stackoverflow\.com|stackexchange\.com|medium\.com|congress\.gov|sagepub\.com|politico\.com|devgenius\.io|hrw\.org|grc\.com'
+HOST_ALLOW='cbo\.gov|stackoverflow\.com|stackexchange\.com|medium\.com|congress\.gov|sagepub\.com|politico\.com|devgenius\.io|hrw\.org|grc\.com|condenaststore\.com'
 HOST_SHORT='youtu\.be|youtube\.com|a\.co|aka\.ms|bit\.ly|t\.co|amazon\.com'
 FENCE_MAX=40
 INDEX_MAX=104
@@ -404,6 +404,7 @@ selftest() {
   printf -- '---\ntype: take\n---\n## Approved\n\nI call my detachment a choice. <!-- private-ok -->\n' >"$fx/life/selfok.md"
   printf -- '---\ntype: take\n---\n## Year OK\n\nI read [it](https://example.com/2020/x) twice. I saw https://example.com/2019/y once.\n\nI read the book. It came out in 1998.\n' >"$fx/life/yearok.md"
   printf -- '---\ntype: take\n---\n## Year Abbreviation\n\nI moved to the U.S. in 1999, e.g. for work.\n' >"$fx/life/yearabbr.md"
+  printf -- '---\ntype: take\n---\n## Allow\n\nI link a [cartoon](https://condenaststore.com/featured/x.html).\n' >"$fx/life/allow.md"
   printf -- '---\ntype: take\n---\n## Retry\n\nI link a [slow host](https://retry.example.test/x).\n' >"$fx/life/retry.md"
   mkdir -p "$TMP/bin"
   cat >"$TMP/bin/curl" <<'SHIM'
@@ -441,6 +442,8 @@ SHIM
   res2=$( (CHECK_ROOT="$fx" "$SELF" --no-net life/yearok.md life/yearabbr.md) 2>&1 )
   if printf '%s\n' "$res2" | rg -q -e "life/yearok.md:[0-9]+: W-YEAR"; then printf 'FAIL W-YEAR-link-or-neighbor-ignored\n'; ok=1; else printf 'PASS W-YEAR-link-or-neighbor-ignored\n'; fi
   if printf '%s\n' "$res2" | rg -q -e "life/yearabbr.md:[0-9]+: W-YEAR"; then printf 'PASS W-YEAR-abbreviation\n'; else printf 'FAIL W-YEAR-abbreviation\n'; ok=1; fi
+  res3=$( (CHECK_ROOT="$fx" "$SELF" life/allow.md) 2>&1 )
+  if printf '%s\n' "$res3" | rg -q -e "life/allow.md:[0-9]+: W-EXT" && ! printf '%s\n' "$res3" | rg -q -e "life/allow.md:[0-9]+: L-EXT"; then printf 'PASS W-EXT-allowlist\n'; else printf 'FAIL W-EXT-allowlist\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:11: P-PATH"; then printf 'PASS P-PATH-home\n'; else printf 'FAIL P-PATH-home\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:12: P-PATH"; then printf 'PASS P-PATH-icloud\n'; else printf 'FAIL P-PATH-icloud\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:[0-9]+: L-EXT dead \(404\): https://github.com/queone/no-such-repo"; then printf 'PASS L-EXT-fenced\n'; else printf 'FAIL L-EXT-fenced\n'; ok=1; fi
