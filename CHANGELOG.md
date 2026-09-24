@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.89.0 | Famous Quotes: originals in block quotes, English renderings, sources |
 | 0.88.1 | AC64 checker treats the Condé Nast Store as a bot-blocking host |
 | 0.88.0 | After New Atheism note: the case was made, belief barely moved |
 | 0.87.0 | Avoid and Practice reference; same-pass rule; misinformation dropped |
