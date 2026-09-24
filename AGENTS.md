@@ -551,3 +551,4 @@ Note: the Director triggers those actions; Ratify names what is pending.
 ### Entry Handling
 
 - Keep the stated position, the publishing filter, the register update, the triage-log fill, and the same-pass proofread as the gates for a direct-handled entry.
+- Update the matching row in `mind/avoid-and-practice.md` in the same pass as any change to an entry's advice.

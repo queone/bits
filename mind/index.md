@@ -2,6 +2,7 @@
 
 - [Answer Patterns](answer-patterns.md): Four dimensions for reading what an answer is doing.
 - [Attention](attention.md): Two ways the mind processes, feature integration, the gorilla test, and the global workspace.
+- [Avoid and Practice](avoid-and-practice.md): The site's advice in one-line pairs, each linked to the entry that argues it.
 - [Beauty](beauty.md): Where our sense of beauty comes from, and why I think it redeems us.
 - [Noam Chomsky](chomsky.md): Where I follow him, where I part ways, and his point about the limits of intelligence.
 - [Cold Logic](cold-logic.md): Reasoning that follows a principle past where it serves people, and its warm opposite.
