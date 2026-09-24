@@ -40,6 +40,7 @@ Truth-seeking is a duty. Most entries on this site end in the same shape: stop d
 | Purity tests | Coalitions with imperfect allies | [Activism](../society/activism.md) |
 | Spending effort beyond your influence | Match effort to influence | [Activism](../society/activism.md) |
 | Starting over each time | Build on each other's work | [Salomon's House](../society/salomons-house.md) |
+| Keeping quiet once an argument convinced you | Say so openly, and build on the work | [After New Atheism](../society/after-new-atheism.md) |
 
 ### Living
 

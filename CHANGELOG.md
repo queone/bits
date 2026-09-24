@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.88.0 | After New Atheism note: the case was made, belief barely moved |
 | 0.87.0 | Avoid and Practice reference; same-pass rule; misinformation dropped |
 | 0.86.2 | AC63 adopt Govna governance files v0.66.0 |
 | 0.86.1 | Checker: year warning matches by sentence and ignores link addresses |
