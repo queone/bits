@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.91.1 | AC65 checker stops false warnings on table rows and group names |
 | 0.91.0 | Who We Thank, Who Opened the Door, Star Wars, Karaoke; Baseball take; sample tip |
 | 0.90.0 | Written With Help take; About discloses LLM help; hostile-reader filter rule |
 | 0.89.0 | Famous Quotes: originals in block quotes, English renderings, sources |

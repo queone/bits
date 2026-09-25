@@ -64,6 +64,7 @@ ES_SENT=3
 ES_MIN=4
 NAME_RE='[A-Z][a-z]+ [A-Z][a-z]+'
 NAME_OK='Azure Management|Microsoft Graph'
+NAME_GROUP='[A-Z][a-z]+ (Americans?|Latinos?|Latinas?|Hispanics?|Europeans?|Africans?|Asians?)'
 STALE_STOP='their|about|which|would|through|never|every|since|rather|between|those|these|after|before|other|only|into|more|most|than|such|same|both|each|some|what|when|where|from|with|that|this|have|been|being|does|over|under|while|because|without|within|should|could|there|whether|itself|another|someone|anyone|nothing|always|often|still|entry|entries'
 BACKOFF_1=2
 BACKOFF_2=5
@@ -116,8 +117,8 @@ prosesrc() { # file -> same line count with front matter, fenced blocks, and blo
        /^(```|~~~)/{fence=!fence; print ""; next} fence{print ""; next} /^>/{print ""; next} {print}' "$1"
 }
 
-sentences_of() { # file -> "line<TAB>sentence" per sentence, link addresses and bare URLs removed
-  awk '{ line=$0
+sentences_of() { # file -> "line<TAB>sentence" per sentence, table rows skipped, link addresses and bare URLs removed
+  awk '/^\|/{next} { line=$0
          gsub(/\]\([^)]*\)/, "]", line); gsub(/<https?:[^>]*>/, "", line); gsub(/https?:\/\/[^ )>]*/, "", line)
          gsub(/e\.g\./, "eg", line); gsub(/i\.e\./, "ie", line); gsub(/U\.S\./, "US", line); gsub(/U\.K\./, "UK", line)
          n=split("Dr Mr Mrs Ms Jr Sr St No vs etc", ab, " "); for (k=1;k<=n;k++) gsub(ab[k] "\\.", ab[k], line)
@@ -286,7 +287,7 @@ check_structure() {
   awk '/^#|^\||^[[:space:]]*([-*+]|[0-9]+\.)[[:space:]]/{next} /^[^.!?]*\?[[:space:]]*$/{print NR}' "$TMP/prose.src" | while read -r l; do emit "$f" "$l" X-QA "paragraph that is only a question"; done
   awk '/^(```|~~~)/{ if(!fence && ($0=="```" || $0=="~~~")) print NR; fence=!fence }' "$f" | while read -r l; do emit "$f" "$l" X-FENCE "fenced block without a language tag"; done
   if [ "$kind" = entry ] && { [ "$t" = take ] || [ "$t" = note ]; }; then
-    awk -v re="$NAME_RE" -v ok="$NAME_OK" '/^#/{next} /\]\(|<https?:|attributed/{next} { gsub(ok, "", $0) } $0 ~ re {print NR}' "$TMP/prose.src" | while read -r l; do emit "$f" "$l" W-NAME "named person with no source link in this paragraph"; done
+    awk -v re="$NAME_RE" -v ok="$NAME_OK" -v grp="$NAME_GROUP" '/^#/{next} /\]\(|<https?:|attributed/{next} { gsub(ok, "", $0); gsub(grp, "", $0) } $0 ~ re {print NR}' "$TMP/prose.src" | while read -r l; do emit "$f" "$l" W-NAME "named person with no source link in this paragraph"; done
   fi
 }
 
@@ -404,6 +405,8 @@ selftest() {
   printf -- '---\ntype: take\n---\n## Approved\n\nI call my detachment a choice. <!-- private-ok -->\n' >"$fx/life/selfok.md"
   printf -- '---\ntype: take\n---\n## Year OK\n\nI read [it](https://example.com/2020/x) twice. I saw https://example.com/2019/y once.\n\nI read the book. It came out in 1998.\n' >"$fx/life/yearok.md"
   printf -- '---\ntype: take\n---\n## Year Abbreviation\n\nI moved to the U.S. in 1999, e.g. for work.\n' >"$fx/life/yearabbr.md"
+  printf -- '---\ntype: take\n---\n## Year Table\n\nI keep this list.\n\n| Title | Released |\n|---|---|\n| Episode I | 1999 |\n' >"$fx/life/yeartable.md"
+  printf -- '---\ntype: take\n---\n## Group Name\n\nBlack Americans opened a door, and Latin American writers noticed.\n' >"$fx/life/groupname.md"
   printf -- '---\ntype: take\n---\n## Allow\n\nI link a [cartoon](https://condenaststore.com/featured/x.html).\n' >"$fx/life/allow.md"
   printf -- '---\ntype: take\n---\n## Retry\n\nI link a [slow host](https://retry.example.test/x).\n' >"$fx/life/retry.md"
   mkdir -p "$TMP/bin"
@@ -439,9 +442,11 @@ SHIM
   if printf '%s\n' "$res" | rg -q -e "life/digest.md:[0-9]+: P-HEX"; then printf 'FAIL P-HEX-digest-label\n'; ok=1; else printf 'PASS P-HEX-digest-label\n'; fi
   if printf '%s\n' "$res" | rg -q -e "life/selfok.md:[0-9]+: P-SELF"; then printf 'FAIL P-SELF-override\n'; ok=1; else printf 'PASS P-SELF-override\n'; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:15: W-YEAR"; then printf 'PASS W-YEAR-same-sentence\n'; else printf 'FAIL W-YEAR-same-sentence\n'; ok=1; fi
-  res2=$( (CHECK_ROOT="$fx" "$SELF" --no-net life/yearok.md life/yearabbr.md) 2>&1 )
+  res2=$( (CHECK_ROOT="$fx" "$SELF" --no-net life/yearok.md life/yearabbr.md life/yeartable.md life/groupname.md) 2>&1 )
   if printf '%s\n' "$res2" | rg -q -e "life/yearok.md:[0-9]+: W-YEAR"; then printf 'FAIL W-YEAR-link-or-neighbor-ignored\n'; ok=1; else printf 'PASS W-YEAR-link-or-neighbor-ignored\n'; fi
   if printf '%s\n' "$res2" | rg -q -e "life/yearabbr.md:[0-9]+: W-YEAR"; then printf 'PASS W-YEAR-abbreviation\n'; else printf 'FAIL W-YEAR-abbreviation\n'; ok=1; fi
+  if printf '%s\n' "$res2" | rg -q -e "life/yeartable.md:[0-9]+: W-YEAR"; then printf 'FAIL W-YEAR-table-row\n'; ok=1; else printf 'PASS W-YEAR-table-row\n'; fi
+  if printf '%s\n' "$res2" | rg -q -e "life/groupname.md:[0-9]+: W-NAME"; then printf 'FAIL W-NAME-group-name\n'; ok=1; else printf 'PASS W-NAME-group-name\n'; fi
   res3=$( (CHECK_ROOT="$fx" "$SELF" life/allow.md) 2>&1 )
   if printf '%s\n' "$res3" | rg -q -e "life/allow.md:[0-9]+: W-EXT" && ! printf '%s\n' "$res3" | rg -q -e "life/allow.md:[0-9]+: L-EXT"; then printf 'PASS W-EXT-allowlist\n'; else printf 'FAIL W-EXT-allowlist\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:11: P-PATH"; then printf 'PASS P-PATH-home\n'; else printf 'FAIL P-PATH-home\n'; ok=1; fi
