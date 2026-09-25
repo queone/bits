@@ -84,3 +84,4 @@ Use this table as the list of settled positions the site holds. One line per pos
 | 78 | Virtue signaling projects moral values for approval while avoiding action, and it is often unintentional; the accusation can dodge the argument; the test is what a stance cost. | `society/virtue-signaling.md` | settled |
 | 79 | AI and open data make checking a basic fact quick, as long as you check the AI too; staying deluded is a refusal to engage. | `mind/detecting-baloney.md` | settled |
 | 80 | Joke most of the time, and save politics for talk that can be thoughtful and substantive. | `life/personal-growth.md` | settled |
+| 81 | Computers and AI are tools for putting life in order, so more time goes to what we organize; put big ideas first and routine last, clean, name, prune, write things down, review the order, and stop before organizing becomes avoidance. | `tech/ordenador.md` | settled |

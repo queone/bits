@@ -3,6 +3,7 @@
 - [AI](ai.md): Prompts that keep answers honest, running a model locally, and when embeddings are enough.
 - [Software Before AGI](before-agi.md): Domain-specific harnesses, what to build now, and why all of it is provisional.
 - [Rules and Models](rules-and-models.md): Code and language models as two ways of computing, and what joining them changes.
+- [Ordenador](ordenador.md): Computers and AI as tools for putting life in order, and how to organize well.
 - [Written With Help](written-with-help.md): This site is written with an LLM's help, and why discounting that is preposterous.
 - [Arcade](arcade.md): MAME on a desktop and on a Raspberry Pi, with the cabinet configuration.
 - [AWS](aws.md): Instance comparison and metadata commands.

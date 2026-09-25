@@ -63,6 +63,13 @@ Note: the two blood-pressure pages stay. A generic health how-to is not personal
 - Put a sentence's heaviest phrase at its end, not in its middle.
 - Open a sentence with what the reader already knows, then add the new point.
 - Write every sentence complete and grammatically correct.
+- Keep each sentence to 25 words or fewer.
+- Keep each paragraph to six sentences or fewer.
+- Use one term for one concept within an entry.
+- Keep a noun cluster to three words or fewer.
+- Use the active voice by default.
+- Use the passive when the doer is unknown or unimportant, or when the thing acted on should come first.
+- Keep articles, subjects, and verbs, even when cutting words.
 - Make each sentence follow from the one before it, so a paragraph reads as one line of thought in the author's voice.
 - Open with one grounding sentence in that same voice.
 - Carry the general reference, usually Wikipedia, as an inline link where the concept first appears.
@@ -77,8 +84,11 @@ Note: the two blood-pressure pages stay. A generic health how-to is not personal
 - Quote a non-English source in the original only inside a block quote, followed by an English rendering.
 - Publish no placeholder such as NEEDS REWRITE, need link, Need sources, Needs clean up, TODO, FIXME, or TBD.
 - Write a how-to as the shortest sequence of steps that reaches the result.
+- Keep each sentence in a how-to step to 20 words or fewer.
+- Write one instruction per how-to step.
+- Start a safety step with its command or condition.
 
-Note: the banned headings are the fingerprint of an unedited machine draft. The text under them is usually the only part worth keeping. The question-form and Spanish-prose detectors in `check.sh` back the transcript and English rules. The five sentence-level rules after the length rule follow The Sense of Style, and `mind/sense-of-style.md` explains them.
+Note: the banned headings are the fingerprint of an unedited machine draft. The text under them is usually the only part worth keeping. The question-form and Spanish-prose detectors in `check.sh` back the transcript and English rules. The five sentence-level rules after the length rule follow The Sense of Style, and `mind/sense-of-style.md` explains them. The seven rules after the complete-sentence rule and the three after the how-to rule borrow from Simplified Technical English (ASD-STE100), which is meant to work alongside a style guide, not replace it. The Sense of Style stays the primary guide, so the passive keeps the uses Pinker allows. Takes and notes treat the caps as review prompts, and quotations are exempt.
 
 ## Fairness And Corrections
 
@@ -201,7 +211,7 @@ Note: triage is this filter run early, on a thought instead of a draft. The voic
 - Treat any non-warning finding in a changed entry as blocking.
 - Treat a warning as a review prompt, not a failure.
 
-Detector codes. Privacy: `P-GUID`, `P-SSH`, `P-HEX`, `P-MAC`, `P-EMAIL`, `P-PATH`, `P-ORG`, `P-DENY`, `P-SELF`. Warnings: `W-YEAR`, `W-PERSONAL`, `W-NAME`, `W-PLAIN`, `W-ZOMBIE`, `W-ANCHOR`, `W-STALE`, and the informational `W-DENY`, `W-TYPE`, `W-EXT`. Budgets: `B-TYPE`, `B-WORDS`, `B-FENCE`. Links: `L-REL`, `L-ANCHOR`, `L-ABS`, `L-EXT`. Structure: `X-MARKER`, `X-HEADING`, `X-LANG`, `X-QA`, `X-FENCE`. Index: `I-INDEX`, `I-LONG`. Register: `R-PATH`. Privacy and link checks run on every checked file. Budget, fence, marker, heading, and index checks run only on entries and the root site pages. The plain-English warning measures mean words per sentence over prose lines, with front matter, fences, block quotes, headings, table rows, link targets, and code spans removed, and with initials and common abbreviations not counted as sentence ends. The name warning skips the product names in its allow-list, and group names such as "Black Americans" or "Latin American", where a capitalized word comes before a group noun. The Spanish check fires on a line with four distinct Spanish words or a sentence with three. The question-form check also flags a paragraph that is nothing but a question. The anchor warning skips a fragment that starts with `/` or `!`, which is a client-side route. A fetch with no answer at all is retried once before it counts as dead. A fetch refused with status 416 is retried once without the byte range, because some servers reject a range request on a live page. The stale-owner warning takes the first five letters of each word of five letters or more in a register row, minus common function words, and fires when fewer than half of them start a word in the owning entries. `CHANGELOG.md` is exempt from `P-ORG` because its historical rows are immutable.
+Detector codes. Privacy: `P-GUID`, `P-SSH`, `P-HEX`, `P-MAC`, `P-EMAIL`, `P-PATH`, `P-ORG`, `P-DENY`, `P-SELF`. Warnings: `W-YEAR`, `W-PERSONAL`, `W-NAME`, `W-PLAIN`, `W-SENT`, `W-PARA`, `W-ZOMBIE`, `W-ANCHOR`, `W-STALE`, and the informational `W-DENY`, `W-TYPE`, `W-EXT`. Budgets: `B-TYPE`, `B-WORDS`, `B-FENCE`. Links: `L-REL`, `L-ANCHOR`, `L-ABS`, `L-EXT`. Structure: `X-MARKER`, `X-HEADING`, `X-LANG`, `X-QA`, `X-FENCE`. Index: `I-INDEX`, `I-LONG`. Register: `R-PATH`. Privacy and link checks run on every checked file. Budget, fence, marker, heading, and index checks run only on entries and the root site pages. The plain-English warning measures mean words per sentence over prose lines, with front matter, fences, block quotes, headings, table rows, link targets, and code spans removed, and with initials and common abbreviations not counted as sentence ends. The name warning skips the product names in its allow-list, and group names such as "Black Americans" or "Latin American", where a capitalized word comes before a group noun. The Spanish check fires on a line with four distinct Spanish words or a sentence with three. The question-form check also flags a paragraph that is nothing but a question. The anchor warning skips a fragment that starts with `/` or `!`, which is a client-side route. A fetch with no answer at all is retried once before it counts as dead. A fetch refused with status 416 is retried once without the byte range, because some servers reject a range request on a live page. The stale-owner warning takes the first five letters of each word of five letters or more in a register row, minus common function words, and fires when fewer than half of them start a word in the owning entries. `CHANGELOG.md` is exempt from `P-ORG` because its historical rows are immutable.
 
 `P-PATH` covers an absolute home directory path, a home-folder layout (a non-default folder under `~` or `$HOME`), and an iCloud Drive path. Apple's default folders and `bin` are allowed.
 
@@ -214,6 +224,8 @@ Detector codes. Privacy: `P-GUID`, `P-SSH`, `P-HEX`, `P-MAC`, `P-EMAIL`, `P-PATH
 `L-EXT` also covers bare `github.com/queone` and `raw.githubusercontent.com/queone` URLs inside fenced blocks and code spans, so download commands are checked too. The `github.com/<owner>/<repo>/raw/` redirect form is not reported as moved.
 
 `W-ZOMBIE` warns a `take` or `note` whose nominalization rate passes five per hundred prose words, lists the counted words, and never blocks.
+
+`W-SENT` warns a sentence over 25 words in a `take`, `note`, `howto`, or `reference`, and a sentence over 20 words inside a how-to step. `W-PARA` warns a paragraph of more than six sentences, where a paragraph is a run of consecutive prose lines and each list item counts on its own. Both skip `quote` entries, block quotes, headings, table rows, fenced blocks, link targets, and code spans, and they count words the way the plain-English warning does.
 
 `I-LONG` blocks a line in one of the four area indexes whose title, colon, space, and description together pass 104 characters, because a longer line wraps. Sub-indexes are not measured.
 

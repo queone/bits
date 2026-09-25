@@ -10,3 +10,5 @@ Chapter 1 says writers learn by taking good prose apart to see why it works. Cha
 Two popular tips need attribution. "Omit needless words" is [Strunk and White's](https://en.wikipedia.org/wiki/The_Elements_of_Style). Pinker endorses it, then adds two caveats. Some redundant words earn their keep by steering the reader, and the rule is not an order to pare every sentence to the bone. Reading aloud, by contrast, really is his.
 
 Outside this site I use the same three habits. For an email, I write the first sentence as the thing I want the reader to see. For documentation, I cut the signposts and define each term on first use. For a code comment, I say what the reader cannot see in the code, in one sentence.
+
+Here I also borrow a few limits from [Simplified Technical English](https://en.wikipedia.org/wiki/Simplified_Technical_English), a controlled English written for aircraft manuals. I aim to keep each sentence to 25 words and each paragraph to six sentences.

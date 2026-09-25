@@ -133,6 +133,30 @@ plain_mean() { # file -> mean words per sentence over prose, in tenths
              n=split(out, s, "[.!?]+([ \"\047)]+|$)"); w=0; c=0; for(i=1;i<=n;i++){ k=split(s[i], t, /[[:space:]]+/); m=0; for(j=1;j<=k;j++) if(t[j]!="") m++; if(m>0){w+=m; c++} } if(c==0) print 0; else printf "%d\n", (w*10)/c }'
 }
 
+sentence_limits() { # file type -> "line<TAB>code<TAB>message" for sentences over the cap and paragraphs over six sentences
+  prosesrc "$1" | awk -v t="$2" '
+    function norm(s,   n, tk, i, w, out) {
+      gsub(/<!--[^>]*-->/, "", s); gsub(/\]\([^)]*\)/, "]", s); gsub(/`[^`]*`/, "x", s); gsub(/<https?:[^>]*>/, "", s); gsub(/https?:\/\/[^ )>]*/, "", s)
+      n = split(s, tk, /[[:space:]]+/); out = ""
+      for (i = 1; i <= n; i++) { w = tk[i]; if (w ~ /^[A-Z]\.[,;:)]?$/ || w ~ /^(e\.g\.|i\.e\.|etc\.|vs\.|Dr\.|Mr\.|Mrs\.|Ms\.|Jr\.|Sr\.|St\.|No\.|U\.S\.|U\.K\.)[,;:)]?$/) gsub(/\./, "", w); out = out " " w }
+      return out
+    }
+    function unit(s, start, step,   n, sn, i, k, tt, j, m, c, cap) {
+      s = norm(s); cap = (step && t == "howto") ? 20 : 25; c = 0
+      n = split(s, sn, "[.!?]+([ \"\047)]+|$)")
+      for (i = 1; i <= n; i++) {
+        k = split(sn[i], tt, /[[:space:]]+/); m = 0; for (j = 1; j <= k; j++) if (tt[j] != "") m++
+        if (m > 0) { c++; if (m > cap) printf "%d\tW-SENT\tsentence of %d words, keep it to %d or fewer\n", start, m, cap }
+      }
+      if (!step && c > 6) printf "%d\tW-PARA\tparagraph of %d sentences, keep it to six or fewer\n", start, c
+    }
+    function flush() { if (buf != "") unit(buf, bstart, 0); buf = "" }
+    /^#/ || /^\|/ || /^[[:space:]]*$/ { flush(); next }
+    /^[[:space:]]*([-*+]|[0-9]+\.)[[:space:]]/ { flush(); s = $0; sub(/^[[:space:]]*([-*+]|[0-9]+\.)[[:space:]]+/, "", s); unit(s, NR, 1); next }
+    { if (buf == "") bstart = NR; buf = buf " " $0 }
+    END { flush() }'
+}
+
 zombie_rate() { # file -> "tenths word:count ..." nominalizations per 100 prose words, most frequent first
   prosesrc "$1" | awk '/^#/{next} /^\|/{next} /^[[:space:]]*$/{next} {print}' | sed -E 's/\]\([^)]*\)/]/g; s/`[^`]*`/x/g' \
     | awk -v re="$ZOMBIE_RE" -v oklist="$ZOMBIE_OK" 'BEGIN{ n=split(oklist, a, " "); for (i=1;i<=n;i++) ok[a[i]]=1 }
@@ -279,6 +303,9 @@ check_structure() {
     zr=$(zombie_rate "$f"); zt=${zr%% *}; zw=${zr#* }; [ "$zw" = "$zr" ] && zw=""
     if [ "$zt" -gt "$ZOMBIE_MAX" ]; then emit "$f" 1 W-ZOMBIE "nominalizations at $((zt / 10)).$((zt % 10)) per 100 words, above $((ZOMBIE_MAX / 10)).$((ZOMBIE_MAX % 10)): $zw"; fi
   fi
+  if [ "$kind" = entry ] && { [ "$t" = take ] || [ "$t" = note ] || [ "$t" = howto ] || [ "$t" = reference ]; }; then
+    sentence_limits "$f" "$t" | while IFS=$'\t' read -r l c m; do emit "$f" "$l" "$c" "$m"; done
+  fi
   prosesrc "$f" >"$TMP/prose.src"
   rg -n -o -i -w -e "$ES_RE" "$TMP/prose.src" | tr '[:upper:]' '[:lower:]' | sort -u | cut -d: -f1 | uniq -c | awk -v m="$ES_MIN" '$1>=m{print $2}' | while read -r l; do emit "$f" "$l" X-LANG "Spanish prose, write the entry in English"; done
   awk '/^#|^\|/{next} { line=$0; gsub(/\]\([^)]*\)/, "]", line); n=split(line, s, "[.!?]+[ \"\047)]*"); for(i=1;i<=n;i++) if (s[i] ~ /[A-Za-z]/) printf "%d\t%s\n", NR, s[i] }' "$TMP/prose.src" >"$TMP/sent.src"
@@ -407,6 +434,15 @@ selftest() {
   printf -- '---\ntype: take\n---\n## Year Abbreviation\n\nI moved to the U.S. in 1999, e.g. for work.\n' >"$fx/life/yearabbr.md"
   printf -- '---\ntype: take\n---\n## Year Table\n\nI keep this list.\n\n| Title | Released |\n|---|---|\n| Episode I | 1999 |\n' >"$fx/life/yeartable.md"
   printf -- '---\ntype: take\n---\n## Group Name\n\nBlack Americans opened a door, and Latin American writers noticed.\n' >"$fx/life/groupname.md"
+  wn() { local i=1 s='Alpha'; while [ "$i" -lt "$1" ]; do i=$((i + 1)); s="$s w$i"; done; printf '%s' "$s"; }
+  printf -- '---\ntype: take\n---\n## Sent Long\n\n%s.\n' "$(wn 26)" >"$fx/life/sentlong.md"
+  printf -- '---\ntype: take\n---\n## Sent OK\n\n%s.\n' "$(wn 25)" >"$fx/life/sentok.md"
+  printf -- '---\ntype: howto\n---\n## Step Long\n\n1. %s.\n' "$(wn 21)" >"$fx/life/steplong.md"
+  printf -- '---\ntype: howto\n---\n## Step OK\n\n1. %s.\n' "$(wn 20)" >"$fx/life/stepok.md"
+  printf -- '---\ntype: take\n---\n## Para Long\n\nOne two. One two. One two. One two. One two. One two. One two.\n' >"$fx/life/paralong.md"
+  printf -- '---\ntype: take\n---\n## Para OK\n\nOne two. One two. One two. One two. One two. One two.\n' >"$fx/life/paraok.md"
+  printf -- '---\ntype: quote\n---\n## Quote Exempt\n\n%s.\n' "$(wn 40)" >"$fx/life/quoteex.md"
+  printf -- '---\ntype: take\n---\n## Block Exempt\n\nA short line.\n\n> %s.\n' "$(wn 40)" >"$fx/life/bqex.md"
   printf -- '---\ntype: take\n---\n## Allow\n\nI link a [cartoon](https://condenaststore.com/featured/x.html).\n' >"$fx/life/allow.md"
   printf -- '---\ntype: take\n---\n## Retry\n\nI link a [slow host](https://retry.example.test/x).\n' >"$fx/life/retry.md"
   mkdir -p "$TMP/bin"
@@ -447,6 +483,14 @@ SHIM
   if printf '%s\n' "$res2" | rg -q -e "life/yearabbr.md:[0-9]+: W-YEAR"; then printf 'PASS W-YEAR-abbreviation\n'; else printf 'FAIL W-YEAR-abbreviation\n'; ok=1; fi
   if printf '%s\n' "$res2" | rg -q -e "life/yeartable.md:[0-9]+: W-YEAR"; then printf 'FAIL W-YEAR-table-row\n'; ok=1; else printf 'PASS W-YEAR-table-row\n'; fi
   if printf '%s\n' "$res2" | rg -q -e "life/groupname.md:[0-9]+: W-NAME"; then printf 'FAIL W-NAME-group-name\n'; ok=1; else printf 'PASS W-NAME-group-name\n'; fi
+  res4=$( (CHECK_ROOT="$fx" "$SELF" --no-net life/sentlong.md life/sentok.md life/steplong.md life/stepok.md life/paralong.md life/paraok.md life/quoteex.md life/bqex.md) 2>&1 )
+  if printf '%s\n' "$res4" | rg -q -e "life/sentlong.md:[0-9]+: W-SENT"; then printf 'PASS W-SENT-over-cap\n'; else printf 'FAIL W-SENT-over-cap\n'; ok=1; fi
+  if printf '%s\n' "$res4" | rg -q -e "life/sentok.md:[0-9]+: W-SENT"; then printf 'FAIL W-SENT-at-cap\n'; ok=1; else printf 'PASS W-SENT-at-cap\n'; fi
+  if printf '%s\n' "$res4" | rg -q -e "life/steplong.md:[0-9]+: W-SENT"; then printf 'PASS W-SENT-step-over-cap\n'; else printf 'FAIL W-SENT-step-over-cap\n'; ok=1; fi
+  if printf '%s\n' "$res4" | rg -q -e "life/stepok.md:[0-9]+: W-SENT"; then printf 'FAIL W-SENT-step-at-cap\n'; ok=1; else printf 'PASS W-SENT-step-at-cap\n'; fi
+  if printf '%s\n' "$res4" | rg -q -e "life/paralong.md:[0-9]+: W-PARA"; then printf 'PASS W-PARA-over-cap\n'; else printf 'FAIL W-PARA-over-cap\n'; ok=1; fi
+  if printf '%s\n' "$res4" | rg -q -e "life/paraok.md:[0-9]+: W-PARA"; then printf 'FAIL W-PARA-at-cap\n'; ok=1; else printf 'PASS W-PARA-at-cap\n'; fi
+  if printf '%s\n' "$res4" | rg -q -e "life/(quoteex|bqex).md:[0-9]+: W-(SENT|PARA)"; then printf 'FAIL W-SENT-quotes-exempt\n'; ok=1; else printf 'PASS W-SENT-quotes-exempt\n'; fi
   res3=$( (CHECK_ROOT="$fx" "$SELF" life/allow.md) 2>&1 )
   if printf '%s\n' "$res3" | rg -q -e "life/allow.md:[0-9]+: W-EXT" && ! printf '%s\n' "$res3" | rg -q -e "life/allow.md:[0-9]+: L-EXT"; then printf 'PASS W-EXT-allowlist\n'; else printf 'FAIL W-EXT-allowlist\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:11: P-PATH"; then printf 'PASS P-PATH-home\n'; else printf 'FAIL P-PATH-home\n'; ok=1; fi

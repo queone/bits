@@ -4,6 +4,7 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-25 | Publish | Computers and AI as ordenadores: tools for putting life in order | `tech/`, `note`, "Ordenador" | `tech/ordenador.md` |
 | 2026-09-25 | Drop | A satirical religious character, described | Not an entry; no position | |
 | 2026-09-25 | Drop | Greenland pressure as gunboat diplomacy | Dropped by the Director | |
 | 2026-09-25 | Merge | Joke most of the time; keep political talk thoughtful | `life/personal-growth.md` | `life/personal-growth.md` |

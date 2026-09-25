@@ -58,6 +58,7 @@ Truth-seeking is a duty. Most entries on this site end in the same shape: stop d
 |---|---|---|
 | Expecting good things | Notice them, since nothing is owed | [Personal Growth](../life/personal-growth.md) |
 | Arguing politics at every turn | Joke most of the time, and keep political talk thoughtful | [Personal Growth](../life/personal-growth.md) |
+| Organizing for its own sake | Organize for the work it frees, big ideas first | [Ordenador](../tech/ordenador.md) |
 | Chasing a legacy | Care for posterity | [Legacy](../life/legacy.md) |
 | Dwelling on the fear of death | Widen your interests beyond the self | [Growing Old](../life/growing-old.md) |
 | Chasing arrival | Keep the direction | [Flourishing](../life/flourishing.md) |
