@@ -4,6 +4,21 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-25 | Drop | "Most Americans want security, not freedom" | A one-line topic; Fromm's Escape from Freedom is the earlier version | |
+| 2026-09-25 | Drop | A summary of Russell's Why I Am Not a Christian | Encyclopedia-level as written | |
+| 2026-09-25 | Drop | The transcendental argument for God as circular | Encyclopedia-level as written | |
+| 2026-09-25 | Drop | Birthright citizenship and demographic anxiety | Assumes a racial motive; the filter criticizes actions, not motives | |
+| 2026-09-25 | Drop | Black-and-white versus spectrum thinking in politics | Covered: `society/us-identity-politics.md`, `mind/cultural-cognition.md` | |
+| 2026-09-25 | Drop | Define the cases, or it is a slogan and not a policy | Covered: `society/discourse.md`, "Watch words" | |
+| 2026-09-25 | Drop | Thiel and the Antichrist | Covered: `society/elite-rapture.md` | |
+| 2026-09-25 | Drop | System 1 and System 2 in political arguments | Covered: `mind/two-systems.md` | |
+| 2026-09-25 | Merge | A library guide to the trackers of the administration's actions | `society/rule-of-law.md` | `society/rule-of-law.md` |
+| 2026-09-25 | Merge | The own-side test: condemning a hero of your own side, as Democrats did with César Chávez | `society/discourse.md` | `society/discourse.md` |
+| 2026-09-25 | Merge | Local outreach beat a captured media system in Hungary's 2026 election | `society/viral-truth.md` | `society/viral-truth.md` |
+| 2026-09-25 | Publish | The case against the administration from conservative values | `society/`, `note`, "Not Conservatism" | `society/not-conservatism.md` |
+| 2026-09-25 | Publish | Bending institutions by legal means: Orbán's Hungary, with Trujillo for those who lived it | `society/`, `take`, "The Orbán Playbook" | `society/orban-playbook.md` |
+| 2026-09-25 | Publish | Trans issues: neither moral panic on the right nor absolutism on the left | `society/`, `take`, "Trans Issues" | `society/trans-issues.md` |
+| 2026-09-25 | Publish | The immigration choice: tax and legalize the workforce already here, or pay to remove it | `society/`, `note`, "The Immigration Choice" | `society/immigration-choice.md` |
 | 2026-09-25 | Drop | What failed in arguing with a friend who moved to the far right | Covered by `society/discourse.md`: do not blame, avoid questioning motives, separate facts from worldviews, the freedom to pause, let people be wrong | |
 | 2026-09-25 | Merge | The people you know are not the country: ask how big and how fair the sample is | `mind/detecting-baloney.md` | `mind/detecting-baloney.md` |
 | 2026-09-25 | Publish | Latinos and the civil-rights door: solidarity over anti-Haitian attitudes and votes against protections | `society/`, `take`, "Who Opened the Door" | `society/who-opened-the-door.md` |

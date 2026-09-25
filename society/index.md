@@ -9,13 +9,16 @@
 - [Discourse](discourse.md): A protocol for arguing with reasonable people, and a guide for the rest.
 - [Elite Rapture](elite-rapture.md): Apocalyptic framing from the very wealthy, and why the framing is the danger.
 - [Enlightenment Ideals](enlightenment-ideals.md): Reason in the service of flourishing, its four rivals, and the realist objection.
+- [The Immigration Choice](immigration-choice.md): Tax and legalize the workforce already here, or pay to remove it.
 - [Israel and Hamas](israel-hamas.md): The legal and humanitarian framings of genocide and proportionality, with sources.
 - [Libertarianism](libertarianism.md): Where body sovereignty stops serving people.
 - [Markets and Capitalism](markets-capitalism.md): Tools, not moral oracles; outcomes depend on the rules.
 - [Mild Leviathan](mild-leviathan.md): AI as a volunteered mild Leviathan for self-governance.
 - [Internet Monetization Model](monetization-model.md): How attention becomes revenue, and what recommender systems optimize for.
 - [The Money Exception](money-exception.md): Why even skeptics go easy on concentrated wealth, and when to speak up anyway.
+- [Not Conservatism](not-conservatism.md): Measured by conservative values, the administration is institutional decay.
 - [Oligarchy](oligarchy.md): Why the problem is concentrated wealth, not one man, with a ledger of who gains and who pays.
+- [The Orbán Playbook](orban-playbook.md): Bending institutions by legal means, as in Hungary, and how it can be beaten.
 - [The Perception Gap](perception-gap.md): Why heavy news users see the other side as more extreme than it is, and what I did.
 - [Perception Management](perception-management.md): How narratives, not facts, shape mass belief.
 - [Politics](politics.md): Reason and Compassion as the real poles, plus three smaller convictions.
@@ -24,6 +27,7 @@
 - [Salomon's House](salomons-house.md): An order of science explainers, after Bacon, under a four-rule charter.
 - [Slow by Design](slow-by-design.md): A republic built to cool passions, how virality undoes it, and the remedies I would add.
 - [Smug Pilots](smug-pilots.md): How engagement media and bickering experts wore down trust, and what experts owe listeners.
+- [Trans Issues](trans-issues.md): Neither panic on the right nor dogma on the left: rights, evidence, open debate.
 - [The Two-Front War](two-front-war.md): Illness in the U.S. means fighting the disease and the bill.
 - [U.S. Identity Politics](us-identity-politics.md): Identity first, policy rationalized afterward, and the way out.
 - [Viral Truth](viral-truth.md): What truth can borrow from how lies spread, and what it must not.

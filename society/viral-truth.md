@@ -11,7 +11,7 @@ Five principles truth-tellers can borrow from the way lies travel, without borro
 |---|-----------|--------|
 | 1 | Speed | [Pre-bunk](https://en.wikipedia.org/wiki/Prebunking) predictable falsehoods; prepare quick summaries in advance; verify fast, not perfectly. |
 | 2 | Simplicity | One idea per message, one sentence that survives a screenshot, one visual when possible. |
-| 3 | Trusted messengers | Credible insiders and local voices persuade; former skeptics persuade better than lifelong believers. |
+| 3 | Trusted messengers | Insiders, local voices, and former skeptics persuade; [village tours](https://www.wilsoncenter.org/article/hungarys-turning-point) helped [unseat Orbán](https://en.wikipedia.org/wiki/2026_Hungarian_parliamentary_election). |
 | 4 | Repetition | Repetition builds memory and silence leaves room for lies; repeating truth is not propaganda. Silence also feeds [pluralistic ignorance](https://en.wikipedia.org/wiki/Pluralistic_ignorance): each person privately doubts, yet assumes everyone else believes. |
 | 5 | Asymmetry | Focus on the persuadable middle, strengthen allies who amplify, accept that not everyone can be reached. |
 

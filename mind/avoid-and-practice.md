@@ -45,6 +45,10 @@ Truth-seeking is a duty. Most entries on this site end in the same shape: stop d
 | Keeping quiet once an argument convinced you | Say so openly, and build on the work | [After New Atheism](../society/after-new-atheism.md) |
 | Closing the door behind you | Solidarity with those who opened it, and voting accordingly | [Who Opened the Door](../society/who-opened-the-door.md) |
 | Easy reverence for the troops | Honor every profession that serves, and ask how troops are used | [Who We Thank](../society/who-we-thank.md) |
+| Removing a workforce already here | A conditional path to legal status, with enforcement at the border | [The Immigration Choice](../society/immigration-choice.md) |
+| Moral panics and purity tests | Equal rights, evidence, and free inquiry | [Trans Issues](../society/trans-issues.md) |
+| Standing aside while institutions weaken | Defend them early, by legal means too | [The Orbán Playbook](../society/orban-playbook.md) |
+| Calling institutional decay strength | Judge by the Constitution, restraint, and the rule of law | [Not Conservatism](../society/not-conservatism.md) |
 
 ### Living
 
