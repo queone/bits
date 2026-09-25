@@ -4,6 +4,16 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-25 | Drop | A satirical religious character, described | Not an entry; no position | |
+| 2026-09-25 | Drop | Greenland pressure as gunboat diplomacy | Dropped by the Director | |
+| 2026-09-25 | Merge | Joke most of the time; keep political talk thoughtful | `life/personal-growth.md` | `life/personal-growth.md` |
+| 2026-09-25 | Merge | AI and open data make fact-checking quick; check the AI too | `mind/detecting-baloney.md` | `mind/detecting-baloney.md` |
+| 2026-09-25 | Merge | Harsh immigration tactics and the cost in empathy | `society/immigration-choice.md` | `society/immigration-choice.md` |
+| 2026-09-25 | Merge | Tilted election rules, voters ending it, and culture wars as rights claims | `society/orban-playbook.md`, `society/trans-issues.md` | `society/orban-playbook.md` |
+| 2026-09-25 | Merge | Fear of exaggerated threats and deference to a strongman | `society/orban-playbook.md` | `society/orban-playbook.md` |
+| 2026-09-25 | Merge | Congress never authorized the Venezuela strikes or the Maduro raid | `society/not-conservatism.md` | `society/not-conservatism.md` |
+| 2026-09-25 | Merge | "Never argue with an idiot": Brynner quoting Cocteau, not Twain | `mind/famous-quotes.md` | `mind/famous-quotes.md` |
+| 2026-09-25 | Publish | Virtue signaling: moral display without action, often unintended | `society/`, `note`, "Virtue Signaling" | `society/virtue-signaling.md` |
 | 2026-09-25 | Drop | "Most Americans want security, not freedom" | A one-line topic; Fromm's Escape from Freedom is the earlier version | |
 | 2026-09-25 | Drop | A summary of Russell's Why I Am Not a Christian | Encyclopedia-level as written | |
 | 2026-09-25 | Drop | The transcendental argument for God as circular | Encyclopedia-level as written | |

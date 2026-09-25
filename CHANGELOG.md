@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.93.0 | Virtue Signaling note; Cocteau not Twain; war powers, fear, empathy, AI check |
 | 0.92.0 | Immigration Choice, Trans Issues, Orbán Playbook, Not Conservatism; 3 merges |
 | 0.91.1 | AC65 checker stops false warnings on table rows and group names |
 | 0.91.0 | Who We Thank, Who Opened the Door, Star Wars, Karaoke; Baseball take; sample tip |

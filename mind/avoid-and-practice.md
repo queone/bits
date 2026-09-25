@@ -28,6 +28,7 @@ Truth-seeking is a duty. Most entries on this site end in the same shape: stop d
 | Taking a framing at face value | Ask who benefits from it | [Perception Management](../society/perception-management.md) |
 | Believing a claim that needs many silent conspirators | Count the people who would have to keep the secret | [Detecting Baloney](detecting-baloney.md) |
 | Judging a country by the people you know | Ask how big and how fair the sample is | [Detecting Baloney](detecting-baloney.md) |
+| Staying deluded when facts are easy to check | Use AI and open data, and check the AI too | [Detecting Baloney](detecting-baloney.md) |
 | Heavy partisan news | Cut back | [The Perception Gap](../society/perception-gap.md) |
 | Discounting help because a machine gave it | Judge the writing by its claims | [Written With Help](../tech/written-with-help.md) |
 
@@ -49,12 +50,14 @@ Truth-seeking is a duty. Most entries on this site end in the same shape: stop d
 | Moral panics and purity tests | Equal rights, evidence, and free inquiry | [Trans Issues](../society/trans-issues.md) |
 | Standing aside while institutions weaken | Defend them early, by legal means too | [The Orbán Playbook](../society/orban-playbook.md) |
 | Calling institutional decay strength | Judge by the Constitution, restraint, and the rule of law | [Not Conservatism](../society/not-conservatism.md) |
+| Moral display without action | Ask what a stance cost, starting with your own | [Virtue Signaling](../society/virtue-signaling.md) |
 
 ### Living
 
 | Avoid | Practice | Where |
 |---|---|---|
 | Expecting good things | Notice them, since nothing is owed | [Personal Growth](../life/personal-growth.md) |
+| Arguing politics at every turn | Joke most of the time, and keep political talk thoughtful | [Personal Growth](../life/personal-growth.md) |
 | Chasing a legacy | Care for posterity | [Legacy](../life/legacy.md) |
 | Dwelling on the fear of death | Widen your interests beyond the self | [Growing Old](../life/growing-old.md) |
 | Chasing arrival | Keep the direction | [Flourishing](../life/flourishing.md) |

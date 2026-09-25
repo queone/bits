@@ -11,4 +11,6 @@ Now the cost of removal. The [American Immigration Council](https://www.american
 
 If the worry is that legal status invites more crossings, the answer is enforcement at the border and rules for the future. It is not expelling a workforce already woven into the economy.
 
+What troubles me most is the cost in empathy. Harsh tactics draw support even from some people with immigrant roots of their own, and cruelty toward vulnerable families and children is hard to square with Christian ethics or with basic decency.
+
 So the real choice is not open borders against lawlessness. It is whether we formalize and tax the people already here, or pay for an enforcement regime with uncertain returns. I would choose a structured, enforceable, conditional path to legal status. It strengthens compliance and widens the tax base.

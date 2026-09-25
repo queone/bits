@@ -23,4 +23,8 @@ Quotes are useful cognitive anchors: a good line compresses a lesson into someth
 
 "Every deadline arrives, and every debt is paid." It is also the title of [Antonio de Zamora's 1722](https://en.wikipedia.org/wiki/Don_Juan) Don Juan play. Delay does not erase consequences.
 
-Good quotes help memory and perspective. Bad use of quotes replaces thinking with borrowed certainty. Keep the first, avoid the second.
+### [Jean Cocteau](https://en.wikipedia.org/wiki/Jean_Cocteau)
+
+> Never associate with idiots on their own level, because … on their level they'll beat you every time.
+
+Yul Brynner attributed it to his friend Cocteau in 1956. It is often [misattributed](https://quoteinvestigator.com/2023/01/29/never-argue/) to Mark Twain.
