@@ -98,7 +98,7 @@ sudo reboot
 ```
 
 ##### Issues
-- If keyboard does not respond when the **manu** menu comes up, ensure that the user you're running all this under has the correct permissions by doing `sudo usermod -a -G input $USER`
+- If the keyboard does not respond when the **manu** menu comes up, check the user's permissions. Add the user to the input group with `sudo usermod -a -G input $USER`.
 
 #### Set New Hostname
 
@@ -226,7 +226,7 @@ jstest /dev/input/js0
 # Then press the buttons and joystick controls to confirm
 ```
 
-Once you know the OS is able to read the controller, configure it **within** MAME itself by pressing **TAB** from an attached keyboard, and MAME will allow you to configure the buttons accordingly. For more info see the [MAME documenation pages](https://docs.mamedev.org/index.html).
+Once the OS can read the controller, configure it **within** MAME itself. Press **TAB** on an attached keyboard, and MAME lets you configure the buttons. For more info see the [MAME documentation pages](https://docs.mamedev.org/index.html).
 
 
 ### Creating USB Installers

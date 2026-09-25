@@ -3,7 +3,7 @@ type: reference
 ---
 ## Karaoke
 
-The songs I sing at [karaoke](https://en.wikipedia.org/wiki/Karaoke), grouped by what earns each one its place. Crowd means the room sings along or reacts. Vocal range means the song sits where my voice is strong. Every new song starts as an experiment until I have sung it in public, and it gets its real reason once I see how it goes.
+The songs I sing at [karaoke](https://en.wikipedia.org/wiki/Karaoke), grouped by what earns each one its place. Crowd means the room sings along or reacts. Vocal range means the song sits where my voice is strong. Every new song starts as an experiment until I have sung it in public. It gets its real reason once I see how it goes.
 
 | Song | Artist | Reason |
 |------|--------|--------|

@@ -114,7 +114,7 @@ linksrc() { # file -> same line count with fenced blocks and code spans blanked
 
 prosesrc() { # file -> same line count with front matter, fenced blocks, and block quotes blanked
   awk 'NR==1 && $0=="---"{fm=1; print ""; next} fm==1 && $0=="---"{fm=0; print ""; next} fm==1{print ""; next}
-       /^(```|~~~)/{fence=!fence; print ""; next} fence{print ""; next} /^>/{print ""; next} {print}' "$1"
+       /^[[:space:]]*(```|~~~)/{fence=!fence; print ""; next} fence{print ""; next} /^>/{print ""; next} {print}' "$1"
 }
 
 sentences_of() { # file -> "line<TAB>sentence" per sentence, table rows skipped, link addresses and bare URLs removed
@@ -128,9 +128,9 @@ sentences_of() { # file -> "line<TAB>sentence" per sentence, table rows skipped,
 
 
 plain_mean() { # file -> mean words per sentence over prose, in tenths
-  prosesrc "$1" | awk '/^#/{next} /^\|/{next} /^[[:space:]]*$/{next} {print}' | sed -E 's/\]\([^)]*\)/]/g; s/`[^`]*`/x/g' | tr '\n' ' ' \
+  prosesrc "$1" | awk '/^#/{next} /^[[:space:]]*\|/{next} /^[[:space:]]*$/{next} /^(    |\t)/ && !/^[[:space:]]*([-*+]|[0-9]+\.)[[:space:]]/{next} {print}' | sed -E 's/\]\([^)]*\)/]/g; s/`[^`]*`/x/g' | tr '\n' ' ' \
     | awk '{ n=split($0, tk, /[[:space:]]+/); out=""; for(i=1;i<=n;i++){ w=tk[i]; if (w ~ /^[A-Z]\.[,;:)]?$/ || w ~ /^(e\.g\.|i\.e\.|etc\.|vs\.|Dr\.|Mr\.|Mrs\.|Ms\.|Jr\.|Sr\.|St\.|No\.|U\.S\.|U\.K\.)[,;:)]?$/) gsub(/\./, "", w); out=out " " w }
-             n=split(out, s, "[.!?]+([ \"\047)]+|$)"); w=0; c=0; for(i=1;i<=n;i++){ k=split(s[i], t, /[[:space:]]+/); m=0; for(j=1;j<=k;j++) if(t[j]!="") m++; if(m>0){w+=m; c++} } if(c==0) print 0; else printf "%d\n", (w*10)/c }'
+             n=split(out, s, "[.!?]+[*_\"\047)]*([[:space:]]+|$)"); w=0; c=0; for(i=1;i<=n;i++){ k=split(s[i], t, /[[:space:]]+/); m=0; for(j=1;j<=k;j++) if(t[j]!="") m++; if(m>0){w+=m; c++} } if(c==0) print 0; else printf "%d\n", (w*10)/c }'
 }
 
 sentence_limits() { # file type -> "line<TAB>code<TAB>message" for sentences over the cap and paragraphs over six sentences
@@ -143,7 +143,7 @@ sentence_limits() { # file type -> "line<TAB>code<TAB>message" for sentences ove
     }
     function unit(s, start, step,   n, sn, i, k, tt, j, m, c, cap) {
       s = norm(s); cap = (step && t == "howto") ? 20 : 25; c = 0
-      n = split(s, sn, "[.!?]+([ \"\047)]+|$)")
+      n = split(s, sn, "[.!?]+[*_\"\047)]*([[:space:]]+|$)")
       for (i = 1; i <= n; i++) {
         k = split(sn[i], tt, /[[:space:]]+/); m = 0; for (j = 1; j <= k; j++) if (tt[j] != "") m++
         if (m > 0) { c++; if (m > cap) printf "%d\tW-SENT\tsentence of %d words, keep it to %d or fewer\n", start, m, cap }
@@ -151,8 +151,9 @@ sentence_limits() { # file type -> "line<TAB>code<TAB>message" for sentences ove
       if (!step && c > 6) printf "%d\tW-PARA\tparagraph of %d sentences, keep it to six or fewer\n", start, c
     }
     function flush() { if (buf != "") unit(buf, bstart, 0); buf = "" }
-    /^#/ || /^\|/ || /^[[:space:]]*$/ { flush(); next }
+    /^#/ || /^[[:space:]]*\|/ || /^[[:space:]]*$/ { flush(); next }
     /^[[:space:]]*([-*+]|[0-9]+\.)[[:space:]]/ { flush(); s = $0; sub(/^[[:space:]]*([-*+]|[0-9]+\.)[[:space:]]+/, "", s); unit(s, NR, 1); next }
+    /^(    |\t)/ { flush(); next }
     { if (buf == "") bstart = NR; buf = buf " " $0 }
     END { flush() }'
 }
@@ -443,6 +444,10 @@ selftest() {
   printf -- '---\ntype: take\n---\n## Para OK\n\nOne two. One two. One two. One two. One two. One two.\n' >"$fx/life/paraok.md"
   printf -- '---\ntype: quote\n---\n## Quote Exempt\n\n%s.\n' "$(wn 40)" >"$fx/life/quoteex.md"
   printf -- '---\ntype: take\n---\n## Block Exempt\n\nA short line.\n\n> %s.\n' "$(wn 40)" >"$fx/life/bqex.md"
+  printf -- '---\ntype: howto\n---\n## Bold Step\n\n1. **Alpha beta gamma.** %s.\n' "$(wn 18)" >"$fx/life/boldstep.md"
+  printf -- '---\ntype: take\n---\n## Indented Fence\n\n- A short item.\n\n   ```text\n\n   %s.\n\n   ```\n' "$(wn 30)" >"$fx/life/indfence.md"
+  printf -- '---\ntype: take\n---\n## Code Block\n\nA short line.\n\n    %s.\n' "$(wn 30)" >"$fx/life/codeblock.md"
+  printf -- '---\ntype: take\n---\n## Indented Table\n\nA short line.\n\n  | %s | x |\n' "$(wn 30)" >"$fx/life/indtable.md"
   printf -- '---\ntype: take\n---\n## Allow\n\nI link a [cartoon](https://condenaststore.com/featured/x.html).\n' >"$fx/life/allow.md"
   printf -- '---\ntype: take\n---\n## Retry\n\nI link a [slow host](https://retry.example.test/x).\n' >"$fx/life/retry.md"
   mkdir -p "$TMP/bin"
@@ -491,6 +496,10 @@ SHIM
   if printf '%s\n' "$res4" | rg -q -e "life/paralong.md:[0-9]+: W-PARA"; then printf 'PASS W-PARA-over-cap\n'; else printf 'FAIL W-PARA-over-cap\n'; ok=1; fi
   if printf '%s\n' "$res4" | rg -q -e "life/paraok.md:[0-9]+: W-PARA"; then printf 'FAIL W-PARA-at-cap\n'; ok=1; else printf 'PASS W-PARA-at-cap\n'; fi
   if printf '%s\n' "$res4" | rg -q -e "life/(quoteex|bqex).md:[0-9]+: W-(SENT|PARA)"; then printf 'FAIL W-SENT-quotes-exempt\n'; ok=1; else printf 'PASS W-SENT-quotes-exempt\n'; fi
+  res5=$( (CHECK_ROOT="$fx" "$SELF" --no-net life/boldstep.md life/indfence.md life/codeblock.md life/indtable.md) 2>&1 )
+  for c in boldstep indfence codeblock indtable; do
+    if printf '%s\n' "$res5" | rg -q -e "life/$c.md:[0-9]+: W-SENT"; then printf 'FAIL W-SENT-%s\n' "$c"; ok=1; else printf 'PASS W-SENT-%s\n' "$c"; fi
+  done
   res3=$( (CHECK_ROOT="$fx" "$SELF" life/allow.md) 2>&1 )
   if printf '%s\n' "$res3" | rg -q -e "life/allow.md:[0-9]+: W-EXT" && ! printf '%s\n' "$res3" | rg -q -e "life/allow.md:[0-9]+: L-EXT"; then printf 'PASS W-EXT-allowlist\n'; else printf 'FAIL W-EXT-allowlist\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:11: P-PATH"; then printf 'PASS P-PATH-home\n'; else printf 'FAIL P-PATH-home\n'; ok=1; fi

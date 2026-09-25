@@ -27,7 +27,7 @@ How to argue with reasonable people, drawing on [Carl Rogers](https://en.wikiped
 - **Model it.** Be and do what you want them to do. Admit ignorance.
 - **Watch words.** Be careful, and understand their definitions.
 - **Ask questions.** Calibrated, open-ended how and what questions that do not lead to a simple yes or no.
-- **Acknowledge extremists on your own side** to build a bridge across the moral divide, with concessions such as "some on my side are fanatics who should be arrested" or Democrats condemning [César Chávez](https://en.wikipedia.org/wiki/Cesar_Chavez_sexual_abuse_allegations). Do not expect reciprocation; build trust. Treat their side charitably.
+- **Acknowledge extremists on your own side** to build a bridge across the moral divide. Concessions help, such as "some on my side are fanatics who should be arrested" or Democrats condemning [César Chávez](https://en.wikipedia.org/wiki/Cesar_Chavez_sexual_abuse_allegations). Do not expect reciprocation; build trust. Treat their side charitably.
 - **Do not blame.** Focus on contribution.
 - **Focus on epistemology.** How do they know what they claim to know?
 - **Learn what makes someone closed-minded.**
@@ -38,6 +38,6 @@ How to argue with reasonable people, drawing on [Carl Rogers](https://en.wikiped
 
 - **Channel Socrates.** Use [Socratic questions](https://en.wikipedia.org/wiki/Socratic_questioning) about clarity ("How do you know that's true?"), sources ("What's your source for that?"), evidence ("Is that all the evidence, or a selection?"), and other views ("What is another way to look at it?").
 - **Ask for a number.** How certain are they, as a percentage?
-- **Avoid the dishonest moves yourself.** Questioning motives or authority, claiming a group's authority, changing the subject, and [sealioning](https://en.wikipedia.org/wiki/Sealioning), which buries a person in requests for evidence. Say "that idea", not "your idea".
+- **Avoid the dishonest moves yourself.** They are questioning motives or authority, claiming a group's authority, changing the subject, and [sealioning](https://en.wikipedia.org/wiki/Sealioning). Sealioning buries a person in requests for evidence. Say "that idea", not "your idea".
 - **Separate facts from worldviews.** A changed fact need not mean a changed [identity](../mind/identity-lightly.md).
-- **Let people be wrong.** Friendship rests on respect, not agreement. [Jefferson](https://founders.archives.gov/documents/Jefferson/01-31-02-0445) wrote in 1800: "I never considered a difference of opinion in politics, in religion, in philosophy, as cause for withdrawing from a friend."
+- **Let people be wrong.** Friendship rests on respect, not agreement. [Jefferson](https://founders.archives.gov/documents/Jefferson/01-31-02-0445) wrote this in 1800. "I never considered a difference of opinion in politics, in religion, in philosophy, as cause for withdrawing from a friend."

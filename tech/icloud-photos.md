@@ -3,7 +3,7 @@ type: reference
 ---
 ## iCloud Photos Backup Guide
 - Bits on how to safely back up your iCloud Photos library using `rsync` to an external drive.
-- This type of backup only really makes sense if you have "Download Original to this Mac" enabled, and that can obviously take a VERY LARGE CHUNK of your Mac's drive!
+- This type of backup only makes sense if you have "Download Original to this Mac" enabled. That setting can take a VERY LARGE CHUNK of your Mac's drive!
 - Or you can export all your iCloud Photos locally using something like `icloudpd`, as described below.
 
 

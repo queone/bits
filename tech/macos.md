@@ -48,7 +48,7 @@ sudo curl -Lo /var/root/.bashrc https://github.com/queone/gkit/raw/main/scripts/
 The user file shows the current git branch in the prompt when `~/.gitbranch.sh` is installed, as described under [Show Branch in Shell Prompt](git/index.md#show-branch-in-shell-prompt). It ends by sourcing `~/.bashrc.local` when that file exists. Private settings such as tokens, tenant IDs, and account aliases go through that file and never enter a repo. Once both files are in place, macfit in the next section keeps them the same on every Mac.
 
 ### Keep Config Files In Sync
-[macfit](https://github.com/queone/gkit/tree/main/cmd/macfit), another gkit utility, keeps the same config files on every Mac. It holds them in one encrypted store file. Put that file in a folder that iCloud Drive or another sync client carries to each Mac, and every Mac that sees the folder opens it with one passphrase. The store is the remote, as in git: `push` sends live files up, `pull` brings them down.
+[macfit](https://github.com/queone/gkit/tree/main/cmd/macfit), another gkit utility, keeps the same config files on every Mac. It holds them in one encrypted store file. Put that file in a folder that iCloud Drive or another sync client carries to each Mac. Every Mac that sees the folder opens it with one passphrase. The store is the remote, as in git: `push` sends live files up, `pull` brings them down.
 
 ```bash
 macfit init -N -s <synced-folder>/macfit.store   # first Mac: create the store and set a passphrase
@@ -244,7 +244,7 @@ hdiutil convert ubuntu-20.04-desktop-amd64.iso -format UDRW -o ubuntu-20.04-desk
 
 ### Startup Keys
 - For newer Apple Silicon CPU machines:
-  Switch on your Mac device with the Power Button and do not stop pressing the power button until you see a window that displays a list of drives connected to your Mac.
+  Switch on your Mac with the power button. Keep pressing it until you see a window that lists the drives connected to your Mac.
 
 - For older Apple Intel CPU machines:
 

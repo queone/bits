@@ -58,4 +58,4 @@ The phrase is [Jonathan Rauch](https://en.wikipedia.org/wiki/Jonathan_Rauch)'s, 
 | Professionalism | Reputations, earned over time, keep people honest. |
 | No bullshitting | Reject charlatans outright. |
 
-The list rests on the same ground as the rest of this site: scientific naturalism, [Enlightenment](../society/enlightenment-ideals.md) humanism, open dialogue, and free expression, with no effort to silence disagreement.
+The list rests on the same ground as the rest of this site: scientific naturalism, [Enlightenment](../society/enlightenment-ideals.md) humanism, open dialogue, and free expression. None of it tries to silence disagreement.

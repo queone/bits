@@ -3,7 +3,7 @@ type: reference
 ---
 ## Github Workflow OIDC Access to Azure
 
-OIDC allows workflows to authenticate and interact with Azure using short-lived tokens. This eliminates the need for long-lived personal access tokens (PAT) or service principal with a secrets, providing a more secure and manageable approach to accessing cloud resources directly from GitHub Actions.
+OIDC allows workflows to authenticate and interact with Azure using short-lived tokens. This removes the need for long-lived personal access tokens (PATs) or a service principal with a secret. It is a more secure and manageable way to reach cloud resources directly from GitHub Actions.
 
 ### How It Works
 1. **Configuration**: You configure your Azure AD App Registration to trust an external identity provider by setting up a federation with that IdP. This involves specifying details about the IdP, such as the issuer URL, and possibly uploading metadata documents for SAML-based federations.
@@ -154,7 +154,7 @@ MS Graph                    │                         Azure ARM
 
 ### Using OIDC for Authentication with Azure
 
-This document explains how **OpenID Connect (OIDC)** authentication works between a program (like a GitHub workflow) and Azure, and what it takes for any program to be trusted by Azure.
+This document explains how **OpenID Connect (OIDC)** authentication works between a program (like a GitHub workflow) and Azure. It also covers what it takes for any program to be trusted by Azure.
 
 ---
 
@@ -192,7 +192,7 @@ Yes, **any program** can use OIDC to authenticate with Azure, provided it meets 
      1. **Registering the Issuer's Public Key**:
         - Azure needs the public key of the OIDC token issuer to verify the token's signature.
      2. **Configuring a Federated Identity**:
-        - In Azure AD, you create a **federated identity credential** that maps the OIDC token's claims (e.g., issuer, subject) to an Azure AD application or service principal.
+        - In Azure AD, you create a **federated identity credential**. It maps the OIDC token's claims, such as issuer and subject, to an Azure AD application or service principal.
 
 #### c. The Program Must Have the Correct Configuration in Azure AD
    - The program's OIDC token must include claims that match the federated identity configuration in Azure AD.
@@ -272,7 +272,7 @@ If you want to write a custom program that uses OIDC to authenticate with Azure,
 
 ### Roles in the OIDC Flow
 
-In the OIDC authentication flow between GitHub and Azure, **GitHub** acts as the **Identity Provider (IdP)**, while **Azure** acts as the **Relying Party (RP)** or **Service Provider (SP)**.
+In the OIDC authentication flow between GitHub and Azure, **GitHub** acts as the **Identity Provider (IdP)**. **Azure** acts as the **Relying Party (RP)**, also called the **Service Provider (SP)**.
 
 - **GitHub's Role**:
   - Issues OIDC tokens for workflow runs, containing claims about the workflow (e.g., repository, branch, job name).

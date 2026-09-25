@@ -2,7 +2,7 @@
 type: reference
 ---
 ## GitHub App Installation Permissions
-This document outlines the three sets of permissions a GitHub App can request upon installation, and lists the available permissions in each category with brief descriptions.
+This document outlines the three sets of permissions a GitHub App can request upon installation. It lists the available permissions in each category, with brief descriptions.
 
 ### 1. Repository Permissions
 Permissions that apply to repositories the app is installed on.

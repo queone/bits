@@ -131,9 +131,9 @@ linuxkit-025000000001:~#
 - **Node**: A node is a worker machine in Kubernetes and may be a VM or physical machine, depending on the cluster. Multiple Pods can run on one Node.
   Pod
 
-- **Pod**: A Pod is a group of one or more application containers (such as Docker or rkt) and includes shared storage (volumes), IP address and information about how to run them.
+- **Pod**: A Pod is a group of one or more application containers, such as Docker or rkt. It includes shared storage (volumes), an IP address, and information about how to run them.
 
-- **Service**: A Kubernetes Service is an abstraction layer which defines a logical set of Pods and enables external traffic exposure, load balancing and service discovery for those Pods.
+- **Service**: A Kubernetes Service is an abstraction layer that defines a logical set of Pods. It enables external traffic exposure, load balancing, and service discovery for those Pods.
 
 - **Helm Chart**: A Helm chart encapsulates a group of YAML definitions composing a specific application/package. It provides a mechanism for configuration at deploy-time and allows you to define metadata and documentation that might be useful when sharing the package. Helm can be useful in different scenarios:
   - Find and use popular software packaged as Kubernetes charts
@@ -145,7 +145,7 @@ linuxkit-025000000001:~#
 - **Criticism**: There are many who argue that for many shops Kubernetes is unncessarily complex and probably should be avoided. In many cases it is easier to run Docker alone, maybe using Compose or Swarm.
 
 ### Docker Swarm
-Docker Swarm is native clustering for Docker. It turns a pool of Docker hosts into a single, virtual host. Swarm serves the standard Docker API, so any tool which already communicates with a Docker daemon can use Swarm to transparently scale to multiple hosts: Dokku, Compose, Krane, Deis, DockerUI, Shipyard, Drone, Jenkins ... and, of course, the Docker client itself.
+Docker Swarm is native clustering for Docker. It turns a pool of Docker hosts into a single, virtual host. Swarm serves the standard Docker API. Any tool that already talks to a Docker daemon can use Swarm to scale to multiple hosts. Examples include Dokku, Compose, Krane, Deis, DockerUI, Shipyard, Drone, Jenkins, and the Docker client itself.
 
 ### kubeadm
 Creating a single control-plane cluster with kubeadm.
@@ -184,7 +184,7 @@ kubectl get systemnetworkpolicy.alpha --all-namespaces --export -o yaml > system
 
 ### Docker Compose
 
-Docker Compose allows one to define and run multi-container applications with Docker. A multi-container application can be defined in a single file (usually called `docker-compose.yaml`), then spun up with a single command (usually `docker-compose up`) and that gets everything running. Check the version: `docker-compose --version`.
+Docker Compose allows one to define and run multi-container applications with Docker. You define a multi-container application in a single file, usually called `docker-compose.yaml`. One command, usually `docker-compose up`, then gets everything running. Check the version: `docker-compose --version`.
 
 Two very rough examples of using **docker compose**: 
 

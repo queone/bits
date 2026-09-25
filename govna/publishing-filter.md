@@ -225,7 +225,7 @@ Detector codes. Privacy: `P-GUID`, `P-SSH`, `P-HEX`, `P-MAC`, `P-EMAIL`, `P-PATH
 
 `W-ZOMBIE` warns a `take` or `note` whose nominalization rate passes five per hundred prose words, lists the counted words, and never blocks.
 
-`W-SENT` warns a sentence over 25 words in a `take`, `note`, `howto`, or `reference`, and a sentence over 20 words inside a how-to step. `W-PARA` warns a paragraph of more than six sentences, where a paragraph is a run of consecutive prose lines and each list item counts on its own. Both skip `quote` entries, block quotes, headings, table rows, fenced blocks, link targets, and code spans, and they count words the way the plain-English warning does.
+`W-SENT` warns a sentence over 25 words in a `take`, `note`, `howto`, or `reference`, and a sentence over 20 words inside a how-to step. `W-PARA` warns a paragraph of more than six sentences, where a paragraph is a run of consecutive prose lines and each list item counts on its own. Both skip `quote` entries, block quotes, headings, table rows, fenced blocks, link targets, and code spans, and they count words the way the plain-English warning does. Like that warning, they end a sentence at a period even when closing bold or italic marks follow it, and they skip code fences and table rows indented under a list and lines indented four or more spaces.
 
 `I-LONG` blocks a line in one of the four area indexes whose title, colon, space, and description together pass 104 characters, because a longer line wraps. Sub-indexes are not measured.
 

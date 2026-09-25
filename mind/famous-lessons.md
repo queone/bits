@@ -31,4 +31,6 @@ Models, rules, and frameworks are simplifications of reality, not reality itself
 
 
 ## Hume’s Guillotine
-A claim about what is cannot by itself prove a claim about what ought to be ([Hume’s Guillotine](https://en.wikipedia.org/wiki/Is%E2%80%93ought_problem)). David Hume raised the point in 1739. A descriptive claim says how things are. A normative claim says what we should do. The error runs both ways. “It is natural, so it is right” is the [appeal to nature](https://en.wikipedia.org/wiki/Appeal_to_nature). “It would be bad if it were true, so it is false” is the [moralistic fallacy](https://en.wikipedia.org/wiki/Moralistic_fallacy). The takeaway is **check which kind of claim you are reading before you argue with it**.
+A claim about what is cannot by itself prove a claim about what ought to be ([Hume’s Guillotine](https://en.wikipedia.org/wiki/Is%E2%80%93ought_problem)). David Hume raised the point in 1739. A descriptive claim says how things are. A normative claim says what we should do.
+
+The error runs both ways. “It is natural, so it is right” is the [appeal to nature](https://en.wikipedia.org/wiki/Appeal_to_nature). “It would be bad if it were true, so it is false” is the [moralistic fallacy](https://en.wikipedia.org/wiki/Moralistic_fallacy). The takeaway is **check which kind of claim you are reading before you argue with it**.

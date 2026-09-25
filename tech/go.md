@@ -81,7 +81,7 @@ go-callvis -focus main ./...
 
 ### Using `struct{}` for Efficient Maps
 
-Optimize Go memory usage when you need a "set" data structure, by using a map where the keys represent the elements of the set, and the value is of type `struct{}`. Why?
+To save memory when you need a "set" data structure in Go, use a map whose keys are the set's elements. Make the value type `struct{}`. Why?
 
 - **Zero Memory Overhead**: `struct{}` is an empty struct type in Go, and it occupies **0 bytes of memory**.
 - **Efficiency**: By using `struct{}` as the map value, you avoid unnecessary memory consumption compared to using `bool` or other types.
