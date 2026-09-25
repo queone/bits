@@ -27,4 +27,6 @@
 - [The Two-Front War](two-front-war.md): Illness in the U.S. means fighting the disease and the bill.
 - [U.S. Identity Politics](us-identity-politics.md): Identity first, policy rationalized afterward, and the way out.
 - [Viral Truth](viral-truth.md): What truth can borrow from how lies spread, and what it must not.
+- [Who Opened the Door](who-opened-the-door.md): What Latinos owe the Black civil-rights movement, and how to repay it.
+- [Who We Thank](who-we-thank.md): Ballpark honors for the military: deserved, but excessive and selective.
 - [Whose Problem](whose-problem.md): Real problems, and why no single donor should own them.

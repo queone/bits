@@ -9,6 +9,6 @@ A light grip keeps the mind flexible, unbound by labels, and free to follow evid
 
 It is good for you in another way. Psychologists count the ability to shift mindsets, while staying true to deeply held values, as [a basic part of health](https://pubmed.ncbi.nlm.nih.gov/21151705/).
 
-It also changes how a conversation goes. People can tell when you are trying to understand and not to win, and views offered that way land more peacefully. Galef adds a surprise: a light grip can help activism too. That matches [my own rule](../society/activism.md) about working with imperfect allies.
+It also changes how a conversation goes. People can tell when you are trying to understand and not to win, and views offered that way land more peacefully. Galef adds a surprise: a light grip can help activism too. That matches [my own rule](../society/activism.md) about working with imperfect allies. [Who Opened the Door](../society/who-opened-the-door.md) applies it to Latinos and the civil-rights debt.
 
 None of this means standing for nothing. [I stand for a few things](../life/personal-growth.md) and mean to keep them. The labels are what I hold lightly. The values I hold firmly.

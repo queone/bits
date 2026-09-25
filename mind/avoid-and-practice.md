@@ -27,6 +27,7 @@ Truth-seeking is a duty. Most entries on this site end in the same shape: stop d
 | Grading your own paper | Welcome an honest review from someone who knows more | [Dunning-Kruger](dunning-kruger.md) |
 | Taking a framing at face value | Ask who benefits from it | [Perception Management](../society/perception-management.md) |
 | Believing a claim that needs many silent conspirators | Count the people who would have to keep the secret | [Detecting Baloney](detecting-baloney.md) |
+| Judging a country by the people you know | Ask how big and how fair the sample is | [Detecting Baloney](detecting-baloney.md) |
 | Heavy partisan news | Cut back | [The Perception Gap](../society/perception-gap.md) |
 | Discounting help because a machine gave it | Judge the writing by its claims | [Written With Help](../tech/written-with-help.md) |
 
@@ -42,6 +43,8 @@ Truth-seeking is a duty. Most entries on this site end in the same shape: stop d
 | Spending effort beyond your influence | Match effort to influence | [Activism](../society/activism.md) |
 | Starting over each time | Build on each other's work | [Salomon's House](../society/salomons-house.md) |
 | Keeping quiet once an argument convinced you | Say so openly, and build on the work | [After New Atheism](../society/after-new-atheism.md) |
+| Closing the door behind you | Solidarity with those who opened it, and voting accordingly | [Who Opened the Door](../society/who-opened-the-door.md) |
+| Easy reverence for the troops | Honor every profession that serves, and ask how troops are used | [Who We Thank](../society/who-we-thank.md) |
 
 ### Living
 

@@ -4,7 +4,7 @@ type: reference
 ## Columbo
 ![Columbo](columbo.jpg)
 
-The 69 episodes of [Columbo](https://en.wikipedia.org/wiki/List_of_Columbo_episodes), as transcoded from the Complete Series DVD set.
+The 69 episodes of [Columbo](https://en.wikipedia.org/wiki/List_of_Columbo_episodes), as transcoded from the Complete Series DVD set. The other watch list here is [Star Wars Chronology](star-wars.md).
 
 Anyone who owns that set can use [HandBrake](https://en.wikipedia.org/wiki/HandBrake) ([download](https://handbrake.fr/)) to transcode each title to MP4 and stream it locally:
 

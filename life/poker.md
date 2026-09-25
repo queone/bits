@@ -3,7 +3,7 @@ type: reference
 ---
 ## Poker
 
-Chip counts, blind schedules, and payouts I reuse for home games, with standard [poker chip](https://en.wikipedia.org/wiki/Poker_chip) colors and a tournament [blind](https://en.wikipedia.org/wiki/Blind_%28poker%29) ladder.
+Chip counts, blind schedules, and payouts I reuse for home games, with standard [poker chip](https://en.wikipedia.org/wiki/Poker_chip) colors and a tournament [blind](https://en.wikipedia.org/wiki/Blind_%28poker%29) ladder. For a night out, see [Karaoke](karaoke.md).
 
 - Cash game
 ```text

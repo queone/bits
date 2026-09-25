@@ -9,8 +9,10 @@
 - [Kidneys and Blood Pressure](kidneys-bp.md): How the kidneys regulate blood pressure and what that means for diet.
 - [Chess](chess.md): Openings to master, and a PGN cleanup function.
 - [Poker](poker.md): Chip counts, blind schedules, and payouts for home games.
-- [Baseball](baseball.md): One link for baseball data hacking.
+- [Karaoke](karaoke.md): Songs I sing, grouped by what earns each one its place.
+- [Baseball](baseball.md): Why baseball is an American art form, plus one link for data hacking.
 - [Columbo](columbo.md): All 69 episodes, and how to transcode the DVD set.
+- [Star Wars Chronology](star-wars.md): The films and live-action series in story order, with release years.
 - [Apple TV Home Videos](appletv-videos.md): Play videos from a Mac through the Apple TV app.
 - [Crop Videos](crop-videos.md): Crop a widescreen clip to 4:3 with FFmpeg.
 - [Converting iPhone Ringtones](iphone-ringtones.md): M4R to MP3 and back with FFmpeg.

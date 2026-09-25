@@ -4,6 +4,13 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-25 | Drop | What failed in arguing with a friend who moved to the far right | Covered by `society/discourse.md`: do not blame, avoid questioning motives, separate facts from worldviews, the freedom to pause, let people be wrong | |
+| 2026-09-25 | Merge | The people you know are not the country: ask how big and how fair the sample is | `mind/detecting-baloney.md` | `mind/detecting-baloney.md` |
+| 2026-09-25 | Publish | Latinos and the civil-rights door: solidarity over anti-Haitian attitudes and votes against protections | `society/`, `take`, "Who Opened the Door" | `society/who-opened-the-door.md` |
+| 2026-09-25 | Publish | Ballpark honors for the military: deserved, but excessive and selective | `society/`, `take`, "Who We Thank" | `society/who-we-thank.md` |
+| 2026-09-25 | Merge | Baseball as an American art form: no game clock, games within the game, inherited nostalgia | `life/baseball.md` | `life/baseball.md` |
+| 2026-09-25 | Publish | A karaoke song list, with a reason for each pick | `life/`, `reference`, "Karaoke" | `life/karaoke.md` |
+| 2026-09-25 | Publish | Star Wars films and live-action series in story order, a curated watch list | `life/`, `reference`, "Star Wars Chronology" | `life/star-wars.md` |
 | 2026-09-24 | Publish | Written with help: the double standard against LLM-assisted writing, and why this site discloses | `tech/`, `take`, "Written With Help" | `tech/written-with-help.md` |
 | 2026-09-24 | Merge | Borges, Sartre, and a Spanish proverb: originals in block quotes with English renderings and sources | `mind/famous-quotes.md` | `mind/famous-quotes.md` |
 | 2026-09-24 | Publish | After New Atheism: the case against God was made, belief barely moved, and the gap churches leave | `society/`, `note`, "After New Atheism" | `society/after-new-atheism.md` |
