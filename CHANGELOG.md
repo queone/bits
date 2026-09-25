@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.94.3 | AC69 adopt Govna governance files v0.67.0 |
 | 0.94.2 | AC68 checker allowlists The Atlantic; take and note sentence cleanup |
 | 0.94.1 | AC67 cap warnings skip indented code, split at bold; how-to, reference cleanup |
 | 0.94.0 | AC66 Bits borrows STE sentence and paragraph limits; Ordenador note |
