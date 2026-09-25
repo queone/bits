@@ -3,7 +3,7 @@ type: note
 ---
 ## Domain-Specific Models
 
-I find it useful to see a person's belief system as a system of domain-specific models. Each of us builds them without noticing, over years, to survive and to thrive: one for money, one for work, one for strangers, one for illness. Each is a set of [rules of thumb](https://en.wikipedia.org/wiki/Heuristic_(psychology)).
+I find it useful to see a person's belief system as a system of domain-specific models. Each of us builds them unnoticed over years to survive and thrive: one for money, one for work, one for strangers, one for illness. Each is a set of [rules of thumb](https://en.wikipedia.org/wiki/Heuristic_(psychology)).
 
 The models differ. Some are simple and some complex. Some run all day, some hardly ever.
 

@@ -3,7 +3,7 @@ type: take
 ---
 ## Viral Truth
 
-[Misinformation](https://en.wikipedia.org/wiki/Misinformation) spreads faster than truth. Lies are simpler, more emotional, and cheaper to produce, and the [attention economy](https://en.wikipedia.org/wiki/Attention_economy) is tuned for exactly those traits, and [trust in experts](smug-pilots.md) pays part of the bill. Truth does not spread by default. If it is to compete, I think it has to be built for the same terrain.
+[Misinformation](https://en.wikipedia.org/wiki/Misinformation) spreads faster than truth. Lies are simpler, more emotional, and cheaper to produce. The [attention economy](https://en.wikipedia.org/wiki/Attention_economy) is tuned for exactly those traits, and [trust in experts](smug-pilots.md) pays part of the bill. Truth does not spread by default. If it is to compete, I think it has to be built for the same terrain.
 
 Five principles truth-tellers can borrow from the way lies travel, without borrowing their ethics:
 

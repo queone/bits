@@ -15,4 +15,6 @@ The second surprise: the experiment has been run, in a small way. In [split-brai
 
 Isn't this also what society does? Humanity's challenge is integrating each individual into the group. [Marvin Minsky](https://en.wikipedia.org/wiki/Society_of_Mind) built a theory of mind on that very picture: a society of small, mindless agents.
 
-Now the fancy. Imagine a different kind of mind, not necessarily human, where more than two threads run at once and are orchestrated into something richer. It ought to be faster. But if every thread still collapses into one experiencer, the gain is only the ability to switch, the way the Matrix switches [agents](https://en.wikipedia.org/wiki/Agent_Smith). A truly multi-threaded consciousness would need more: a way to bind many streams that stays coherent, and a way to be several experiencers at once without becoming several minds. I do not know what that would be like.
+Now the fancy. Imagine a different kind of mind, not necessarily human, where more than two threads run at once and are orchestrated into something richer. It ought to be faster.
+
+But if every thread still collapses into one experiencer, the gain is only the ability to switch, the way the Matrix switches [agents](https://en.wikipedia.org/wiki/Agent_Smith). A truly multi-threaded consciousness would need more: a way to bind many streams that stays coherent. It would also need a way to be several experiencers at once without becoming several minds. I do not know what that would be like.

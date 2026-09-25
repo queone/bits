@@ -160,7 +160,7 @@ Note: the 2026-09-03 review found attention-economy mechanics explained in six e
 - Run the site-wide link sweep monthly through the scheduled workflow, and on demand.
 - Fix the findings of the monthly link sweep in the next release.
 
-Note: the allowlist covers hosts that reject scripted requests: the Congressional Budget Office, Stack Overflow and Stack Exchange, Medium, congress.gov, SAGE, Politico, devgenius, Human Rights Watch, GRC, and the Condé Nast Store. Liveness decays between releases, which is why the sweep repeats.
+Note: the allowlist covers hosts that reject scripted requests: the Congressional Budget Office, Stack Overflow and Stack Exchange, Medium, congress.gov, SAGE, Politico, devgenius, Human Rights Watch, GRC, the Condé Nast Store, and The Atlantic. Liveness decays between releases, which is why the sweep repeats.
 
 ## Code Hosting
 

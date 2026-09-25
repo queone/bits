@@ -32,7 +32,11 @@ alias r1='ollama run deepseek-r1:7b'  # Setup a shell alias to prompt question
 
 #### Common Patterns
 
-The most common use is semantic search. Embed a set of documents and a query, then find the nearest neighbors (FAISS, Annoy, ScaNN, Pinecone). No text-generating model is needed. Recommendation engines use the same idea. They place users and items in one shared space and rank by distance (Spotify, YouTube, Amazon). Fraud and anomaly detection embed transactions or log lines and flag the outliers. Clustering and deduplication group similar items for topic discovery, customer segments, or duplicate detection. Code search maps plain-language queries and code into the same space (Sourcegraph's older approach, GitHub code search before Copilot). Finally, classification embeds inputs and compares them against class centers or a simple linear layer. That is faster and cheaper than calling a full LLM (for example Sentence-BERT for duplicate-question detection or support-ticket routing).
+The most common use is semantic search. Embed a set of documents and a query, then find the nearest neighbors (FAISS, Annoy, ScaNN, Pinecone). No text-generating model is needed.
+
+Recommendation engines use the same idea. They place users and items in one shared space and rank by distance (Spotify, YouTube, Amazon). Fraud and anomaly detection embed transactions or log lines and flag the outliers. Clustering and deduplication group similar items for topic discovery, customer segments, or duplicate detection.
+
+Code search maps plain-language queries and code into the same space (Sourcegraph's older approach, GitHub code search before Copilot). Finally, classification embeds inputs and compares them against class centers or a simple linear layer. That is faster and cheaper than calling a full LLM (for example Sentence-BERT for duplicate-question detection or support-ticket routing).
 
 #### When Embeddings Are Enough
 

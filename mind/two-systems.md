@@ -5,7 +5,11 @@ type: note
 
 Daniel Kahneman's [Thinking, Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow) gave the mind two characters. System 1 is fast, automatic, and effortless. It reads a face and senses that something is off. System 2 is slow, deliberate, and effortful. It checks a proof and holds back an impulse. The names come from Keith Stanovich and Richard West ([Dual process theory](https://en.wikipedia.org/wiki/Dual_process_theory)), who studied why people differ in reasoning.
 
-Kahneman was careful about what the characters are. "System 1 and System 2 are so central to the story I tell in this book," he [wrote](https://www.scientificamerican.com/article/kahneman-excerpt-thinking-fast-and-slow/), "that I must make it absolutely clear that they are fictitious characters." There are no two boxes in the brain. The machinery is [parallel and serial processing](attention.md). The characters are a way to talk about where effort goes.
+Kahneman was careful about what the characters are. He [wrote](https://www.scientificamerican.com/article/kahneman-excerpt-thinking-fast-and-slow/):
+
+> System 1 and System 2 are so central to the story I tell in this book that I must make it absolutely clear that they are fictitious characters.
+
+There are no two boxes in the brain. The machinery is [parallel and serial processing](attention.md). The characters are a way to talk about where effort goes.
 
 Two claims in the book fell during the replication years. The chapter on priming rested on small studies that later failed. Kahneman [conceded](https://replicationindex.com/2017/02/02/reconstruction-of-a-train-wreck-how-priming-research-went-of-the-rails/comment-page-1/#comment-1454) that the evidence "was significantly weaker than I believed when I wrote it" and that he "should have known better". The idea that willpower drains like a battery, called [ego depletion](https://en.wikipedia.org/wiki/Ego_depletion), failed a test across [23 labs](https://pubmed.ncbi.nlm.nih.gov/27474142/) and then one with [3,531 people](https://pubmed.ncbi.nlm.nih.gov/34520296/).
 

@@ -13,8 +13,12 @@ A third is the by-product. [Steven Pinker](pinker.md) called music "[auditory ch
 
 A fourth says beauty is real. The physicist [David Deutsch](https://en.wikipedia.org/wiki/David_Deutsch) argues that there is [objective beauty](https://www.nature.com/articles/526S16a). Some beauty is local to a species or a culture, he says, and some is universal, "[as objective as the laws of physics](https://www.onfiction.ca/2012/04/david-deutsch-on-objective-beauty.html)". His case is the flower, which evolved to attract insects and yet attracts us.
 
-I lean toward the by-product, and I get there from the body. Pleasure is the useful signal. Eating when hungry feels good, and so, to be plain, does relieving yourself. What helps the body feels right. My guess is that the sense of beauty is that same machinery firing at things it was never built for: a sunset, a fugue, an equation. Brain scans fit this. One region [responds](https://en.wikipedia.org/wiki/Neuroesthetics) to beauty in paintings, in music, and even in mathematics.
+I lean toward the by-product, and I get there from the body. Pleasure is the useful signal. Eating when hungry feels good, and so, to be plain, does relieving yourself. What helps the body feels right. My guess is that the sense of beauty is that same machinery. It fires at things it was never built for: a sunset, a fugue, an equation.
+
+Brain scans fit this. One region [responds](https://en.wikipedia.org/wiki/Neuroesthetics) to beauty in paintings, in music, and even in mathematics.
 
 Pleasure and beauty are still not the same thing. [Kant](https://en.wikipedia.org/wiki/Critique_of_Judgment) drew the line long ago. The agreeable is a good steak. The beautiful is something we stop to contemplate, wanting nothing from it.
 
-So I part with Deutsch on one point. He thinks the standard is out there. I think it is in us, a by-product that works as a compass. It draws us to objects and ideas that sit in harmony with what we are. That is why I call it redeeming. It is a way of choosing that has [nothing to do with winning](../life/legacy.md). [Science](science.md) tells me what is true. Beauty helps me choose what is worth wanting.
+So I part with Deutsch on one point. He thinks the standard is out there. I think it is in us, a by-product that works as a compass. It draws us to objects and ideas that sit in harmony with what we are. That is why I call it redeeming. It is a way of choosing that has [nothing to do with winning](../life/legacy.md).
+
+[Science](science.md) tells me what is true. Beauty helps me choose what is worth wanting.

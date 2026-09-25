@@ -3,7 +3,7 @@ type: take
 ---
 ## Rights and Remedies
 
-A right you cannot enforce is not a right. The idea is as old as the republic. In [Marbury v. Madison](https://en.wikipedia.org/wiki/Marbury_v._Madison), in 1803, Chief Justice John Marshall wrote that the United States would cease to be "a government of laws, and not of men" if its laws [furnish no remedy](https://www.law.cornell.edu/supremecourt/text/5/137) "for the violation of a vested legal right."
+A right you cannot enforce is not a right. The idea is as old as the republic. In [Marbury v. Madison](https://en.wikipedia.org/wiki/Marbury_v._Madison), in 1803, Chief Justice John Marshall wrote that the United States would cease to be "a government of laws, and not of men." That would happen, he said, if its laws [furnish no remedy](https://www.law.cornell.edu/supremecourt/text/5/137) "for the violation of a vested legal right."
 
 I think the Constitution is sound on paper. But paper is all it is until someone can walk into a court and get relief. The rights can stay in the text while the paths to enforce them narrow, and that is what I see happening.
 

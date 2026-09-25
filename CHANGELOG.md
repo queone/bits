@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.94.2 | AC68 checker allowlists The Atlantic; take and note sentence cleanup |
 | 0.94.1 | AC67 cap warnings skip indented code, split at bold; how-to, reference cleanup |
 | 0.94.0 | AC66 Bits borrows STE sentence and paragraph limits; Ordenador note |
 | 0.93.0 | Virtue Signaling note; Cocteau not Twain; war powers, fear, empathy, AI check |

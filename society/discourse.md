@@ -36,7 +36,11 @@ How to argue with reasonable people, drawing on [Carl Rogers](https://en.wikiped
 
 [Michael Shermer](https://en.wikipedia.org/wiki/Michael_Shermer) gives a longer list in his 2022 book Conspiracy. It adds:
 
-- **Channel Socrates.** Use [Socratic questions](https://en.wikipedia.org/wiki/Socratic_questioning) about clarity ("How do you know that's true?"), sources ("What's your source for that?"), evidence ("Is that all the evidence, or a selection?"), and other views ("What is another way to look at it?").
+- **Channel Socrates.** Use [Socratic questions](https://en.wikipedia.org/wiki/Socratic_questioning):
+  - Clarity: "How do you know that's true?"
+  - Sources: "What's your source for that?"
+  - Evidence: "Is that all the evidence, or a selection?"
+  - Other views: "What is another way to look at it?"
 - **Ask for a number.** How certain are they, as a percentage?
 - **Avoid the dishonest moves yourself.** They are questioning motives or authority, claiming a group's authority, changing the subject, and [sealioning](https://en.wikipedia.org/wiki/Sealioning). Sealioning buries a person in requests for evidence. Say "that idea", not "your idea".
 - **Separate facts from worldviews.** A changed fact need not mean a changed [identity](../mind/identity-lightly.md).

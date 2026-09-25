@@ -5,7 +5,9 @@ type: note
 
 [Steven Pinker](pinker.md)'s introductory [psychology lectures](https://stevenpinker.com/psy-1-introduction-psychological-science-lectures) split consciousness the way the philosopher David Chalmers did, into easy problems and a [hard problem](https://en.wikipedia.org/wiki/Hard_problem_of_consciousness).
 
-The easy problem is access. Some information is available to us: the objects we see, our plans, the content of a sentence. Some is not: the rules of syntax, the image on the retina, the commands to our muscles. "Easy" is an in-joke. It is still very hard, but science has a way in. [Attention](attention.md) decides what gets through. The leading account is a [global workspace](https://en.wikipedia.org/wiki/Global_workspace_theory), a blackboard where a small, relevant subset of information is posted for memory, language, and planning to share.
+The easy problem is access. Some information is available to us: the objects we see, our plans, the content of a sentence. Some is not: the rules of syntax, the image on the retina, the commands to our muscles.
+
+"Easy" is an in-joke. It is still very hard, but science has a way in. [Attention](attention.md) decides what gets through. The leading account is a [global workspace](https://en.wikipedia.org/wiki/Global_workspace_theory), a blackboard where a small, relevant subset of information is posted for memory, language, and planning to share.
 
 The hard problem is sentience: why any of this feels like something. Philosophers call the raw feels [qualia](https://en.wikipedia.org/wiki/Qualia), such as the painfulness of pain or the smell of cinnamon. Is your blue my blue? Could a program feel? Could there be a [zombie](https://en.wikipedia.org/wiki/Philosophical_zombie) that acts like us with nobody home?
 

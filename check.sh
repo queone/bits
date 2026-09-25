@@ -51,7 +51,7 @@ MARKER_RE='NEEDS REWRITE|\(need link\)|\[Need sources\]|Needs clean up'
 MARKER_CS_RE='\b(TODO|FIXME|TBD)\b'
 HEADING_RE='^#{1,6}[[:space:]]*(Conclusion|Final Thoughts|Bottom Line|Key Insight|Summary|Question|Answer|My take|Opinion|My opinion|Thoughts|My thoughts|Verdict)[[:space:]]*:?[[:space:]]*$'
 URL_SKIP='mydomain\.com|example\.(com|org|net)|somewhere\.com|contoso\.com|169\.254\.169\.254|://(10|192\.168|127)\.|localhost|\{|%s|<|\$|/\.default$|token\.actions\.githubusercontent\.com|management\.azure\.com/?$|graph\.microsoft\.com/?$'
-HOST_ALLOW='cbo\.gov|stackoverflow\.com|stackexchange\.com|medium\.com|congress\.gov|sagepub\.com|politico\.com|devgenius\.io|hrw\.org|grc\.com|condenaststore\.com'
+HOST_ALLOW='cbo\.gov|stackoverflow\.com|stackexchange\.com|medium\.com|congress\.gov|sagepub\.com|politico\.com|devgenius\.io|hrw\.org|grc\.com|condenaststore\.com|theatlantic\.com'
 HOST_SHORT='youtu\.be|youtube\.com|a\.co|aka\.ms|bit\.ly|t\.co|amazon\.com'
 FENCE_MAX=40
 INDEX_MAX=104
@@ -448,7 +448,7 @@ selftest() {
   printf -- '---\ntype: take\n---\n## Indented Fence\n\n- A short item.\n\n   ```text\n\n   %s.\n\n   ```\n' "$(wn 30)" >"$fx/life/indfence.md"
   printf -- '---\ntype: take\n---\n## Code Block\n\nA short line.\n\n    %s.\n' "$(wn 30)" >"$fx/life/codeblock.md"
   printf -- '---\ntype: take\n---\n## Indented Table\n\nA short line.\n\n  | %s | x |\n' "$(wn 30)" >"$fx/life/indtable.md"
-  printf -- '---\ntype: take\n---\n## Allow\n\nI link a [cartoon](https://condenaststore.com/featured/x.html).\n' >"$fx/life/allow.md"
+  printf -- '---\ntype: take\n---\n## Allow\n\nI link a [cartoon](https://condenaststore.com/featured/x.html).\n\nI link an [essay](https://www.theatlantic.com/ideas/x/).\n' >"$fx/life/allow.md"
   printf -- '---\ntype: take\n---\n## Retry\n\nI link a [slow host](https://retry.example.test/x).\n' >"$fx/life/retry.md"
   mkdir -p "$TMP/bin"
   cat >"$TMP/bin/curl" <<'SHIM'
@@ -501,7 +501,8 @@ SHIM
     if printf '%s\n' "$res5" | rg -q -e "life/$c.md:[0-9]+: W-SENT"; then printf 'FAIL W-SENT-%s\n' "$c"; ok=1; else printf 'PASS W-SENT-%s\n' "$c"; fi
   done
   res3=$( (CHECK_ROOT="$fx" "$SELF" life/allow.md) 2>&1 )
-  if printf '%s\n' "$res3" | rg -q -e "life/allow.md:[0-9]+: W-EXT" && ! printf '%s\n' "$res3" | rg -q -e "life/allow.md:[0-9]+: L-EXT"; then printf 'PASS W-EXT-allowlist\n'; else printf 'FAIL W-EXT-allowlist\n'; ok=1; fi
+  n=$(printf '%s\n' "$res3" | rg -c -e "life/allow.md:[0-9]+: W-EXT" || true)
+  if [ "${n:-0}" -ge 2 ] && ! printf '%s\n' "$res3" | rg -q -e "life/allow.md:[0-9]+: L-EXT"; then printf 'PASS W-EXT-allowlist\n'; else printf 'FAIL W-EXT-allowlist\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:11: P-PATH"; then printf 'PASS P-PATH-home\n'; else printf 'FAIL P-PATH-home\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:12: P-PATH"; then printf 'PASS P-PATH-icloud\n'; else printf 'FAIL P-PATH-icloud\n'; ok=1; fi
   if printf '%s\n' "$res" | rg -q -e "life/dirty.md:[0-9]+: L-EXT dead \(404\): https://github.com/queone/no-such-repo"; then printf 'PASS L-EXT-fenced\n'; else printf 'FAIL L-EXT-fenced\n'; ok=1; fi

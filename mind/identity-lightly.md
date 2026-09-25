@@ -3,7 +3,7 @@ type: take
 ---
 ## Hold Your Identity Lightly
 
-Holding your identity lightly is a gift to yourself. The phrase is [Julia Galef](https://en.wikipedia.org/wiki/The_Scout_Mindset)'s. Once a belief becomes part of who you are, she argues, it gets harder to change. Paul Graham made the same point in 2009, in an essay called [Keep Your Identity Small](https://paulgraham.com/identity.html): "The more labels you have for yourself, the dumber they make you."
+Holding your identity lightly is a gift to yourself. The phrase is [Julia Galef](https://en.wikipedia.org/wiki/The_Scout_Mindset)'s. Once a belief becomes part of who you are, she argues, it gets harder to change. Paul Graham made the same point in 2009, in an essay called [Keep Your Identity Small](https://paulgraham.com/identity.html). "The more labels you have for yourself, the dumber they make you."
 
 A light grip keeps the mind flexible, unbound by labels, and free to follow evidence wherever it leads. It is the fix for a problem I have described elsewhere. A belief [sticks to identity like velcro](domain-specific-models.md), and whole societies [read facts through it](cultural-cognition.md).
 
