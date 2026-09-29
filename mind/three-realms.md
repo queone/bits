@@ -11,7 +11,7 @@ My intuition is that each realm carries its own scale of [desire](desire.md), ru
 
 People differ in what pays. Psychologists measure the [need for cognition](https://en.wikipedia.org/wiki/Need_for_cognition), which is how much a person seeks out and enjoys hard thinking. They also measure the [need for affect](https://pubmed.ncbi.nlm.nih.gov/11497031/), which is how much a person approaches or avoids strong feelings. I know of no measure as well known for the physical realm. Still, anyone who has met both an athlete and a bookworm knows that difference is real.
 
-Put the three together and the ranking starts to look like temperament. Mine runs intellectual, physical, emotional. Someone else's runs the other way, and a room built for them can feel foreign to me. Neither order is a flaw. It is a budget, set by what has paid before.
+Put the three together and the ranking starts to look like temperament. Mine runs intellectual, physical, emotional. [Someone else's](../life/compatibility.md) runs the other way, and a room built for them can feel foreign to me. Neither order is a flaw. It is a budget, set by what has paid before.
 
 Some call the spiritual a fourth realm. I think it is the three at once. [Awe](https://pubmed.ncbi.nlm.nih.gov/29715721/), its best-studied form, joins a sense of vastness, a feeling, and a mind remaking its frame. Spirituality's brain circuit [also serves fear and pain](https://pubmed.ncbi.nlm.nih.gov/34454698/). The evidence points that way, short of proof.
 
