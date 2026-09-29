@@ -3,7 +3,7 @@ type: note
 ---
 ## The Ouroboros
 
-I used to picture two worlds, a physical one and a spiritual one, with traffic between them. I now think there is one world, built in levels. [Particles](https://en.wikipedia.org/wiki/Standard_Model) make atoms, atoms make molecules, molecules make cells, cells make bodies, and bodies make minds. Each level is built from the one below and does things the one below cannot. That is [emergence](https://en.wikipedia.org/wiki/Emergence).
+I used to picture two worlds, one physical and one spiritual, with traffic between them. I now think there is one world, built in levels. [Particles](https://en.wikipedia.org/wiki/Standard_Model) make atoms, atoms make molecules, molecules make cells, cells make bodies, and bodies make minds. Each level is built from the one below and does things the one below cannot. That is [emergence](https://en.wikipedia.org/wiki/Emergence). Even space [may be a level](holographic-space.md).
 
 What feels spiritual is the high levels seen from inside. [Three Realms](three-realms.md) makes that claim about the spiritual, and [Transcendence](transcendence.md) makes it about the pull we feel toward it. [Dennett](dennett.md) saw Darwin's idea as the bridge between mechanism and meaning. The bridge runs inside one world.
 

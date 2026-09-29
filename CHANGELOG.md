@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.95.0 | Holographic Space note: space may be one more level; Ouroboros links to it |
 | 0.94.4 | AC70 adopt Govna governance files v0.68.0 |
 | 0.94.3 | AC69 adopt Govna governance files v0.67.0 |
 | 0.94.2 | AC68 checker allowlists The Atlantic; take and note sentence cleanup |

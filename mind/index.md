@@ -23,6 +23,7 @@
 - [Famous Quotes](famous-quotes.md): A few lines worth remembering, and how to use quotes well.
 - [Four Floors](four-floors.md): Where motivation comes from: genes, reflection, other minds, and reflexivity.
 - [Free Will](free-will.md): The Harris and Dennett exchange, in three layers.
+- [Holographic Space](holographic-space.md): Why space itself may be one more level, built from quantum information.
 - [Hold Your Identity Lightly](identity-lightly.md): Fewer labels, freer thinking, calmer talk, and the values worth keeping.
 - [Optimism](optimism.md): Lines and proverbs against pessimism.
 - [The Ouroboros](ouroboros.md): One world in levels, from particles to minds, and how it folds back on itself.
