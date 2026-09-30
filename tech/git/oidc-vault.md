@@ -124,6 +124,7 @@ To recap, ensure the following is configured in Vault:
 
 
 **Reference**
+- [Terraform to Vault From Azure](../terraform/vault-from-azure.md): the same login through Vault's Azure auth method, from a VM or from a job via oidctok
 - [Configuring OpenID Connect in HashiCorp Vault](https://docs.github.com/en/enterprise-cloud@latest/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-hashicorp-vault)
 
   

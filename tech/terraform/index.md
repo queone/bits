@@ -206,7 +206,7 @@ In general, the typical options when using Terraform are the following:
 
 Option one is really just to test Terraform. The others are a little more serious when managing a cloud environment.
 
-Here we will focus on _Option #4_ (see <https://jloudon.com/cloud/Using-GitHub-Actions-and-Terraform-for-IaC-Automation/>), which will entail:
+Here we will focus on _Option #4_, which will entail:
     - Source control           : GitHub private repository
     - Workflow automation      : GitHub Actions and HashiCorp’s GitHub Action (setup-terraform)
     - Infrastructure as code   : Terraform
@@ -340,4 +340,5 @@ module "azure_dns_zones" {
 ### See also
 * [The Problem with Infrastructure-as-Code](problem-with-iac.md)
 * [The Problem with Terraform State](problem-with-state.md)
+* [Terraform to Vault From Azure](vault-from-azure.md)
 

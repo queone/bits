@@ -6,6 +6,7 @@ Computer security bits.
 
 ### Subtopics
 - [Access Control Models](access-models.md)
+- [OIDC and SAML](oidc-saml.md)
 - [Dispositions](../dispositions.md)
 
 ### Storing Passwords

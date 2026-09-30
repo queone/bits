@@ -22,5 +22,5 @@
 - [PDF](pdf.md): Shrinking and merging PDFs from the command line.
 - [Privacy](privacy.md): Online basics, why we surveil, and where it becomes overreach.
 - [Scripts](https://github.com/queone/gkit/tree/main/scripts): Standalone shell, PowerShell, and Python scripts, kept in the gkit repository.
-- [Security](security/index.md): Passwords, certificates, SSH keys, pfSense, OpenSSL, and Vault.
+- [Security](security/index.md): Passwords, certificates, SSH keys, pfSense, OpenSSL, Vault, and OIDC versus SAML.
 - [Terraform](terraform/index.md): Modules, state moves, workflow, Azure, and GitHub Actions, plus two essays on IaC and state.

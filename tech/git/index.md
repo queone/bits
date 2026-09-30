@@ -6,6 +6,7 @@ Version control bits with `git` and <https://github.com>.
 
 ### Subtopics
 - [Github Actions Workflow General](github-actions.md)
+- [Validate YAML in GitHub Actions](validate-yaml.md)
 - [Github Actions Workflow OIDC Access to Vault](oidc-vault.md)
 - [Github Actions Workflow OIDC Access to Azure](oidc-azure.md)
 - [GitHub App Installation Permissions](app-inst-perms.md)

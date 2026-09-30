@@ -145,3 +145,6 @@ jobs:
           asset_name: ${{ env.BinaryName }}.tgz
           asset_content_type: application/gzip
 ```
+
+### See also
+- [Validate YAML in GitHub Actions](validate-yaml.md): a job that checks the YAML files a push changed against a schema.

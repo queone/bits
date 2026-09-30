@@ -4,6 +4,10 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-09-30 | Publish | Mixing a song under a video's own audio with FFmpeg | `life/`, `howto`, "Mix Music Into a Video" | `life/mix-music-video.md` |
+| 2026-09-30 | Publish | OIDC and SAML: same job, different labels, two login flows | `tech/security/`, `reference`, "OIDC and SAML" | `tech/security/oidc-saml.md` |
+| 2026-09-30 | Publish | Terraform on an Azure VM logs in to Vault with its managed identity | `tech/terraform/`, `howto`, "Terraform to Vault From Azure" | `tech/terraform/vault-from-azure.md` |
+| 2026-09-30 | Publish | GitHub Actions validates changed YAML files against a Python schema | `tech/git/`, `howto`, "Validate YAML in GitHub Actions" | `tech/git/validate-yaml.md` |
 | 2026-09-28 | Publish | Romantic compatibility: the three realms plus serendipity as a fourth factor | `life/`, `take`, "Compatibility" | `life/compatibility.md` |
 | 2026-09-28 | Publish | Holography: space may be one more emergent level, built from quantum information | `mind/`, `note`, "Holographic Space" | `mind/holographic-space.md` |
 | 2026-09-25 | Publish | Computers and AI as ordenadores: tools for putting life in order | `tech/`, `note`, "Ordenador" | `tech/ordenador.md` |

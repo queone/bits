@@ -142,6 +142,7 @@ MS Graph                    │                         Azure ARM
 ```
 
 ### References
+- [OIDC and SAML](../security/oidc-saml.md): the two protocols side by side
 - [oidctok README](https://github.com/queone/gkit/blob/main/cmd/oidctok/README.md)
 - [Python option: get_oidc_tokens.py](https://github.com/queone/gkit/blob/main/scripts/get_oidc_tokens.py)
 - [What is Github Action for Azure](https://learn.microsoft.com/en-us/azure/developer/github/github-actions) 
