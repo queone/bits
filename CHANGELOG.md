@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.96.1 | AC71 adopt Govna governance files v0.69.0 |
 | 0.96.0 | Compatibility take: three realms plus serendipity; Three Realms links to it |
 | 0.95.0 | Holographic Space note: space may be one more level; Ouroboros links to it |
 | 0.94.4 | AC70 adopt Govna governance files v0.68.0 |
