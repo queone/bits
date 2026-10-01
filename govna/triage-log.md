@@ -4,6 +4,7 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-10-01 | Publish | Social roles: five domains everyone holds, and role theory's refinements | `society/`, `reference`, "Social Roles" | `society/social-roles.md` |
 | 2026-09-30 | Publish | Mixing a song under a video's own audio with FFmpeg | `life/`, `howto`, "Mix Music Into a Video" | `life/mix-music-video.md` |
 | 2026-09-30 | Publish | OIDC and SAML: same job, different labels, two login flows | `tech/security/`, `reference`, "OIDC and SAML" | `tech/security/oidc-saml.md` |
 | 2026-09-30 | Publish | Terraform on an Azure VM logs in to Vault with its managed identity | `tech/terraform/`, `howto`, "Terraform to Vault From Azure" | `tech/terraform/vault-from-azure.md` |

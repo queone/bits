@@ -27,6 +27,7 @@
 - [Salomon's House](salomons-house.md): An order of science explainers, after Bacon, under a four-rule charter.
 - [Slow by Design](slow-by-design.md): A republic built to cool passions, how virality undoes it, and the remedies I would add.
 - [Smug Pilots](smug-pilots.md): How engagement media and bickering experts wore down trust, and what experts owe listeners.
+- [Social Roles](social-roles.md): Five role domains everyone holds, and the terms for how roles are assigned and strained.
 - [Trans Issues](trans-issues.md): Neither panic on the right nor dogma on the left: rights, evidence, open debate.
 - [The Two-Front War](two-front-war.md): Illness in the U.S. means fighting the disease and the bill.
 - [U.S. Identity Politics](us-identity-politics.md): Identity first, policy rationalized afterward, and the way out.

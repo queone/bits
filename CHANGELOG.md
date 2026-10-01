@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.98.0 | Social Roles reference: five domains, role terms; macfit link to its new repo |
 | 0.97.0 | Entries: mix music, OIDC vs SAML, Terraform to Vault, YAML checks; dead link cut |
 | 0.96.1 | AC71 adopt Govna governance files v0.69.0 |
 | 0.96.0 | Compatibility take: three realms plus serendipity; Three Realms links to it |
