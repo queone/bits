@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.98.2 | AC73 adopt Govna governance files v0.71.0 |
 | 0.98.1 | AC72 adopt Govna governance files v0.70.0 |
 | 0.98.0 | Social Roles reference: five domains, role terms; macfit link to its new repo |
 | 0.97.0 | Entries: mix music, OIDC vs SAML, Terraform to Vault, YAML checks; dead link cut |
