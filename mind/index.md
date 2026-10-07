@@ -12,6 +12,7 @@
 - [Consciousness](consciousness.md): The easy problem, the hard problem, the answers on offer, and why I side with Dennett.
 - [Human Core Challenges](core-challenges.md): The biological, social, and entropy problems under every other problem.
 - [Cultural Cognition](cultural-cognition.md): Reading facts through group identity, and how societies move past it.
+- [Richard Dawkins](dawkins.md): The gene's-eye view that settles what an adaptation is for, and prose worth rereading.
 - [Daniel Dennett](dennett.md): Gradualism, intuition pumps, and Darwin's dangerous idea.
 - [Desire](desire.md): A single scale from hatred to addiction.
 - [Detecting Baloney](detecting-baloney.md): Pointers for an intellectual self-defense toolkit.

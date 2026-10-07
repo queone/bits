@@ -6,20 +6,38 @@ document.addEventListener('DOMContentLoaded', function () {
   var list = document.querySelector('#all-filter ~ ul');
   if (!box || !count || !list) return;
   var items = Array.prototype.slice.call(list.children);
+  var bodies = null, fetched = false;
+  function bodyOf(li) {
+    var a = li.querySelector('a');
+    return (bodies && a && bodies[a.getAttribute('href')]) || '';
+  }
   function apply() {
     var words = box.value.toLowerCase().split(/\s+/).filter(Boolean), shown = 0;
     items.forEach(function (li) {
-      var text = li.textContent.toLowerCase();
-      var hit = words.every(function (w) { return text.indexOf(w) !== -1; });
+      var text = li.textContent.toLowerCase(), body = bodyOf(li);
+      var hit = words.every(function (w) { return text.indexOf(w) !== -1 || body.indexOf(w) !== -1; });
       li.style.display = hit ? '' : 'none';
       if (hit) shown++;
     });
     count.textContent = words.length ? shown + ' of ' + items.length : '';
   }
-  box.addEventListener('input', apply);
+  function loadText() {
+    if (fetched || typeof fetch !== 'function') return;
+    fetched = true;
+    fetch('{{ "/llms-full.txt" | relative_url }}').then(function (r) { return r.ok ? r.text() : ''; }).then(function (t) {
+      var map = {};
+      t.split(/^==== /m).slice(1).forEach(function (block) {
+        var nl = block.indexOf('\n'), head = block.slice(0, nl), url = head.slice(head.lastIndexOf(' ') + 1);
+        map[url.replace(/^https?:\/\/[^/]+/, '')] = block.slice(nl + 1).toLowerCase();
+      });
+      bodies = map;
+      apply();
+    }).catch(function () {});
+  }
+  box.addEventListener('input', function () { if (box.value.trim()) loadText(); apply(); });
   box.form.addEventListener('submit', function (e) { e.preventDefault(); apply(); });
   var q = new URLSearchParams(location.search).get('q');
-  if (q) { box.value = q; }
+  if (q) { box.value = q; loadText(); }
   apply();
 });
 </script>

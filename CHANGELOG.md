@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.102.0 | AC77 search box also matches entry text; Richard Dawkins take |
 | 0.101.0 | AC76 search field centered under the title; links moved to a footer line |
 | 0.100.0 | AC75 search box in every page header; all-entries filter now runs |
 | 0.99.0 | AC74 all-entries page with filter box; llms.txt and llms-full.txt for AI tools |

@@ -3,7 +3,7 @@ type: note
 ---
 ## After New Atheism
 
-About twenty years ago, four writers made the case against God in plain view. They were Richard Dawkins in [The God Delusion](https://en.wikipedia.org/wiki/The_God_Delusion), Daniel Dennett, Sam Harris, and Christopher Hitchens, the so-called [Four Horsemen](https://en.wikipedia.org/wiki/New_Atheism). I think they dismantled that case. They did for me.
+About twenty years ago, four writers made the case against God in plain view. They were [Richard Dawkins](../mind/dawkins.md) in [The God Delusion](https://en.wikipedia.org/wiki/The_God_Delusion), Daniel Dennett, Sam Harris, and Christopher Hitchens, the so-called [Four Horsemen](https://en.wikipedia.org/wiki/New_Atheism). I think they dismantled that case. They did for me.
 
 Before Dawkins I called myself agnostic. Now I can say with conviction that I am an atheist, though, like Dawkins, not a pure 7 on his [scale of theistic probability](https://en.wikipedia.org/wiki/Spectrum_of_theistic_probability). God is very improbable, and I live on the assumption that he is not there.
 
