@@ -338,7 +338,7 @@ module "azure_dns_zones" {
 ```
 
 ### See also
-* [The Problem with Infrastructure-as-Code](problem-with-iac.md)
-* [The Problem with Terraform State](problem-with-state.md)
-* [Terraform to Vault From Azure](vault-from-azure.md)
+* [The Problem with Infrastructure-as-Code](problem-with-iac.md): Why infrastructure-as-code exists, what platforms have absorbed since, and what remains unsolved.
+* [The Problem with Terraform State](problem-with-state.md): What the state file is, the well-known pains it causes, and which ones are being fixed.
+* [Terraform to Vault From Azure](vault-from-azure.md): Logging Terraform in to Vault with an Azure VM's managed identity, and the same from a GitHub Actions job.
 

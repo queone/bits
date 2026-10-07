@@ -5,11 +5,11 @@ type: reference
 Version control bits with `git` and <https://github.com>.
 
 ### Subtopics
-- [Github Actions Workflow General](github-actions.md)
-- [Validate YAML in GitHub Actions](validate-yaml.md)
-- [Github Actions Workflow OIDC Access to Vault](oidc-vault.md)
-- [Github Actions Workflow OIDC Access to Azure](oidc-azure.md)
-- [GitHub App Installation Permissions](app-inst-perms.md)
+- [Github Actions Workflow General](github-actions.md): Two workflow jobs that release a Go binary, one automatic and one manual.
+- [Validate YAML in GitHub Actions](validate-yaml.md): A job that checks the YAML files a push changed against a schema.
+- [Github Actions Workflow OIDC Access to Vault](oidc-vault.md): Logging a workflow in to HashiCorp Vault with short-lived OIDC tokens instead of stored secrets.
+- [Github Actions Workflow OIDC Access to Azure](oidc-azure.md): Logging a workflow in to Azure with short-lived OIDC tokens instead of a service principal secret.
+- [GitHub App Installation Permissions](app-inst-perms.md): The three sets of permissions a GitHub App can ask for at installation, with their defaults.
 
 ### Remove Branches
 

@@ -5,7 +5,7 @@ type: reference
 Helpful Microsoft Azure cloud bits.
 
 - [Github Workflow OIDC Access to Azure](../git/oidc-azure.md)
-- [Understanding Microsoft Access Token Validation](ms-token-validation.md)
+- [Understanding Microsoft Access Token Validation](ms-token-validation.md): Why only the intended resource should validate an access token, and the Azure Management exception.
 
 ### Azure Cloud
 

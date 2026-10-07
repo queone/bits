@@ -5,8 +5,8 @@ type: reference
 Computer security bits.
 
 ### Subtopics
-- [Access Control Models](access-models.md)
-- [OIDC and SAML](oidc-saml.md)
+- [Access Control Models](access-models.md): RBAC, ABAC, and the other models for deciding who gets access to what.
+- [OIDC and SAML](oidc-saml.md): The two protocols behind single sign-on, the three parts they share, and where they differ.
 - [Dispositions](../dispositions.md)
 
 ### Storing Passwords

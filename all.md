@@ -8,7 +8,7 @@ Every entry on one page, A to Z, with its area. Type in the search box at the to
 
 {% include all-filter.html %}
 
-- [Access Control Models](tech/security/access-models.md) (Tech)
+- [Access Control Models](tech/security/access-models.md) (Tech): RBAC, ABAC, and the other models for deciding who gets access to what.
 - [Activism](society/activism.md) (Society): Rules for effective activism: match effort to influence, and work with imperfect allies.
 - [After New Atheism](society/after-new-atheism.md) (Society): The case against God was made, belief barely moved, and churches left a gap.
 - [AI](tech/ai.md) (Tech): Prompts that keep answers honest, running a model locally, and when embeddings are enough.
@@ -62,10 +62,10 @@ Every entry on one page, A to Z, with its area. Type in the search box at the to
 - [Four Floors](mind/four-floors.md) (Mind): Where motivation comes from: genes, reflection, other minds, and reflexivity.
 - [Free Will](mind/free-will.md) (Mind): The Harris and Dennett exchange, in three layers.
 - [git](tech/git/index.md) (Tech): Everyday git, branch cleanup, rebase, squash, OIDC to Azure and Vault, and GitHub App permissions.
-- [Github Actions Workflow General](tech/git/github-actions.md) (Tech)
-- [Github Actions Workflow OIDC Access to Azure](tech/git/oidc-azure.md) (Tech)
-- [Github Actions Workflow OIDC Access to Vault](tech/git/oidc-vault.md) (Tech)
-- [GitHub App Installation Permissions](tech/git/app-inst-perms.md) (Tech)
+- [Github Actions Workflow General](tech/git/github-actions.md) (Tech): Two workflow jobs that release a Go binary, one automatic and one manual.
+- [Github Actions Workflow OIDC Access to Azure](tech/git/oidc-azure.md) (Tech): Logging a workflow in to Azure with short-lived OIDC tokens instead of a service principal secret.
+- [Github Actions Workflow OIDC Access to Vault](tech/git/oidc-vault.md) (Tech): Logging a workflow in to HashiCorp Vault with short-lived OIDC tokens instead of stored secrets.
+- [GitHub App Installation Permissions](tech/git/app-inst-perms.md) (Tech): The three sets of permissions a GitHub App can ask for at installation, with their defaults.
 - [Go](tech/go.md) (Tech): Install, local module overrides, build fixes, and snippets.
 - [Growing Old](life/growing-old.md) (Life): Bertrand Russell's answer to the fear of death.
 - [Hold Your Identity Lightly](mind/identity-lightly.md) (Mind): Fewer labels, freer thinking, calmer talk, and the values worth keeping.
@@ -87,7 +87,7 @@ Every entry on one page, A to Z, with its area. Type in the search box at the to
 - [Mix Music Into a Video](life/mix-music-video.md) (Life): Put a song under a clip's own sound with FFmpeg.
 - [Noam Chomsky](mind/chomsky.md) (Mind): Where I follow him, where I part ways, and his point about the limits of intelligence.
 - [Not Conservatism](society/not-conservatism.md) (Society): Measured by conservative values, the administration is institutional decay.
-- [OIDC and SAML](tech/security/oidc-saml.md) (Tech)
+- [OIDC and SAML](tech/security/oidc-saml.md) (Tech): The two protocols behind single sign-on, the three parts they share, and where they differ.
 - [Oligarchy](society/oligarchy.md) (Society): Why the problem is concentrated wealth, not one man, with a ledger of who gains and who pays.
 - [Optimism](mind/optimism.md) (Mind): Lines and proverbs against pessimism.
 - [Ordenador](tech/ordenador.md) (Tech): Computers and AI as tools for putting life in order, and how to organize well.
@@ -115,14 +115,14 @@ Every entry on one page, A to Z, with its area. Type in the search box at the to
 - [Star Wars Chronology](life/star-wars.md) (Life): The films and live-action series in story order, with release years.
 - [Steven Pinker](mind/pinker.md) (Mind): My primary reference in psychology, with two reservations.
 - [Terraform](tech/terraform/index.md) (Tech): Modules, state moves, workflow, Azure, and GitHub Actions, plus two essays on IaC and state.
-- [Terraform to Vault From Azure](tech/terraform/vault-from-azure.md) (Tech)
+- [Terraform to Vault From Azure](tech/terraform/vault-from-azure.md) (Tech): Logging Terraform in to Vault with an Azure VM's managed identity, and the same from a GitHub Actions job.
 - [The Immigration Choice](society/immigration-choice.md) (Society): Tax and legalize the workforce already here, or pay to remove it.
 - [The Money Exception](society/money-exception.md) (Society): Why even skeptics go easy on concentrated wealth, and when to speak up anyway.
 - [The Orbán Playbook](society/orban-playbook.md) (Society): Bending institutions by legal means, as in Hungary, and how it can be beaten.
 - [The Ouroboros](mind/ouroboros.md) (Mind): One world in levels, from particles to minds, and how it folds back on itself.
 - [The Perception Gap](society/perception-gap.md) (Society): Why heavy news users see the other side as more extreme than it is, and what I did.
-- [The Problem with Infrastructure-as-Code](tech/terraform/problem-with-iac.md) (Tech)
-- [The Problem with Terraform State](tech/terraform/problem-with-state.md) (Tech)
+- [The Problem with Infrastructure-as-Code](tech/terraform/problem-with-iac.md) (Tech): Why infrastructure-as-code exists, what platforms have absorbed since, and what remains unsolved.
+- [The Problem with Terraform State](tech/terraform/problem-with-state.md) (Tech): What the state file is, the well-known pains it causes, and which ones are being fixed.
 - [The Sense of Style](mind/sense-of-style.md) (Mind): What Pinker's book argues, which popular tips are his, and how to use it.
 - [The Two-Front War](society/two-front-war.md) (Society): Illness in the U.S. means fighting the disease and the bill.
 - [Threads of Mind](mind/threads-of-mind.md) (Mind): An intuition pump: many threads of consciousness, and why the mind already has them.
@@ -132,8 +132,8 @@ Every entry on one page, A to Z, with its area. Type in the search box at the to
 - [Trust in Truth](mind/trust-in-truth.md) (Mind): Six habits for keeping trust in each other and in the institutions of knowledge.
 - [Two Systems](mind/two-systems.md) (Mind): Fast and slow thinking as a fiction, what survived, and the remedy.
 - [U.S. Identity Politics](society/us-identity-politics.md) (Society): Identity first, policy rationalized afterward, and the way out.
-- [Understanding Microsoft Access Token Validation](tech/azure/ms-token-validation.md) (Tech)
-- [Validate YAML in GitHub Actions](tech/git/validate-yaml.md) (Tech)
+- [Understanding Microsoft Access Token Validation](tech/azure/ms-token-validation.md) (Tech): Why only the intended resource should validate an access token, and the Azure Management exception.
+- [Validate YAML in GitHub Actions](tech/git/validate-yaml.md) (Tech): A job that checks the YAML files a push changed against a schema.
 - [Viral Truth](society/viral-truth.md) (Society): What truth can borrow from how lies spread, and what it must not.
 - [Virtue Signaling](society/virtue-signaling.md) (Society): Moral display without action, often unintended, and a test for it.
 - [Who Counts](mind/who-counts.md) (Mind): Why an AGI with the right machinery is someone, and where the line falls.
