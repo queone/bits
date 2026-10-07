@@ -14,7 +14,7 @@
       {% if site.title and site.title != page.title %}
       <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
       {% endif %}
-      <p class="text-small"><a href="https://que-one.translate.goog{{ page.url }}?_x_tr_sl=en&_x_tr_tl=es">Español</a></p>
+      <p class="text-small"><a href="{{ "/all.html" | relative_url }}">All entries</a> | <a href="https://que-one.translate.goog{{ page.url }}?_x_tr_sl=en&_x_tr_tl=es">Español</a></p>
 
       {{ content }}
 

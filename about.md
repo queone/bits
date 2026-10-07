@@ -4,4 +4,4 @@ This site is how I see the world, in short entries. I think of myself as a human
 
 To dispute a claim or request a correction, [open an issue](https://github.com/queone/bits/issues), and I'll try to fix or cite it in a future release.
 
-The four areas: [Life](life/index.md), [Mind](mind/index.md), [Society](society/index.md), and [Tech](tech/index.md).
+The four areas: [Life](life/index.md), [Mind](mind/index.md), [Society](society/index.md), and [Tech](tech/index.md). [All entries](all.md) lists every entry on one page.

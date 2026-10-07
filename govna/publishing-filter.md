@@ -164,12 +164,15 @@ Note: the allowlist covers hosts that reject scripted requests: the Congressiona
 
 ## Code Hosting
 
-- Host no executable code on the site.
+- Host no script or binary for download on the site.
+- Limit page scripts to display behavior and in-page filtering.
 - Keep every script under `scripts/` in the `queone/gkit` repository and link to it.
 - Write download commands as `curl -L` against `https://github.com/queone/gkit/raw/main/scripts/<file>`.
 - Keep a fenced block on a `take`, `note`, `howto`, or `quote` entry to 40 lines or fewer.
 - Tag every fenced block with a language, or `text` for plain output.
 - Show a snippet inline only when reading it is the point of the entry.
+
+Note: the site runs two page scripts, the heading anchors in the layout and the filter box on `all.md`. Both run in the reader's browser and change nothing outside the page they sit on. Scripts that readers download stay in gkit.
 
 ## Triage
 
@@ -211,7 +214,7 @@ Note: triage is this filter run early, on a thought instead of a draft. The voic
 - Treat any non-warning finding in a changed entry as blocking.
 - Treat a warning as a review prompt, not a failure.
 
-Detector codes. Privacy: `P-GUID`, `P-SSH`, `P-HEX`, `P-MAC`, `P-EMAIL`, `P-PATH`, `P-ORG`, `P-DENY`, `P-SELF`. Warnings: `W-YEAR`, `W-PERSONAL`, `W-NAME`, `W-PLAIN`, `W-SENT`, `W-PARA`, `W-ZOMBIE`, `W-ANCHOR`, `W-STALE`, and the informational `W-DENY`, `W-TYPE`, `W-EXT`. Budgets: `B-TYPE`, `B-WORDS`, `B-FENCE`. Links: `L-REL`, `L-ANCHOR`, `L-ABS`, `L-EXT`. Structure: `X-MARKER`, `X-HEADING`, `X-LANG`, `X-QA`, `X-FENCE`. Index: `I-INDEX`, `I-LONG`. Register: `R-PATH`. Privacy and link checks run on every checked file. Budget, fence, marker, heading, and index checks run only on entries and the root site pages. The plain-English warning measures mean words per sentence over prose lines, with front matter, fences, block quotes, headings, table rows, link targets, and code spans removed, and with initials and common abbreviations not counted as sentence ends. The name warning skips the product names in its allow-list, and group names such as "Black Americans" or "Latin American", where a capitalized word comes before a group noun. The Spanish check fires on a line with four distinct Spanish words or a sentence with three. The question-form check also flags a paragraph that is nothing but a question. The anchor warning skips a fragment that starts with `/` or `!`, which is a client-side route. A fetch with no answer at all is retried once before it counts as dead. A fetch refused with status 416 is retried once without the byte range, because some servers reject a range request on a live page. The stale-owner warning takes the first five letters of each word of five letters or more in a register row, minus common function words, and fires when fewer than half of them start a word in the owning entries. `CHANGELOG.md` is exempt from `P-ORG` because its historical rows are immutable.
+Detector codes. Privacy: `P-GUID`, `P-SSH`, `P-HEX`, `P-MAC`, `P-EMAIL`, `P-PATH`, `P-ORG`, `P-DENY`, `P-SELF`. Warnings: `W-YEAR`, `W-PERSONAL`, `W-NAME`, `W-PLAIN`, `W-SENT`, `W-PARA`, `W-ZOMBIE`, `W-ANCHOR`, `W-STALE`, and the informational `W-DENY`, `W-TYPE`, `W-EXT`. Budgets: `B-TYPE`, `B-WORDS`, `B-FENCE`. Links: `L-REL`, `L-ANCHOR`, `L-ABS`, `L-EXT`. Structure: `X-MARKER`, `X-HEADING`, `X-LANG`, `X-QA`, `X-FENCE`. Index: `I-INDEX`, `I-LONG`, `I-ALL`. Register: `R-PATH`. Privacy and link checks run on every checked file. Budget, fence, marker, heading, and index checks run only on entries and the root site pages. A root page may declare `type` front matter the way an entry does; `all.md` declares `reference`, so the list carries no word budget. The plain-English warning measures mean words per sentence over prose lines, with front matter, fences, block quotes, headings, table rows, link targets, and code spans removed, and with initials and common abbreviations not counted as sentence ends. The name warning skips the product names in its allow-list, and group names such as "Black Americans" or "Latin American", where a capitalized word comes before a group noun. The Spanish check fires on a line with four distinct Spanish words or a sentence with three. The question-form check also flags a paragraph that is nothing but a question. The anchor warning skips a fragment that starts with `/` or `!`, which is a client-side route. A fetch with no answer at all is retried once before it counts as dead. A fetch refused with status 416 is retried once without the byte range, because some servers reject a range request on a live page. The stale-owner warning takes the first five letters of each word of five letters or more in a register row, minus common function words, and fires when fewer than half of them start a word in the owning entries. `CHANGELOG.md` is exempt from `P-ORG` because its historical rows are immutable.
 
 `P-PATH` covers an absolute home directory path, a home-folder layout (a non-default folder under `~` or `$HOME`), and an iCloud Drive path. Apple's default folders and `bin` are allowed.
 
@@ -228,6 +231,8 @@ Detector codes. Privacy: `P-GUID`, `P-SSH`, `P-HEX`, `P-MAC`, `P-EMAIL`, `P-PATH
 `W-SENT` warns a sentence over 25 words in a `take`, `note`, `howto`, or `reference`, and a sentence over 20 words inside a how-to step. `W-PARA` warns a paragraph of more than six sentences, where a paragraph is a run of consecutive prose lines and each list item counts on its own. Both skip `quote` entries, block quotes, headings, table rows, fenced blocks, link targets, and code spans, and they count words the way the plain-English warning does. Like that warning, they end a sentence at a period even when closing bold or italic marks follow it, and they skip code fences and table rows indented under a list and lines indented four or more spaces.
 
 `I-LONG` blocks a line in one of the four area indexes whose title, colon, space, and description together pass 104 characters, because a longer line wraps. Sub-indexes are not measured.
+
+`I-ALL` blocks when `all.md` or `llms-full.txt` differs from what `./all.sh` would write, so the generated pages never lag the indexes. It runs on `--all`, and on a checked set that includes an entry, an index, or `all.md`.
 
 ## Self-Enhancement
 

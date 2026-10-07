@@ -9,4 +9,5 @@ exclude:
   - build.sh
   - check.sh
   - pre-prep.sh
+  - all.sh
   - README.md

@@ -82,7 +82,7 @@ kind_of() {
     life/index.md | mind/index.md | society/index.md | tech/index.md) echo index ;;
     life/*/index.md | mind/*/index.md | society/*/index.md | tech/*/index.md) echo index ;;
     life/*.md | mind/*.md | society/*.md | tech/*.md) echo entry ;;
-    about.md | index.md) echo root ;;
+    about.md | index.md | all.md) echo root ;;
     *.md) echo other ;;
     *) echo skip ;;
   esac
@@ -292,7 +292,7 @@ check_structure() {
       case "$t" in take | note | howto | reference | quote) ;; *) emit "$f" 1 B-TYPE "unknown type $t"; t=note ;; esac
     fi
   else
-    t=note
+    case "$t" in take | note | howto | reference | quote) ;; *) t=note ;; esac
   fi
   budget=$(budget_for "$t"); words=$(prose_words "$f")
   if [ "$budget" -gt 0 ] && [ "$words" -gt "$budget" ]; then emit "$f" 1 B-WORDS "$words prose words, budget $budget for $t"; fi
@@ -362,6 +362,14 @@ check_register() {
   done
 }
 
+# ── generated pages (all.md and llms-full.txt, written by ./all.sh) ─────────
+check_generated() { # I-ALL: the committed generated pages must match a fresh render
+  local gen
+  gen="$(dirname "$SELF")/all.sh"
+  [ -x "$gen" ] || return 0
+  CHECK_ROOT="$ROOT" "$gen" --diff >/dev/null 2>&1 || emit all.md 1 I-ALL "generated pages are stale, run ./all.sh"
+}
+
 # ── driver ──────────────────────────────────────────────────────────────────
 check_file() {
   local f="$1" kind
@@ -385,7 +393,7 @@ changed_set() {
 }
 
 all_set() {
-  { fd -e md . life mind society tech govna 2>/dev/null || find life mind society tech govna -name '*.md'; printf '%s\n' about.md index.md AGENTS.md plan.md CHANGELOG.md README.md; } \
+  { fd -e md . life mind society tech govna 2>/dev/null || find life mind society tech govna -name '*.md'; printf '%s\n' about.md index.md all.md AGENTS.md plan.md CHANGELOG.md README.md; } \
     | sed 's#^\./##' | sort -u | while read -r f; do [ -f "$f" ] && printf '%s\n' "$f"; done
 }
 
@@ -399,7 +407,7 @@ report() {
 
 # ── selftest ────────────────────────────────────────────────────────────────
 selftest() {
-  local fx="$TMP/fx" clean="$TMP/clean" res ok=0 c
+  local fx="$TMP/fx" clean="$TMP/clean" res ok=0 c gen
   mkdir -p "$fx/life/sub" "$fx/govna" "$clean/life" "$clean/govna"
   printf '# comment line\n\nsecretword\n' >"$TMP/deny.txt"
   {
@@ -468,13 +476,15 @@ SHIM
   printf -- '---\ntype: take\n---\n## Initials\n\nAs J. J. C. Smart and E. O. Wilson argued, e.g. in the U.S. and the U.K., this sentence runs to twenty words. Dr. Smith, Mr. Jones, i.e. two people, vs. St. Paul, etc. wrote another sentence that also runs on to twenty words.\n' >"$fx/life/initials.md"
   printf '## Life\n\n- [Dirty](dirty.md)\n- [Long](dirty.md): A description that runs on and on, past the cap, so that the index line wraps on a phone and on a laptop alike.\n' >"$fx/life/index.md"
   printf '## Sub\n' >"$fx/life/sub/index.md"
+  gen="$(dirname "$SELF")/all.sh"
+  CHECK_ROOT="$fx" "$gen" >/dev/null 2>&1; rg -v -e '\(life/dirty\.md\)' "$fx/all.md" >"$fx/all.tmp"; mv "$fx/all.tmp" "$fx/all.md"
   printf '# Register\n\n| # | Position | Owning entry | Status |\n|---|---|---|---|\n| 1 | X. | `life/missing.md` | settled |\n| 2 | Y. | `life/dirty.md` | bogus |\n| 3 | Markets reward innovation through price signals. | `life/dirty.md` | settled |\n' >"$fx/govna/stance-register.md"
   printf -- '---\ntype: note\n---\n## Clean\n\nA clean [entry](index.md) with one [ref](https://en.wikipedia.org/wiki/Main_Page).\n\nMicrosoft Graph accepts the token. Photos sit in ~/Pictures/x and settings in ~/.config/x.\n' >"$clean/life/clean.md"
   printf '## Life\n\n- [Clean](clean.md)\n' >"$clean/life/index.md"
   printf '# Register\n\n| # | Position | Owning entry | Status |\n|---|---|---|---|\n| 1 | X. | `life/clean.md` | settled |\n' >"$clean/govna/stance-register.md"
 
   res=$( (CHECK_ROOT="$fx" BITS_DENYLIST="$TMP/deny.txt" "$SELF" life/dirty.md life/untyped.md life/initials.md life/spanish.md life/qa.md life/anchor.md life/zombie.md life/selfok.md life/digest.md; CHECK_ROOT="$fx" "$SELF" --register) 2>&1 )
-  for c in P-GUID P-SSH P-HEX P-MAC P-EMAIL P-PATH P-ORG P-DENY P-SELF W-YEAR W-PERSONAL B-TYPE B-WORDS B-FENCE L-REL L-ANCHOR L-ABS L-EXT X-MARKER X-HEADING X-LANG X-QA X-FENCE W-NAME W-PLAIN W-ZOMBIE W-ANCHOR W-STALE I-INDEX I-LONG R-PATH; do
+  for c in P-GUID P-SSH P-HEX P-MAC P-EMAIL P-PATH P-ORG P-DENY P-SELF W-YEAR W-PERSONAL B-TYPE B-WORDS B-FENCE L-REL L-ANCHOR L-ABS L-EXT X-MARKER X-HEADING X-LANG X-QA X-FENCE W-NAME W-PLAIN W-ZOMBIE W-ANCHOR W-STALE I-INDEX I-LONG I-ALL R-PATH; do
     if printf '%s\n' "$res" | rg -q -e " $c "; then printf 'PASS %s\n' "$c"; else printf 'FAIL %s\n' "$c"; ok=1; fi
   done
   if printf '%s\n' "$res" | rg -q -e "life/initials.md:1: W-PLAIN"; then printf 'PASS W-PLAIN-initials\n'; else printf 'FAIL W-PLAIN-initials\n'; ok=1; fi
@@ -512,6 +522,7 @@ SHIM
   if [ "$(cat "$TMP/count0")" = 2 ] && ! printf '%s\n' "$res" | rg -q -e "W-EXT|L-EXT"; then printf 'PASS RETRY-000\n'; else printf 'FAIL RETRY-000\n'; ok=1; fi
   res=$( (COUNTFILE="$TMP/count416" SHIM_MODE=416 PATH="$TMP/bin:$PATH" CHECK_ROOT="$fx" "$SELF" life/retry.md) 2>&1 )
   if [ "$(cat "$TMP/count416")" = 2 ] && ! printf '%s\n' "$res" | rg -q -e "W-EXT|L-EXT"; then printf 'PASS RETRY-416\n'; else printf 'FAIL RETRY-416\n'; ok=1; fi
+  CHECK_ROOT="$clean" "$gen" >/dev/null 2>&1
   res=$( (CHECK_ROOT="$clean" BITS_DENYLIST="$TMP/deny.txt" "$SELF" --all; CHECK_ROOT="$clean" "$SELF" --register) 2>&1 )
   if printf '%s\n' "$res" | rg -q -e ': [A-Z]-'; then printf 'FAIL clean fixture produced findings:\n%s\n' "$res"; ok=1; else printf 'OK clean-fixture\n'; fi
   return $ok
@@ -542,8 +553,10 @@ main() {
   if [ "$MODE" = all ]; then
     for a in life mind society tech; do [ -d "$a" ] || continue; check_index_dir "$a"; for d in "$a"/*/; do [ -d "$d" ] && check_index_dir "${d%/}"; done; done
     check_register
+    check_generated
   else
     sort -u "$INDEXDIRS" | while read -r a; do [ -n "$a" ] && check_index_dir "$a"; done
+    if [ -s "$INDEXDIRS" ] || printf '%s\n' "$files" | rg -q -x -e 'all\.md'; then check_generated; fi
   fi
   report
 }

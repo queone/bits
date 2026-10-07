@@ -1,0 +1,32 @@
+<div id="all-filter"></div>
+<script>
+(function () {
+  var mark = document.getElementById('all-filter');
+  var list = mark.nextElementSibling;
+  while (list && list.tagName !== 'UL') list = list.nextElementSibling;
+  if (!list) return;
+  var items = Array.prototype.slice.call(list.children);
+  var box = document.createElement('input');
+  box.type = 'search';
+  box.placeholder = 'Type to narrow the list';
+  box.setAttribute('aria-label', 'Filter entries');
+  box.style.cssText = 'width:100%;max-width:30em;padding:.4em .6em;font-size:1em;margin-bottom:.5em';
+  var count = document.createElement('small');
+  count.style.marginLeft = '.75em';
+  mark.appendChild(box);
+  mark.appendChild(count);
+  function apply() {
+    var words = box.value.toLowerCase().split(/\s+/).filter(Boolean), shown = 0;
+    items.forEach(function (li) {
+      var text = li.textContent.toLowerCase();
+      var hit = words.every(function (w) { return text.indexOf(w) !== -1; });
+      li.style.display = hit ? '' : 'none';
+      if (hit) shown++;
+    });
+    count.textContent = words.length ? shown + ' of ' + items.length : '';
+  }
+  box.addEventListener('input', apply);
+  var q = new URLSearchParams(location.search).get('q');
+  if (q) { box.value = q; apply(); }
+})();
+</script>

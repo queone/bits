@@ -1,0 +1,17 @@
+# Bits
+
+> How I see the world, in short entries, plus a few how-tos. Four areas: Life, Mind, Society, and Tech.
+
+Every entry is one of five kinds. A take gives an opinion, a note explains something, a how-to lists the steps to a result, a reference is a cheat-sheet or list, and a quote collects wise words from others. Each area index gives a one-line description per entry, and the full-text file below carries every entry with its URL.
+
+## Areas
+
+- [Life](https://que.one/life/): How to live well, from growing old to personal growth and everyday practice.
+- [Mind](https://que.one/mind/): How thinking works, from attention and beauty to reasoning, language, and the thinkers behind those ideas.
+- [Society](https://que.one/society/): Politics, religion, activism, and how people live together.
+- [Tech](https://que.one/tech/): How-tos and references for cloud, security, git, Terraform, macOS, and working with AI.
+
+## Everything
+
+- [All entries](https://que.one/all.html): Every entry on one page with its area and one-line description.
+- [Full text](https://que.one/llms-full.txt): The text of every entry in one file, each with its URL.

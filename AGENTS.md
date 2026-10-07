@@ -561,7 +561,8 @@ Note: the Director triggers those actions; Ratify names what is pending.
 - Write every fact-claiming entry as defensibly as its sources allow.
 - Write every `take` and `note` in plain English.
 - Proofread every changed `take` and `note` for grammar and flow before Implement completion.
-- Host no executable code on the site.
+- Host no script or binary for download on the site.
+- Limit page scripts to display behavior and in-page filtering.
 - Reference only the `queone` GitHub organization.
 - Record each filter gap found in a closure audit as an `IE<N>:` item in `plan.md` in the same completion report.
 - Apply `govna/publishing-filter.md` `## Triage` when the Director offers a raw thought as a candidate entry.
