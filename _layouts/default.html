@@ -14,7 +14,7 @@
       {% if site.title and site.title != page.title %}
       <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
       {% endif %}
-      <form class="text-small" action="{{ "/all.html" | relative_url }}" method="get"><input type="search" name="q" placeholder="Search entries" aria-label="Search entries" style="width:11em;font-size:inherit;padding:.15em .4em;vertical-align:middle"> <a href="{{ "/all.html" | relative_url }}">All entries</a> | <a href="https://que-one.translate.goog{{ page.url }}?_x_tr_sl=en&_x_tr_tl=es">Español</a></form>
+      <form class="text-center mb-4" action="{{ "/all.html" | relative_url }}" method="get"><input type="search" name="q" placeholder="Search entries" aria-label="Search entries" style="width:100%;max-width:24em;font-size:1em;padding:.3em .6em"></form>
 
       {{ content }}
 
@@ -23,6 +23,7 @@
         This site is open source. {% github_edit_link "Improve this page" %}.
       </div>
       {% endif %}
+      <p class="text-small text-center border-top border-gray-light mt-5 pt-3"><a href="{{ "/all.html" | relative_url }}">All entries</a> | <a href="https://que-one.translate.goog{{ page.url }}?_x_tr_sl=en&_x_tr_tl=es">Español</a></p>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
     <script>anchors.add();</script>
