@@ -14,7 +14,7 @@
       {% if site.title and site.title != page.title %}
       <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
       {% endif %}
-      <p class="text-small"><a href="{{ "/all.html" | relative_url }}">All entries</a> | <a href="https://que-one.translate.goog{{ page.url }}?_x_tr_sl=en&_x_tr_tl=es">Español</a></p>
+      <form class="text-small" action="{{ "/all.html" | relative_url }}" method="get"><input type="search" name="q" placeholder="Search entries" aria-label="Search entries" style="width:11em;font-size:inherit;padding:.15em .4em;vertical-align:middle"> <a href="{{ "/all.html" | relative_url }}">All entries</a> | <a href="https://que-one.translate.goog{{ page.url }}?_x_tr_sl=en&_x_tr_tl=es">Español</a></form>
 
       {{ content }}
 

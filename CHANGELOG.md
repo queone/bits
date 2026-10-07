@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.100.0 | AC75 search box in every page header; all-entries filter now runs |
 | 0.99.0 | AC74 all-entries page with filter box; llms.txt and llms-full.txt for AI tools |
 | 0.98.2 | AC73 adopt Govna governance files v0.71.0 |
 | 0.98.1 | AC72 adopt Govna governance files v0.70.0 |
