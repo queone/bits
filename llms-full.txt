@@ -599,6 +599,7 @@ Truth-seeking is a duty. Most entries on this site end in the same shape: stop d
 |---|---|---|
 | Feeding identity politics | Truth-seeking dialogue that treats disagreement as information | [U.S. Identity Politics](../society/us-identity-politics.md), [Discourse](../society/discourse.md) |
 | Arguing to win | Restate the other side so well they wish they had said it | [Discourse](../society/discourse.md) |
+| Settling a disagreement on a stage | Argue in writing, and bet on what would change your mind | [Argue in Writing, Bet on Predictions](../society/argue-in-writing.md) |
 | Ridicule | Education, respect, and rapport | [Pseudoscience](pseudoscience.md) |
 | Arguing someone out of a comforting belief | Norms, trusted messengers, and institutions | [Comfort and Biases](comfort-biases.md) |
 | Attacking the person | Criticize the position | [Cold Logic](cold-logic.md), [Dunning-Kruger](dunning-kruger.md) |
@@ -619,6 +620,7 @@ Truth-seeking is a duty. Most entries on this site end in the same shape: stop d
 | Staying deluded when facts are easy to check | Use AI and open data, and check the AI too | [Detecting Baloney](detecting-baloney.md) |
 | Heavy partisan news | Cut back | [The Perception Gap](../society/perception-gap.md) |
 | Discounting help because a machine gave it | Judge the writing by its claims | [Written With Help](../tech/written-with-help.md) |
+| Denying a distinction because there is no sharp line | Ask what the word is for, and set the gate there | [Sorites Paradox](sorites-paradox.md) |
 
 ### Public life
 
@@ -1208,9 +1210,9 @@ Kind: take
 
 [Enlightenment Now](https://en.wikipedia.org/wiki/Enlightenment_Now) continues the [case](../society/enlightenment-ideals.md). Its account of what markets have done changed my earlier view, though I do not share his [high regard](../society/money-exception.md) for them. It also tends to overlook motives. Its treatment of the weapons-of-mass-destruction case for the Iraq War, and of the Y2K panic, blames bias and ignores the profit motives that fed both. [George Monbiot](https://en.wikipedia.org/wiki/George_Monbiot) has raised [environmental objections](https://bsky.app/profile/georgemonbiot.bsky.social/post/3m2m3mfff622e) to the book. I wish Pinker would answer a journalist I take seriously.
 
-My favorite line from
+The [AI exchange](../society/argue-in-writing.md) shows the same habit. He answered the weakest form of the case, as Alexander [catalogued](https://www.astralcodexten.com/p/an-open-letter-to-steven-pinker-on), and left the strongest unaddressed. He dismisses when he should engage, and the bill comes due when his sober voice is most needed.
 
-[Enlightenment Now](https://en.wikipedia.org/wiki/Enlightenment_Now) is this. Martin Luther King Jr. said the arc of the moral universe is long but bends toward justice. In the same spirit, the arc of history bends toward progress, toward more reason, knowledge, and well-being.
+My favorite line from [Enlightenment Now](https://en.wikipedia.org/wiki/Enlightenment_Now) is this. Martin Luther King Jr. said the arc of the moral universe is long but bends toward justice. In the same spirit, the arc of history bends toward progress, toward more reason, knowledge, and well-being.
 
 ==== Karl Popper (Mind) https://que.one/mind/popper.html
 Kind: take
@@ -1375,6 +1377,21 @@ Two popular tips need attribution. "Omit needless words" is [Strunk and White's]
 Outside this site I use the same three habits. For an email, I write the first sentence as the thing I want the reader to see. For documentation, I cut the signposts and define each term on first use. For a code comment, I say what the reader cannot see in the code, in one sentence.
 
 Here I also borrow a few limits from [Simplified Technical English](https://en.wikipedia.org/wiki/Simplified_Technical_English), a controlled English written for aircraft manuals. I aim to keep each sentence to 25 words and each paragraph to six sentences.
+
+==== Sorites Paradox (Mind) https://que.one/mind/sorites-paradox.html
+Kind: take
+
+## Sorites Paradox
+
+One grain of sand is not a heap. Adding one grain to what is not a heap never makes one. So nothing is a heap. That is the [sorites paradox](https://en.wikipedia.org/wiki/Sorites_paradox).
+
+It rests on [vagueness](https://en.wikipedia.org/wiki/Vagueness): a word with borderline cases, where a claim seems neither true nor false. It strains two classical laws: [bivalence](https://en.wikipedia.org/wiki/Principle_of_bivalence), that every statement is true or false, and the [excluded middle](https://en.wikipedia.org/wiki/Law_of_excluded_middle), that a claim or its negation holds. [Epistemicists](https://en.wikipedia.org/wiki/Epistemicism) answer that a cutoff exists, unknown to us. I think the cutoff is chosen, not found.
+
+I do not think it is much of a paradox. Ask what the word is for, set the gate there, and for that purpose it disappears. Define a chicken egg by what hatches, and the egg came first. Define it by who laid it, and the chicken did.
+
+Most laws pick eighteen for adulthood. Biologists keep several [species concepts](https://en.wikipedia.org/wiki/Species_problem), each a gate for a purpose. A logic gate reads a continuous voltage as a 0 or a 1 by a threshold, and a [noise margin](https://en.wikipedia.org/wiki/Noise_margin) keeps signals clear of it. The vagueness is handled, not denied.
+
+Yet the heap keeps turning up in arguments, and only muddles them. The move to watch for is "there is no sharp line, so there is no distinction." Scott Alexander [caught](https://www.astralcodexten.com/p/an-open-letter-to-steven-pinker-on) [Steven Pinker](pinker.md) at it in a post: superintelligence is meaningless because there is no day it arrives. The catch holds, but Pinker's stronger case is that intelligence is many mechanisms, each good at some problems, and the heap does not touch it. When you hear the move, ask for the purpose, then the gate.
 
 ==== Threads of Mind (Mind) https://que.one/mind/threads-of-mind.html
 Kind: note
@@ -1575,6 +1592,21 @@ The drift came mainly from [generations](https://discovery.ucl.ac.uk/id/eprint/1
 That fits what I think about [changing minds](../mind/comfort-biases.md): arguments rarely do it, and norms, messengers, and institutions do. What wearies me is that so many learned readers did not budge either. [Intelligence and reflection are separate](../mind/reflexivity.md), and the [models installed in childhood](../mind/domain-specific-models.md) stick like velcro. I think [Pinker's](../mind/pinker.md) Better Angels met the same unfair resistance from smart people. The best-argued reply came from Ross Douthat, whose 2025 book [Believe](https://www.deseret.com/faith/2025/02/10/ross-douthat-believe-book-new-york-times/) argues that everyone should be religious.
 
 So those of us the Horsemen convinced should say so openly, and [build on their work](salomons-house.md). One question they left open still matters. Churches gave people community, ritual, and shared meaning, and nothing secular has matched them yet. The pull toward something larger is [evolved](../mind/transcendence.md), so it will not vanish with belief. It needs [secular homes](../life/flourishing.md).
+
+==== Argue in Writing, Bet on Predictions (Society) https://que.one/society/argue-in-writing.html
+Kind: take
+
+## Argue in Writing, Bet on Predictions
+
+In September 2026 [Scott Alexander](https://www.astralcodexten.com/p/an-open-letter-to-steven-pinker-on) challenged [Steven Pinker](../mind/pinker.md) to a public debate on whether AI could end us. Pinker [declined](https://quillette.substack.com/p/an-open-letter-to-scott-alexander). A debate, he wrote, is "a spectator sport, not an epistemic tool," and he suggested bets on verifiable predictions instead. Alexander answered with an open letter, itemized and checkable.
+
+Read both letters and the two largely agree. Both say the dangers are real and want oversight. The difference is degree and timing. Alexander thinks the danger is close enough to act on now. Pinker doubts the extinction scenarios and does not share that urgency. On urgency I side with Alexander.
+
+On the manner of continuing, I side with Pinker, though Alexander's written reply is a step in the right direction. Urgency tempts escalation: the challenge, the open letter, the list of grievances. That is exactly when the slow manner matters most. Writing beats a stage, because a reader can check each claim and nobody wins on a zinger. A bet beats both. It forces each side to name what would change its mind, which neither letter did, and it adds a deadline and a score.
+
+[Tetlock](https://en.wikipedia.org/wiki/Superforecasting) showed that forecasters who keep score get better, and a bet keeps score. You cannot collect on extinction. The bets belong on the steps toward it: an AI that copies itself, resists shutdown, or runs a long task on its own. An [adversarial collaboration](https://en.wikipedia.org/wiki/Adversarial_collaboration) with resolvable predictions would settle more than a third open letter. It would also force the [Dennett test](discourse.md), since you cannot bet against a position you have not stated well.
+
+The same split runs through the [optimists and doomsayers](mild-leviathan.md) on AI, and through every quarrel our [slow republic](slow-by-design.md) was built to cool.
 
 ==== Cold at the Top (Society) https://que.one/society/cold-at-the-top.html
 Kind: take

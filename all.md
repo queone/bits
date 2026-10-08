@@ -15,6 +15,7 @@ Every entry on one page, A to Z, with its area. Type in the search box at the to
 - [Answer Patterns](mind/answer-patterns.md) (Mind): Four dimensions for reading what an answer is doing.
 - [Apple TV Home Videos](life/appletv-videos.md) (Life): Play videos from a Mac through the Apple TV app.
 - [Arcade](tech/arcade.md) (Tech): MAME on a desktop and on a Raspberry Pi, with the cabinet configuration.
+- [Argue in Writing, Bet on Predictions](society/argue-in-writing.md) (Society): Why writing and bets beat a stage debate.
 - [Attention](mind/attention.md) (Mind): Two ways the mind processes, feature integration, the gorilla test, and the global workspace.
 - [Avoid and Practice](mind/avoid-and-practice.md) (Mind): The site's advice in one-line pairs, each linked to the entry that argues it.
 - [AWS](tech/aws.md) (Tech): Instance comparison and metadata commands.
@@ -112,8 +113,9 @@ Every entry on one page, A to Z, with its area. Type in the search box at the to
 - [Smug Pilots](society/smug-pilots.md) (Society): How engagement media and bickering experts wore down trust, and what experts owe listeners.
 - [Social Roles](society/social-roles.md) (Society): Five role domains everyone holds, and the terms for how roles are assigned and strained.
 - [Software Before AGI](tech/before-agi.md) (Tech): Domain-specific harnesses, what to build now, and why all of it is provisional.
+- [Sorites Paradox](mind/sorites-paradox.md) (Mind): No paradox once you set the gate, and the move to watch for.
 - [Star Wars Chronology](life/star-wars.md) (Life): The films and live-action series in story order, with release years.
-- [Steven Pinker](mind/pinker.md) (Mind): My primary reference in psychology, with two reservations.
+- [Steven Pinker](mind/pinker.md) (Mind): My primary reference in psychology, with three reservations.
 - [Terraform](tech/terraform/index.md) (Tech): Modules, state moves, workflow, Azure, and GitHub Actions, plus two essays on IaC and state.
 - [Terraform to Vault From Azure](tech/terraform/vault-from-azure.md) (Tech): Logging Terraform in to Vault with an Azure VM's managed identity, and the same from a GitHub Actions job.
 - [The Immigration Choice](society/immigration-choice.md) (Society): Tax and legalize the workforce already here, or pay to remove it.

@@ -167,7 +167,7 @@ zombie_rate() { # file -> "tenths word:count ..." nominalizations per 100 prose 
 }
 
 budget_for() {
-  case "$1" in take) echo 250 ;; note) echo 400 ;; howto) echo 500 ;; quote) echo 300 ;; reference) echo 0 ;; *) echo 400 ;; esac
+  case "$1" in take) echo 300 ;; note) echo 400 ;; howto) echo 500 ;; quote) echo 300 ;; reference) echo 0 ;; *) echo 400 ;; esac
 }
 
 # ── privacy (every file) ────────────────────────────────────────────────────
@@ -498,6 +498,8 @@ SHIM
   if printf '%s\n' "$res2" | rg -q -e "life/yearabbr.md:[0-9]+: W-YEAR"; then printf 'PASS W-YEAR-abbreviation\n'; else printf 'FAIL W-YEAR-abbreviation\n'; ok=1; fi
   if printf '%s\n' "$res2" | rg -q -e "life/yeartable.md:[0-9]+: W-YEAR"; then printf 'FAIL W-YEAR-table-row\n'; ok=1; else printf 'PASS W-YEAR-table-row\n'; fi
   if printf '%s\n' "$res2" | rg -q -e "life/groupname.md:[0-9]+: W-NAME"; then printf 'FAIL W-NAME-group-name\n'; ok=1; else printf 'PASS W-NAME-group-name\n'; fi
+  { printf -- '---\ntype: take\n---\n## Words\n\n'; c=0; while [ $c -lt 299 ]; do printf 'word '; c=$((c+1)); done; printf '\n'; } >"$fx/life/wordover.md"
+  { printf -- '---\ntype: take\n---\n## Words\n\n'; c=0; while [ $c -lt 298 ]; do printf 'word '; c=$((c+1)); done; printf '\n'; } >"$fx/life/wordok.md"
   res4=$( (CHECK_ROOT="$fx" "$SELF" --no-net life/sentlong.md life/sentok.md life/steplong.md life/stepok.md life/paralong.md life/paraok.md life/quoteex.md life/bqex.md) 2>&1 )
   if printf '%s\n' "$res4" | rg -q -e "life/sentlong.md:[0-9]+: W-SENT"; then printf 'PASS W-SENT-over-cap\n'; else printf 'FAIL W-SENT-over-cap\n'; ok=1; fi
   if printf '%s\n' "$res4" | rg -q -e "life/sentok.md:[0-9]+: W-SENT"; then printf 'FAIL W-SENT-at-cap\n'; ok=1; else printf 'PASS W-SENT-at-cap\n'; fi
@@ -506,6 +508,9 @@ SHIM
   if printf '%s\n' "$res4" | rg -q -e "life/paralong.md:[0-9]+: W-PARA"; then printf 'PASS W-PARA-over-cap\n'; else printf 'FAIL W-PARA-over-cap\n'; ok=1; fi
   if printf '%s\n' "$res4" | rg -q -e "life/paraok.md:[0-9]+: W-PARA"; then printf 'FAIL W-PARA-at-cap\n'; ok=1; else printf 'PASS W-PARA-at-cap\n'; fi
   if printf '%s\n' "$res4" | rg -q -e "life/(quoteex|bqex).md:[0-9]+: W-(SENT|PARA)"; then printf 'FAIL W-SENT-quotes-exempt\n'; ok=1; else printf 'PASS W-SENT-quotes-exempt\n'; fi
+  res6=$( (CHECK_ROOT="$fx" "$SELF" --no-net life/wordover.md life/wordok.md) 2>&1 )
+  if printf '%s\n' "$res6" | rg -q -e "life/wordover.md:1: B-WORDS 301 prose words, budget 300 for take"; then printf 'PASS B-WORDS-over-cap\n'; else printf 'FAIL B-WORDS-over-cap\n'; ok=1; fi
+  if printf '%s\n' "$res6" | rg -q -e "life/wordok.md:[0-9]+: B-WORDS"; then printf 'FAIL B-WORDS-at-cap\n'; ok=1; else printf 'PASS B-WORDS-at-cap\n'; fi
   res5=$( (CHECK_ROOT="$fx" "$SELF" --no-net life/boldstep.md life/indfence.md life/codeblock.md life/indtable.md) 2>&1 )
   for c in boldstep indfence codeblock indtable; do
     if printf '%s\n' "$res5" | rg -q -e "life/$c.md:[0-9]+: W-SENT"; then printf 'FAIL W-SENT-%s\n' "$c"; ok=1; else printf 'PASS W-SENT-%s\n' "$c"; fi

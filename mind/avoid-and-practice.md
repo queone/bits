@@ -11,6 +11,7 @@ Truth-seeking is a duty. Most entries on this site end in the same shape: stop d
 |---|---|---|
 | Feeding identity politics | Truth-seeking dialogue that treats disagreement as information | [U.S. Identity Politics](../society/us-identity-politics.md), [Discourse](../society/discourse.md) |
 | Arguing to win | Restate the other side so well they wish they had said it | [Discourse](../society/discourse.md) |
+| Settling a disagreement on a stage | Argue in writing, and bet on what would change your mind | [Argue in Writing, Bet on Predictions](../society/argue-in-writing.md) |
 | Ridicule | Education, respect, and rapport | [Pseudoscience](pseudoscience.md) |
 | Arguing someone out of a comforting belief | Norms, trusted messengers, and institutions | [Comfort and Biases](comfort-biases.md) |
 | Attacking the person | Criticize the position | [Cold Logic](cold-logic.md), [Dunning-Kruger](dunning-kruger.md) |
@@ -31,6 +32,7 @@ Truth-seeking is a duty. Most entries on this site end in the same shape: stop d
 | Staying deluded when facts are easy to check | Use AI and open data, and check the AI too | [Detecting Baloney](detecting-baloney.md) |
 | Heavy partisan news | Cut back | [The Perception Gap](../society/perception-gap.md) |
 | Discounting help because a machine gave it | Judge the writing by its claims | [Written With Help](../tech/written-with-help.md) |
+| Denying a distinction because there is no sharp line | Ask what the word is for, and set the gate there | [Sorites Paradox](sorites-paradox.md) |
 
 ### Public life
 

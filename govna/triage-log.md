@@ -4,6 +4,9 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-10-08 | Merge | Pinker dismisses when he should engage, and the bill comes due when his voice is most needed | `mind/pinker.md` | `mind/pinker.md` |
+| 2026-10-08 | Publish | Sorites: a pseudo-paradox that a purpose-fit gate dissolves, and the no-sharp-line move in arguments | `mind/`, `take`, "Sorites Paradox" | `mind/sorites-paradox.md` |
+| 2026-10-08 | Publish | Argue in writing and bet on predictions: how two sides that largely agree settle a difference in urgency | `society/`, `take`, "Argue in Writing, Bet on Predictions" | `society/argue-in-writing.md` |
 | 2026-10-07 | Publish | Dawkins: the gene's-eye view as the frame for evolutionary psychology, and his prose | `mind/`, `take`, "Richard Dawkins" | `mind/dawkins.md` |
 | 2026-10-01 | Publish | Social roles: five domains everyone holds, and role theory's refinements | `society/`, `reference`, "Social Roles" | `society/social-roles.md` |
 | 2026-09-30 | Publish | Mixing a song under a video's own audio with FFmpeg | `life/`, `howto`, "Mix Music Into a Video" | `life/mix-music-video.md` |

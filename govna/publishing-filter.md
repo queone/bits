@@ -15,7 +15,7 @@ Note: the site is public and attributable through its GitHub repository. Anonymi
 ## Entry Types And Budgets
 
 - Declare exactly one `type` in front matter on every entry: `take`, `note`, `howto`, `reference`, or `quote`.
-- Keep a `take` to 250 prose words.
+- Keep a `take` to 300 prose words.
 - Keep a `note` to 400 prose words.
 - Keep a `howto` to 500 prose words.
 - Keep a `quote` to 300 words including the quoted text.

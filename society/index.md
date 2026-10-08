@@ -2,6 +2,7 @@
 
 - [After New Atheism](after-new-atheism.md): The case against God was made, belief barely moved, and churches left a gap.
 - [Activism](activism.md): Rules for effective activism: match effort to influence, and work with imperfect allies.
+- [Argue in Writing, Bet on Predictions](argue-in-writing.md): Why writing and bets beat a stage debate.
 - [Cold at the Top](cold-at-the-top.md): Indifference at the top: traits plus incentives, no excuse.
 - [Constitutional Republic](constitutional-republic.md): Why "republic, not democracy" is a false choice, and what is contested.
 - [Confederate Monuments](monuments.md): Memorials to a myth, not to history.

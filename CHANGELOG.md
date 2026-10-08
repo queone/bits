@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.104.0 | AC78 take cap 300; takes: argue in writing, sorites; Pinker third reservation |
 | 0.103.0 | Eleven Tech sub-index entries get one-line descriptions for search |
 | 0.102.0 | AC77 search box also matches entry text; Richard Dawkins take |
 | 0.101.0 | AC76 search field centered under the title; links moved to a footer line |

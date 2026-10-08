@@ -11,6 +11,6 @@ type: take
 
 [Enlightenment Now](https://en.wikipedia.org/wiki/Enlightenment_Now) continues the [case](../society/enlightenment-ideals.md). Its account of what markets have done changed my earlier view, though I do not share his [high regard](../society/money-exception.md) for them. It also tends to overlook motives. Its treatment of the weapons-of-mass-destruction case for the Iraq War, and of the Y2K panic, blames bias and ignores the profit motives that fed both. [George Monbiot](https://en.wikipedia.org/wiki/George_Monbiot) has raised [environmental objections](https://bsky.app/profile/georgemonbiot.bsky.social/post/3m2m3mfff622e) to the book. I wish Pinker would answer a journalist I take seriously.
 
-My favorite line from
+The [AI exchange](../society/argue-in-writing.md) shows the same habit. He answered the weakest form of the case, as Alexander [catalogued](https://www.astralcodexten.com/p/an-open-letter-to-steven-pinker-on), and left the strongest unaddressed. He dismisses when he should engage, and the bill comes due when his sober voice is most needed.
 
-[Enlightenment Now](https://en.wikipedia.org/wiki/Enlightenment_Now) is this. Martin Luther King Jr. said the arc of the moral universe is long but bends toward justice. In the same spirit, the arc of history bends toward progress, toward more reason, knowledge, and well-being.
+My favorite line from [Enlightenment Now](https://en.wikipedia.org/wiki/Enlightenment_Now) is this. Martin Luther King Jr. said the arc of the moral universe is long but bends toward justice. In the same spirit, the arc of history bends toward progress, toward more reason, knowledge, and well-being.
