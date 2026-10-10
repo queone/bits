@@ -93,6 +93,7 @@ Every entry on one page, A to Z, with its area. Type in the search box at the to
 - [Oligarchy](society/oligarchy.md) (Society): Why the problem is concentrated wealth, not one man, with a ledger of who gains and who pays.
 - [Optimism](mind/optimism.md) (Mind): Lines and proverbs against pessimism.
 - [Ordenador](tech/ordenador.md) (Tech): Computers and AI as tools for putting life in order, and how to organize well.
+- [Owning the Machines](society/owning-the-machines.md) (Society): When wages stop paying, ownership must spread; basic income is not enough.
 - [PDF](tech/pdf.md) (Tech): Shrinking and merging PDFs from the command line.
 - [Perception Management](society/perception-management.md) (Society): How narratives, not facts, shape mass belief.
 - [Personal Growth](life/personal-growth.md) (Life): The handful of ideas I run my own life on.

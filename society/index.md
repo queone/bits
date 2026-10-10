@@ -20,6 +20,7 @@
 - [Not Conservatism](not-conservatism.md): Measured by conservative values, the administration is institutional decay.
 - [Oligarchy](oligarchy.md): Why the problem is concentrated wealth, not one man, with a ledger of who gains and who pays.
 - [The Orbán Playbook](orban-playbook.md): Bending institutions by legal means, as in Hungary, and how it can be beaten.
+- [Owning the Machines](owning-the-machines.md): When wages stop paying, ownership must spread; basic income is not enough.
 - [The Perception Gap](perception-gap.md): Why heavy news users see the other side as more extreme than it is, and what I did.
 - [Perception Management](perception-management.md): How narratives, not facts, shape mass belief.
 - [Politics](politics.md): Reason and Compassion as the real poles, plus three smaller convictions.

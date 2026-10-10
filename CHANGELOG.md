@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.108.0 | Owning the Machines take: ownership must spread when automation ends wages |
 | 0.107.0 | Bruce Schneier take; Enlightenment Ideals, Beauty, Slow by Design become takes |
 | 0.106.0 | Five notes become takes: Chomsky, Consciousness, Immigration, New Atheism, Money |
 | 0.105.0 | Pinker take states his AI reason first; inequality and Monbiot lines reworded |
