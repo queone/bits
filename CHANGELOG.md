@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 26.10.10a | AC79 adopt Govna governance files v0.73.0; dated release tags vYY.MM.DDa |
 | 0.110.0 | Prompt Cards reference replaces four thin media how-tos |
 | 0.109.0 | Argue in Writing names the Hugging Face hack as a step a bet would settle |
 | 0.108.0 | Owning the Machines take: ownership must spread when automation ends wages |
