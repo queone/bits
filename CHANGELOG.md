@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.105.0 | Pinker take states his AI reason first; inequality and Monbiot lines reworded |
 | 0.104.0 | AC78 take cap 300; takes: argue in writing, sorites; Pinker third reservation |
 | 0.103.0 | Eleven Tech sub-index entries get one-line descriptions for search |
 | 0.102.0 | AC77 search box also matches entry text; Richard Dawkins take |
