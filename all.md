@@ -24,6 +24,7 @@ Every entry on one page, A to Z, with its area. Type in the search box at the to
 - [Baseball](life/baseball.md) (Life): Why baseball is an American art form, plus one link for data hacking.
 - [Beauty](mind/beauty.md) (Mind): Where our sense of beauty comes from, and why I think it redeems us.
 - [Blood Pressure Diet](life/bp-diet.md) (Life): A DASH-style cheat-sheet of foods to favor and foods to limit.
+- [Bruce Schneier](mind/schneier.md) (Mind): Encryption and privacy expert; trust as civilization; agreement on public AI.
 - [Chess](life/chess.md) (Life): Openings to master, and a PGN cleanup function.
 - [Cold at the Top](society/cold-at-the-top.md) (Society): Indifference at the top: traits plus incentives, no excuse.
 - [Cold Logic](mind/cold-logic.md) (Mind): Reasoning that follows a principle past where it serves people, and its warm opposite.

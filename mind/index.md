@@ -34,6 +34,7 @@
 - [Pseudoscience](pseudoscience.md): Why it is bad, who is drawn to it, and what actually counters it.
 - [Reflexivity](reflexivity.md): Observing and revising your thinking, its evolved limits, and how institutions extend it.
 - [Reflexivity Curriculum](reflexivity-curriculum.md): Norms, practices, and safeguards that make reflection the default.
+- [Bruce Schneier](schneier.md): Encryption and privacy expert; trust as civilization; agreement on public AI.
 - [Science](science.md): The most important mental tool we have, and why it comes hard.
 - [The Sense of Style](sense-of-style.md): What Pinker's book argues, which popular tips are his, and how to use it.
 - [Sorites Paradox](sorites-paradox.md): No paradox once you set the gate, and the move to watch for.

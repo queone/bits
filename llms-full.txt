@@ -654,27 +654,17 @@ Truth-seeking is a duty. Most entries on this site end in the same shape: stop d
 | Chasing arrival | Keep the direction | [Flourishing](../life/flourishing.md) |
 
 ==== Beauty (Mind) https://que.one/mind/beauty.html
-Kind: note
+Kind: take
 
 ## Beauty
 
-Our sense of [beauty](https://en.wikipedia.org/wiki/Beauty) strikes me as the most redeeming thing about us. We stop to look at a sunset that gives us nothing. Where that sense comes from is an open question, and the answers on offer disagree.
+Our sense of [beauty](https://en.wikipedia.org/wiki/Beauty) strikes me as the most redeeming thing about us. We stop to look at a sunset that gives us nothing. Where that sense comes from is an open question.
 
-One answer is mate choice. Darwin argued in The Descent of Man that animals choose mates for their looks. [Richard Prum](https://en.wikipedia.org/wiki/The_Evolution_of_Beauty) has revived the idea as a force of its own in evolution.
+One answer is mate choice, Darwin's idea that animals choose mates for their looks, revived by [Richard Prum](https://en.wikipedia.org/wiki/The_Evolution_of_Beauty). A second is the useful signal: what looks good once helped us, as when children from many nations [prefer](https://en.wikipedia.org/wiki/Evolutionary_aesthetics) pictures of savanna with trees. A third is the by-product. [Steven Pinker](pinker.md) called music "[auditory cheesecake](https://en.wikipedia.org/wiki/Evolutionary_musicology)": a taste for fat and sugar was useful, and cheesecake just presses the buttons. A fourth says beauty is real: [David Deutsch](https://en.wikipedia.org/wiki/David_Deutsch) argues for [objective beauty](https://www.nature.com/articles/526S16a), some of it universal, "[as objective as the laws of physics](https://www.onfiction.ca/2012/04/david-deutsch-on-objective-beauty.html)". His case is the flower, evolved to attract insects, which attracts us too.
 
-A second answer is the useful signal. What looks good to us once helped us. Children from many nations [prefer](https://en.wikipedia.org/wiki/Evolutionary_aesthetics) pictures of savanna with trees, the kind of landscape where much of human evolution is thought to have happened.
+I lean toward the by-product, and I get there from the body. Pleasure is the useful signal: eating when hungry feels good, and so does relieving yourself. What helps the body feels right. My guess is that beauty is the same machinery, firing at things it was never built for: a sunset, a fugue, an equation. Pleasure and beauty still differ, though. [Kant](https://en.wikipedia.org/wiki/Critique_of_Judgment) drew the line: the agreeable is a good steak, and the beautiful is what we stop to contemplate, wanting nothing from it.
 
-A third is the by-product. [Steven Pinker](pinker.md) called music "[auditory cheesecake](https://en.wikipedia.org/wiki/Evolutionary_musicology)". A taste for fat and sugar was useful. Cheesecake played no part in that selection. It just presses the buttons.
-
-A fourth says beauty is real. The physicist [David Deutsch](https://en.wikipedia.org/wiki/David_Deutsch) argues that there is [objective beauty](https://www.nature.com/articles/526S16a). Some beauty is local to a species or a culture, he says, and some is universal, "[as objective as the laws of physics](https://www.onfiction.ca/2012/04/david-deutsch-on-objective-beauty.html)". His case is the flower, which evolved to attract insects and yet attracts us.
-
-I lean toward the by-product, and I get there from the body. Pleasure is the useful signal. Eating when hungry feels good, and so, to be plain, does relieving yourself. What helps the body feels right. My guess is that the sense of beauty is that same machinery. It fires at things it was never built for: a sunset, a fugue, an equation.
-
-Brain scans fit this. One region [responds](https://en.wikipedia.org/wiki/Neuroesthetics) to beauty in paintings, in music, and even in mathematics.
-
-Pleasure and beauty are still not the same thing. [Kant](https://en.wikipedia.org/wiki/Critique_of_Judgment) drew the line long ago. The agreeable is a good steak. The beautiful is something we stop to contemplate, wanting nothing from it.
-
-So I part with Deutsch on one point. He thinks the standard is out there. I think it is in us, a by-product that works as a compass. It draws us to objects and ideas that sit in harmony with what we are. That is why I call it redeeming. It is a way of choosing that has [nothing to do with winning](../life/legacy.md).
+So I part with Deutsch. He thinks the standard is out there. I think it is in us, a by-product that works as a compass, drawing us to objects and ideas in harmony with what we are. That is why I call it redeeming: it is a way of choosing that owes [nothing to winning](../life/legacy.md).
 
 [Science](science.md) tells me what is true. Beauty helps me choose what is worth wanting.
 
@@ -1346,6 +1336,21 @@ So most reasoning runs in a defensive mode. People confuse first impressions wit
 
 Institutions can supply its parts at scale and make reflection the default, not an act of discipline. The concrete design lives in the [reflexivity curriculum](reflexivity-curriculum.md).
 
+==== Bruce Schneier (Mind) https://que.one/mind/schneier.html
+Kind: take
+
+## Bruce Schneier
+
+[Bruce Schneier](https://en.wikipedia.org/wiki/Bruce_Schneier) is my go-to expert on encryption and privacy. I value his expert knowledge and his takes alike. With [Pinker](pinker.md), [Chomsky](chomsky.md), and the other thinkers on this site, he helps define my *Weltanschauung*.
+
+I have read [Data and Goliath](https://www.schneier.com/books/data-and-goliath/), [Liars and Outliers](https://www.schneier.com/books/liars-and-outliers/), and [A Hacker's Mind](https://www.schneier.com/books/a-hackers-mind/), and I could not agree more with them. The first shows surveillance as a business model. The second makes trust the basis of society. The third teaches thinking like a hacker, finding the loophole in any system of rules.
+
+One passage in Liars and Outliers stands out. He walks through a day without a gun, body armor, or burglar alarm, and [writes](https://www.schneier.com/books/liars-and-outliers-chapter1/): "It's what we call 'trust.' Actually, it's what we call 'civilization.'" That line cements him as an [Enlightenment](../society/enlightenment-ideals.md) thinker.
+
+On AI he is sober. Its powers are speed, scale, scope, and sophistication, and [Rewiring Democracy](https://www.schneier.com/books/rewiring-democracy/) asks whether they concentrate power or distribute it. An AI "will act trustworthy, but it will not be trustworthy", he [warns](https://www.schneier.com/blog/archives/2023/12/ai-and-trust.html). The task is to make AIs trustworthy services, "agents and not double agents". With Henry Farrell and Nathan Sanders he [argues](https://www.schneier.com/blog/archives/2023/04/ai-to-aid-democracy.html) AI could moderate mass political conversation and summarize what citizens think. That is the hope in [Slow by Design](../society/slow-by-design.md).
+
+On the condition I agree with him. An AI built for shareholders will act trustworthy without being trustworthy, so the fix is AI built as a public good and regulated like one. Even frontier labs ask for rules. Sam Altman [told](https://www.judiciary.senate.gov/imo/media/doc/2023-05-16%20-%20Bio%20&%20Testimony%20-%20Altman.pdf) the Senate in 2023 that "regulation of AI is essential", which concedes part of his point. That condition sits well with mine, an AI [aligned](../tech/before-agi.md) with us that has earned our trust, the [mild Leviathan](../society/mild-leviathan.md). I have found nothing of his to disagree with yet.
+
 ==== Science (Mind) https://que.one/mind/science.html
 Kind: take
 
@@ -1710,25 +1715,25 @@ My quarrel is with the framing, not the theology. Once the stakes are the end of
 The way out runs through the scripture these movements claim. Daniel and [Revelation](https://en.wikipedia.org/wiki/Book_of_Revelation) are two books out of sixty-six. The rest is mostly a call to build a more just world and to love thy neighbor. The point was building, not tearing down. Powerful people have every reason to convince you the ending is already here.
 
 ==== Enlightenment Ideals (Society) https://que.one/society/enlightenment-ideals.html
-Kind: note
+Kind: take
 
 ## Enlightenment Ideals
 
-[Steven Pinker](../mind/pinker.md) states the [Enlightenment](https://en.wikipedia.org/wiki/Age_of_Enlightenment) ideal in one line: "we should use reason to improve human flourishing." He said it in a 2023 debate ([part one](https://youtu.be/SA-tCQJEzqk), [part two](https://youtu.be/gNVm-oXFK9k)) with the political scientist [John Mearsheimer](https://en.wikipedia.org/wiki/John_Mearsheimer).
+[Steven Pinker](../mind/pinker.md) states the [Enlightenment](https://en.wikipedia.org/wiki/Age_of_Enlightenment) ideal in one line: "we should use reason to improve human flourishing." He said it in a 2023 debate ([part one](https://youtu.be/SA-tCQJEzqk), [part two](https://youtu.be/gNVm-oXFK9k)) with [John Mearsheimer](https://en.wikipedia.org/wiki/John_Mearsheimer).
 
-I hold the ideal as he states it, and I would like to think its core is the foundation of this site.
+I hold the ideal as he states it. This site practices the first half, reasoning in the open, in the hope it serves the second.
 
-He spells out both halves of the line. Reason means [open deliberation](../mind/trust-in-truth.md), science, and history. Its fruits are institutions: liberal democracy, regulated markets, and international bodies. Flourishing is what each of us wants and cannot deny to others: life, health, sustenance, prosperity, peace, freedom, safety, knowledge, leisure, happiness.
+He spells out both halves. Reason means [open deliberation](../mind/trust-in-truth.md), science, and history, and its fruits are institutions: liberal democracy, regulated markets, and international bodies. Flourishing is what each of us wants and cannot deny to others: life, health, prosperity, peace, freedom, knowledge, happiness.
 
-He also says what the ideal is not. It is not reverence for some great men of the eighteenth century. "They were just guys." The ideas are what count. And it is not praise of the West, which "has always been ambivalent in its commitment" to it.
+He also says what the ideal is not: reverence for some great men of the eighteenth century. "They were just guys." Nor is it praise of the West, which "has always been ambivalent in its commitment" to it.
 
-The rivals are old and still with us. Religion says we should obey God's commandments in holy scripture. Romantic nationalism says nations, embodied in strong leaders, should strive for historic greatness. Zero-sum struggle says subjugated groups must overcome their oppressors. Reactionary ideology says we should reject modernity and return to a golden age.
+The rivals are old and still with us. They are religion and its commandments, romantic nationalism and its strong leaders, zero-sum struggle between groups, and reactionary longing for a golden age.
 
-Mearsheimer's objection deserves its weight. Free reasoning, he says, does not bring people to agree on first principles or on the good life. It brings "significant disagreement", which is why politics matters. And people are social animals who belong to tribes, today called nations, with their identities bound up in them.
+Mearsheimer's objection has weight. Free reasoning, he says, does not bring people to agree on first principles or the good life. It brings "significant disagreement", which is why politics matters. And people are social animals who belong to tribes, today called nations, and identify with them.
 
-I think he is right about how people are. My own entries say as much: politics is [identity-first](us-identity-politics.md), and we [read facts through our groups](../mind/cultural-cognition.md). But that is a description. Pinker's line is an aim. The gap between what is and what ought to be, [Hume's guillotine](../mind/famous-lessons.md), is the space in which the ideal works. We are tribal, and we should reason anyway.
+I think Mearsheimer is right about how people are. My entries say as much: politics is [identity-first](us-identity-politics.md), and we [read facts through our groups](../mind/cultural-cognition.md). But that is a description. Pinker's line is an aim. The gap between is and ought, [Hume's guillotine](../mind/famous-lessons.md), is where the ideal works. We are tribal, and we should reason anyway.
 
-One caution of my own. Regulated markets are a fruit of reason, but defending them calls for care about historical timing. There are moments when the defense shades into [deference to money](money-exception.md).
+One caution. Regulated markets are a fruit of reason, but defending them calls for care about historical timing. At times the defense shades into [deference to money](money-exception.md).
 
 ==== The Immigration Choice (Society) https://que.one/society/immigration-choice.html
 Kind: take
@@ -2031,29 +2036,19 @@ Universities add a problem of their own. Jonathan Rauch warns of [two insurgenci
 The rules I write this site under are a one-person version of the same charter. Link to what someone already explained, source the claims, write plainly, and respect the reader.
 
 ==== Slow by Design (Society) https://que.one/society/slow-by-design.html
-Kind: note
+Kind: take
 
 ## Slow by Design
 
-[Jonathan Haidt](https://en.wikipedia.org/wiki/Jonathan_Haidt) wrote in a [2022 essay](https://www.theatlantic.com/magazine/archive/2022/05/social-media-democracy-trust-babel/629369/) that the Framers "were excellent social psychologists." They knew a democracy rests on its people's judgment, and that judgment can run hot. A delegate's [notes](https://founders.archives.gov/documents/Madison/01-10-02-0044) record [James Madison](https://en.wikipedia.org/wiki/James_Madison) telling the Convention in 1787 that a people may want checks "against the turbulency and weakness of unruly passions." In [Federalist No. 10](https://en.wikipedia.org/wiki/Federalist_No._10) he called the causes of faction "sown in the nature of man."
+[Jonathan Haidt](https://en.wikipedia.org/wiki/Jonathan_Haidt) wrote in a [2022 essay](https://www.theatlantic.com/magazine/archive/2022/05/social-media-democracy-trust-babel/629369/) that the Framers "were excellent social psychologists." A delegate's [notes](https://founders.archives.gov/documents/Madison/01-10-02-0044) record [James Madison](https://en.wikipedia.org/wiki/James_Madison) telling the Convention in 1787 that a people may want checks "against the turbulency and weakness of unruly passions." They built a republic that is slow on purpose, designed, Haidt writes, to "slow things down, cool passions, require compromise." The features are under [Constitutional Republic](constitutional-republic.md).
 
-They built a republic that is slow on purpose. The design, Haidt writes, was to "slow things down, cool passions, require compromise." It also shielded leaders from "the mania of the moment" while voters judge them on Election Day. The features are under [Constitutional Republic](constitutional-republic.md).
+Haidt's claim is that social media stripped the cooling away when platforms added the tools of virality, from 2009 to 2012. Anger now outruns institutions. The mechanics are under [Viral Truth](viral-truth.md), [The Perception Gap](perception-gap.md), and [Perception Management](perception-management.md).
 
-Haidt's claim is that social media stripped the cooling away when platforms added the tools of virality, from 2009 to 2012. Anger moves faster than institutions can absorb it. The mechanics are under [Viral Truth](viral-truth.md), [The Perception Gap](perception-gap.md), and [Perception Management](perception-management.md). His warning: "If we do not make major changes soon, then our institutions, our political system, and our society may collapse."
+I agree with Haidt, though the evidence is mixed and [we may both be wrong](../mind/popper.md). A [2017 study](https://pubmed.ncbi.nlm.nih.gov/28928150/) found polarization grew most among Americans over 65, who use social media least. Haidt's [reply](https://www.theatlantic.com/ideas/archive/2022/07/social-media-harm-facebook-meta-response/670975/) is that his claim concerns a sudden shift in the early 2010s, which long trend lines cannot show. I have no full answer to that yet.
 
-I agree with Haidt, though the evidence is mixed and [we may both be wrong](../mind/popper.md).
+Haidt names three reforms: harden democratic institutions, reform social media, and prepare the next generation. I back all three and would add two. The first he practices without listing it: speaking out calmly, with evidence, builds the critical mass change needs. That is the [duty to speak](money-exception.md), with [civility](smug-pilots.md).
 
-A [2017 study](https://pubmed.ncbi.nlm.nih.gov/28928150/) found polarization grew most among the groups least likely to use social media, such as Americans over 65. Haidt's [reply](https://www.theatlantic.com/ideas/archive/2022/07/social-media-harm-facebook-meta-response/670975/) to a related study is that his claim concerns a sudden shift in the early 2010s, which decades-long trend lines cannot show.
-
-The finding surprises me, and I have no full answer to it yet.
-
-Haidt names three kinds of reform: harden democratic institutions, reform social media, and prepare the next generation. I back all three and would add two.
-
-The first he practices without listing it. When people like him speak out calmly, with evidence, they build the critical mass that change needs. That is the [duty to speak](money-exception.md), with [civility](smug-pilots.md).
-
-The second may be controversial. Slowness served the republic well. So far we have managed to "[keep it](https://en.wikiquote.org/wiki/Benjamin_Franklin)", in Franklin's phrase. But slowness cannot be the whole answer as technology speeds everything up.
-
-I think AI can help us chill out. It could check facts at the speed of virality. It could tell me what Haidt, [Pinker](../mind/pinker.md), [Popper](../mind/popper.md), [Chomsky](../mind/chomsky.md), or [Rauch](../mind/trust-in-truth.md) would say about a thought of mine. Then I could admit sooner when I go astray. That depends on AI being [aligned](../tech/before-agi.md) with us, and earning our trust.
+Slowness served the republic well, and so far we have managed to "[keep it](https://en.wikiquote.org/wiki/Benjamin_Franklin)". But it cannot be the whole answer as technology speeds everything up. My second addition is AI, which I think can help us [chill out](https://www.schneier.com/blog/archives/2023/04/ai-to-aid-democracy.html). It could check facts at the speed of virality. It could tell me what Haidt, [Pinker](../mind/pinker.md), [Popper](../mind/popper.md), [Chomsky](../mind/chomsky.md), or [Rauch](../mind/trust-in-truth.md) would say about a thought of mine, so I could admit error sooner. That depends on AI being [aligned](../tech/before-agi.md) with us and earning our trust.
 
 ==== Smug Pilots (Society) https://que.one/society/smug-pilots.html
 Kind: take
