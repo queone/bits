@@ -679,19 +679,19 @@ So I part with Deutsch on one point. He thinks the standard is out there. I thin
 [Science](science.md) tells me what is true. Beauty helps me choose what is worth wanting.
 
 ==== Noam Chomsky (Mind) https://que.one/mind/chomsky.html
-Kind: note
+Kind: take
 
 ## Noam Chomsky
 
 [Noam Chomsky](https://en.wikipedia.org/wiki/Noam_Chomsky) is the thinker who did the most to shape how I see the world. A magazine profile led me to him early on. I had never met a more honest or more scientific view of reality.
 
-He has two sides: the cognitive scientist and the political dissident. On thinking and morality I agree with him on almost everything. In politics he has made the world better by standing with the oppressed. Many people find his positions hard to put into practice, and I tend to agree.
+He has two sides: the cognitive scientist and the political dissident. On thinking and morality I agree with him on almost everything. In politics he has made the world better by standing with the oppressed. Many people find his positions hard to put into practice, though, and so do I.
 
 Following my inner [Popper](popper.md), the place where I differ is more interesting than the agreements. Chomsky holds that language appeared through a single mutation, not through slow selection. This is his [single-step theory](https://en.wikipedia.org/wiki/Origin_of_language#Chomsky's_single-step_theory). That treats one human trait as special, almost magical. I find the gradual account that [Dennett](dennett.md) defends more likely.
 
-### Limits to human intelligence
+On the limits of human intelligence he wrote this in [Science, Mind, and Limits of Understanding](https://chomsky.info/201401__/):
 
-> If there were no limits to human intelligence, it would lack internal structure and would therefore have no scope. — Noam Chomsky, [Science, Mind, and Limits of Understanding](https://chomsky.info/201401__/)
+> If there were no limits to human intelligence, it would lack internal structure and would therefore have no scope.
 
 His point, from that essay and from an [interview](https://youtu.be/XSgUCMkt8us) with [Lex Fridman](https://en.wikipedia.org/wiki/Lex_Fridman), is simple. A living system can only build and organize information within limits. Those limits are the structure that makes thinking possible.
 
@@ -783,23 +783,23 @@ I wonder how much of that was already implied by complexity theory, by [Gödel's
 Caring about computation matters because it leads to big shifts in how we see things. [Copernicus](https://en.wikipedia.org/wiki/Nicolaus_Copernicus) moving us away from the center of the universe is the famous example. Before and after him, computing planet positions with [Ptolemy](https://en.wikipedia.org/wiki/Ptolemy)'s epicycles worked well enough for most uses. It was only less accurate. More accuracy in our understanding is what such a shift buys.
 
 ==== Consciousness (Mind) https://que.one/mind/consciousness.html
-Kind: note
+Kind: take
 
 ## Consciousness
 
-[Steven Pinker](pinker.md)'s introductory [psychology lectures](https://stevenpinker.com/psy-1-introduction-psychological-science-lectures) split consciousness the way the philosopher David Chalmers did, into easy problems and a [hard problem](https://en.wikipedia.org/wiki/Hard_problem_of_consciousness).
+[Steven Pinker](pinker.md)'s [psychology lectures](https://stevenpinker.com/psy-1-introduction-psychological-science-lectures) split consciousness, as David Chalmers did, into easy problems and a [hard problem](https://en.wikipedia.org/wiki/Hard_problem_of_consciousness).
 
-The easy problem is access. Some information is available to us: the objects we see, our plans, the content of a sentence. Some is not: the rules of syntax, the image on the retina, the commands to our muscles.
+The easy problem is access. Some information is available to us: the objects we see, our plans, the content of a sentence. Some is not: the rules of syntax or the commands to our muscles.
 
-"Easy" is an in-joke. It is still very hard, but science has a way in. [Attention](attention.md) decides what gets through. The leading account is a [global workspace](https://en.wikipedia.org/wiki/Global_workspace_theory), a blackboard where a small, relevant subset of information is posted for memory, language, and planning to share.
+"Easy" is an in-joke. It is still very hard, but science has a way in. [Attention](attention.md) decides what gets through. The leading account is a [global workspace](https://en.wikipedia.org/wiki/Global_workspace_theory), a blackboard where a relevant subset of information is posted for memory, language, and planning to share.
 
-The hard problem is sentience: why any of this feels like something. Philosophers call the raw feels [qualia](https://en.wikipedia.org/wiki/Qualia), such as the painfulness of pain or the smell of cinnamon. Is your blue my blue? Could a program feel? Could there be a [zombie](https://en.wikipedia.org/wiki/Philosophical_zombie) that acts like us with nobody home?
+The hard problem is sentience: why any of this feels like something. Philosophers call the raw feels [qualia](https://en.wikipedia.org/wiki/Qualia), such as the smell of cinnamon. Could a program feel? Could there be a [zombie](https://en.wikipedia.org/wiki/Philosophical_zombie) that acts like us with nobody home?
 
-The lectures list the answers on offer. Dualism leaves too many open questions. Information-processing theories cannot say why a flow of bits should feel like anything, and they slide toward [panpsychism](https://en.wikipedia.org/wiki/Panpsychism), with conscious thermostats. Neural theories point to brain rhythms, and [Penrose](penrose.md) points to quantum gravity, and both still owe us the how. The [mysterians](https://en.wikipedia.org/wiki/New_mysterianism) say our brains may lack the means to solve it. And [Daniel Dennett](dennett.md) says there is no hard problem: sentience, as something over and above the machinery, is an illusion.
+The lectures list the answers. Dualism leaves too many open questions. Information-processing theories cannot say why a flow of bits should feel like anything, and slide toward [panpsychism](https://en.wikipedia.org/wiki/Panpsychism), with conscious thermostats. Neural theories point to brain rhythms, [Penrose](penrose.md) to quantum gravity, and both still owe us the how. The [mysterians](https://en.wikipedia.org/wiki/New_mysterianism) say our brains may lack the means to solve it. And [Daniel Dennett](dennett.md) says there is no hard problem: sentience over and above the machinery is an illusion.
 
-I side with Dennett. I expect consciousness to get a materialist explanation in the end. Life itself looked like this kind of mystery in the nineteenth century, and it turned out to be molecules, organized by natural selection. Descartes's objection, that I cannot be wrong about my own experience, does not move me.
+I side with Dennett. I expect a materialist explanation in the end. Life looked like this kind of mystery in the nineteenth century and turned out to be molecules organized by natural selection. Descartes's objection, that I cannot be wrong about my own experience, does not move me.
 
-That does not make the mysterians wrong about today. [Chomsky's limits](chomsky.md) on human understanding are real, I think, for the brain as it now is. They hold until we find a way to augment it, which may or may never happen.
+That does not make the mysterians wrong today. [Chomsky's limits](chomsky.md) on human understanding are real, I think, for the brain as it now is. They hold until we augment it, which may never happen.
 
 ==== Human Core Challenges (Mind) https://que.one/mind/core-challenges.html
 Kind: note
@@ -1577,21 +1577,21 @@ Kind: take
 It is often more productive to work with the motivated and influential few to change institutions, and to let the average person be.
 
 ==== After New Atheism (Society) https://que.one/society/after-new-atheism.html
-Kind: note
+Kind: take
 
 ## After New Atheism
 
-About twenty years ago, four writers made the case against God in plain view. They were [Richard Dawkins](../mind/dawkins.md) in [The God Delusion](https://en.wikipedia.org/wiki/The_God_Delusion), Daniel Dennett, Sam Harris, and Christopher Hitchens, the so-called [Four Horsemen](https://en.wikipedia.org/wiki/New_Atheism). I think they dismantled that case. They did for me.
+Twenty years ago, four writers made the case against God in plain view. [Richard Dawkins](../mind/dawkins.md) in [The God Delusion](https://en.wikipedia.org/wiki/The_God_Delusion), Daniel Dennett, Sam Harris, and Christopher Hitchens were the [Four Horsemen](https://en.wikipedia.org/wiki/New_Atheism). I think they dismantled that case. They did for me.
 
-Before Dawkins I called myself agnostic. Now I can say with conviction that I am an atheist, though, like Dawkins, not a pure 7 on his [scale of theistic probability](https://en.wikipedia.org/wiki/Spectrum_of_theistic_probability). God is very improbable, and I live on the assumption that he is not there.
+Before Dawkins I called myself agnostic. Now I say with conviction that I am an atheist, though, like Dawkins, not a pure 7 on his [scale of theistic probability](https://en.wikipedia.org/wiki/Spectrum_of_theistic_probability). God is very improbable, and I live as if he is not there.
 
-Yet belief barely moved. Americans with no religion rose from about [7 percent in 1991](https://gss.norc.org/content/dam/gss/get-documentation/pdf/reports/social-change-reports/SC46.pdf) to 29 percent, and that rise has [paused since 2019](https://www.pbs.org/newshour/nation/survey-shows-u-s-christian-population-leveling-off-after-declining-for-years). Belief in God or a universal spirit still stands at 83 percent. Michael Hout and Claude Fischer found that most who left were "unchurched believers": they left the pews, not the sacred.
+Yet belief barely moved. Americans with no religion rose from about [7 percent in 1991](https://gss.norc.org/content/dam/gss/get-documentation/pdf/reports/social-change-reports/SC46.pdf) to 29 percent, then [paused after 2019](https://www.pbs.org/newshour/nation/survey-shows-u-s-christian-population-leveling-off-after-declining-for-years). Belief in God or a universal spirit still stands at 83 percent. [Michael Hout](https://en.wikipedia.org/wiki/Michael_Hout) and [Claude Fischer](https://en.wikipedia.org/wiki/Claude_S._Fischer) found that most who left were "unchurched believers": they left the pews, not the sacred.
 
 The drift came mainly from [generations](https://discovery.ucl.ac.uk/id/eprint/1476386/1/Voas_684202.pdf), each less religious than the last, and partly from politics. As religion fused with the right, liberals left fastest. Their Christian share fell from 62 to 37 percent since 2007. New Atheism named a change it did not cause.
 
-That fits what I think about [changing minds](../mind/comfort-biases.md): arguments rarely do it, and norms, messengers, and institutions do. What wearies me is that so many learned readers did not budge either. [Intelligence and reflection are separate](../mind/reflexivity.md), and the [models installed in childhood](../mind/domain-specific-models.md) stick like velcro. I think [Pinker's](../mind/pinker.md) Better Angels met the same unfair resistance from smart people. The best-argued reply came from Ross Douthat, whose 2025 book [Believe](https://www.deseret.com/faith/2025/02/10/ross-douthat-believe-book-new-york-times/) argues that everyone should be religious.
+That fits what I think about [changing minds](../mind/comfort-biases.md): arguments rarely do it; norms, messengers, and institutions do. What disheartens me is how many learned readers did not budge either. [Intelligence and reflection are separate](../mind/reflexivity.md), and the [models installed in childhood](../mind/domain-specific-models.md) stick like velcro. The best-argued reply came from Ross Douthat, whose 2025 book [Believe](https://www.deseret.com/faith/2025/02/10/ross-douthat-believe-book-new-york-times/) argues that everyone should be religious.
 
-So those of us the Horsemen convinced should say so openly, and [build on their work](salomons-house.md). One question they left open still matters. Churches gave people community, ritual, and shared meaning, and nothing secular has matched them yet. The pull toward something larger is [evolved](../mind/transcendence.md), so it will not vanish with belief. It needs [secular homes](../life/flourishing.md).
+So those of us the Horsemen convinced should say so openly and [build on their work](salomons-house.md). One question they left open still matters. Churches gave people fellowship, ritual, and shared meaning, and nothing secular has matched them. The pull toward something larger is [evolved](../mind/transcendence.md) and will not vanish with belief. It needs [secular homes](../life/flourishing.md).
 
 ==== Argue in Writing, Bet on Predictions (Society) https://que.one/society/argue-in-writing.html
 Kind: take
@@ -1731,23 +1731,23 @@ I think he is right about how people are. My own entries say as much: politics i
 One caution of my own. Regulated markets are a fruit of reason, but defending them calls for care about historical timing. There are moments when the defense shades into [deference to money](money-exception.md).
 
 ==== The Immigration Choice (Society) https://que.one/society/immigration-choice.html
-Kind: note
+Kind: take
 
 ## The Immigration Choice
 
-The case for mass deportation is that unenforced law invites more breaking of it, and that some towns carry costs they never agreed to. Drawing a line at the border is one thing. Removing millions of people who already live and work here is another, and I doubt it is feasible, affordable, or wise.
+The case for mass deportation is that unenforced law invites more lawbreaking, and that some towns carry costs they never chose. Drawing a line at the border is one thing. Removing millions of people who already live and work here is another, and I doubt it is feasible, affordable, or wise.
 
-Start with the claim that undocumented immigrants overwhelm public benefits. Federal law bars them from nearly all [means-tested programs](https://www.americanimmigrationcouncil.org/blog/undocumented-immigrants-snap-medicaid-benefits/), including SNAP, Medicaid, TANF, and subsidized Affordable Care Act plans. Emergency care, school lunches, and a few other exceptions remain.
+Start with the benefits claim. Federal law bars undocumented immigrants from nearly all [means-tested programs](https://www.americanimmigrationcouncil.org/blog/undocumented-immigrants-snap-medicaid-benefits/), including SNAP, Medicaid, TANF, and subsidized Affordable Care Act plans. Exceptions include emergency care and school lunches.
 
-Meanwhile they pay in. The [Institute on Taxation and Economic Policy](https://itep.org/undocumented-immigrants-taxes-2024/), which favors progressive taxes, estimates they paid $96.7 billion in taxes in 2022. That included $25.7 billion into Social Security, which they cannot collect. Where a city's shelters or schools are strained, that reflects state and local capacity and funding, not a federal welfare transfer.
+Meanwhile they pay in. The [Institute on Taxation and Economic Policy](https://itep.org/undocumented-immigrants-taxes-2024/), which favors progressive taxes, estimates they paid $96.7 billion in taxes in 2022. That included $25.7 billion to Social Security they cannot collect. Strained city shelters or schools reflect local capacity and funding, not a federal welfare transfer.
 
-Now the cost of removal. The [American Immigration Council](https://www.americanimmigrationcouncil.org/report/mass-deportation/), which favors immigration, puts a one-time mass deportation at $315 billion or more. By the same report, undocumented workers make up about one in seven construction workers and one in eight agricultural workers. Remove them and labor gets scarcer and prices rise.
+Now the cost of removal. The [American Immigration Council](https://www.americanimmigrationcouncil.org/report/mass-deportation/), which favors immigration, puts a one-time mass deportation at $315 billion or more. The same report counts them as about one in seven construction workers and one in eight farm workers. Remove them and labor gets scarcer and prices rise.
 
-If the worry is that legal status invites more crossings, the answer is enforcement at the border and rules for the future. It is not expelling a workforce already woven into the economy.
+If the worry is more crossings, the answer is border enforcement and rules for the future, not expelling a workforce already woven into the economy.
 
-What troubles me most is the cost in empathy. Harsh tactics draw support even from some people with immigrant roots of their own. Yet cruelty toward vulnerable families and children is hard to square with Christian ethics or with basic decency.
+What troubles me most is the cost in empathy. Harsh tactics draw support even from some people with immigrant roots. Yet cruelty toward vulnerable families and children is hard to square with Christian ethics or basic decency.
 
-So the real choice is not open borders against lawlessness. It is whether we formalize and tax the people already here, or pay for an enforcement regime with uncertain returns. I would choose a structured, enforceable, conditional path to legal status. It strengthens compliance and widens the tax base.
+So the real choice is not open borders against lawlessness. It is whether we formalize and tax the people already here or pay for an enforcement regime with uncertain returns. I would choose a structured, enforceable, conditional path to legal status. It strengthens compliance and widens the tax base.
 
 ==== Israel and Hamas (Society) https://que.one/society/israel-hamas.html
 Kind: note
@@ -1841,19 +1841,19 @@ The attention layer is run by [recommender systems](https://en.wikipedia.org/wik
 The political cost is that the tuning rewards whatever is vivid and stirs feeling. That is how [Pizzagate](https://en.wikipedia.org/wiki/Pizzagate_conspiracy_theory) spread. How that shapes belief is the subject of [perception management](perception-management.md). What it does to political identity is in [identity politics](us-identity-politics.md).
 
 ==== The Money Exception (Society) https://que.one/society/money-exception.html
-Kind: note
+Kind: take
 
 ## The Money Exception
 
-In 2011 [Sam Harris](https://en.wikipedia.org/wiki/Sam_Harris) found the one thing his readers would not forgive. He could call the world's religions "cesspools of confusion and bigotry", deny free will, even defend torture, he wrote, and keep his audience. Then he [suggested](https://www.samharris.org/blog/how-rich-is-too-rich) that billionaires pay more tax. "Nothing will rile and winnow your audience" like that, he [reported afterward](https://www.samharris.org/blog/how-to-lose-readers-without-even-trying). He called the reaction a "quasi-religious abhorrence of 'wealth redistribution'".
+In 2011 [Sam Harris](https://en.wikipedia.org/wiki/Sam_Harris) found the one thing his readers would not forgive. He could call religions "cesspools of confusion and bigotry", deny free will, even defend torture, he wrote, and keep his audience. Then he [suggested](https://www.samharris.org/blog/how-rich-is-too-rich) billionaires pay more tax. "Nothing will rile and winnow your audience" like that, he [reported afterward](https://www.samharris.org/blog/how-to-lose-readers-without-even-trying), calling the reaction a "quasi-religious abhorrence of 'wealth redistribution'".
 
-I see a quieter version among thinkers I admire. [Steven Pinker](../mind/pinker.md) argues in [Enlightenment Now](https://en.wikipedia.org/wiki/Enlightenment_Now) that economic inequality "is not itself a dimension of human wellbeing". That is a position, not a motive. This is only my impression: remedies that touch big money face a higher bar of proof among such thinkers than other ideas do.
+I see a quieter version among thinkers I admire. [Steven Pinker](../mind/pinker.md) argues in [Enlightenment Now](https://en.wikipedia.org/wiki/Enlightenment_Now) that economic inequality "is not itself a dimension of human wellbeing". That is a position, not a motive. This is only my impression: remedies that touch big money face a higher bar of proof among these thinkers.
 
-Some of that bar is sound. [Chesterton's fence](../mind/famous-lessons.md) says not to tear down what you do not understand, and rocking the boat of a working economy can make things far worse. Some of it is ordinary bias. Psychologists call the pull toward the existing state of affairs [status quo bias](https://en.wikipedia.org/wiki/Status_quo_bias), and the urge to defend existing arrangements [system justification](https://en.wikipedia.org/wiki/System_justification).
+Some of that bar is sound. [Chesterton's fence](../mind/famous-lessons.md) says not to tear down what you do not understand, and rocking a working economy can make things far worse. Some of it is ordinary bias. Psychologists call the pull toward things as they are [status quo bias](https://en.wikipedia.org/wiki/Status_quo_bias), and the urge to defend existing arrangements [system justification](https://en.wikipedia.org/wiki/System_justification).
 
-I am not wise enough to draw the exact line between the two. What I can say is that timing matters. In February 1933, [25 German industrialists](https://en.wikipedia.org/wiki/Secret_Meeting_of_20_February_1933) met Hitler and gave about two million Reichsmarks to his campaign. I wonder how that year would have gone if more people of their standing had said no. [Dwight Eisenhower](https://en.wikipedia.org/wiki/Dwight_D._Eisenhower%27s_farewell_address), a general and no radical, did speak up on his way out, warning against "unwarranted influence" by the "military-industrial complex". [Who We Thank](who-we-thank.md) follows that warning to the ballpark.
+I cannot draw the exact line between the two, but timing matters. In February 1933, [25 German industrialists](https://en.wikipedia.org/wiki/Secret_Meeting_of_20_February_1933) met Hitler and gave about two million Reichsmarks to his campaign. I wonder how that year would have gone if more people like them had said no. [Dwight Eisenhower](https://en.wikipedia.org/wiki/Dwight_D._Eisenhower%27s_farewell_address), a general and no radical, spoke up on his way out, warning against "unwarranted influence" by the "military-industrial complex".
 
-So those who respect the fence still ought to speak a little louder when the moment looks consequential. That asks public thinkers to read a crystal ball, which may not be fair. But I agree with [Chomsky](../mind/chomsky.md) that [intellectuals](https://en.wikiquote.org/wiki/Noam_Chomsky) "are in a position to expose the lies of governments", and that the position carries a duty. I would only ask for more diplomacy than he usually shows.
+So those who respect the fence still ought to speak louder when the moment looks consequential. That asks thinkers to read a crystal ball, perhaps unfairly. But I agree with [Chomsky](../mind/chomsky.md) that [intellectuals](https://en.wikiquote.org/wiki/Noam_Chomsky) "are in a position to expose the lies of governments", and that position carries a duty. I would only ask for more diplomacy than he shows.
 
 ==== Confederate Monuments (Society) https://que.one/society/monuments.html
 Kind: take

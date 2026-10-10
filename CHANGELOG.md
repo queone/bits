@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 0.106.0 | Five notes become takes: Chomsky, Consciousness, Immigration, New Atheism, Money |
 | 0.105.0 | Pinker take states his AI reason first; inequality and Monbiot lines reworded |
 | 0.104.0 | AC78 take cap 300; takes: argue in writing, sorites; Pinker third reservation |
 | 0.103.0 | Eleven Tech sub-index entries get one-line descriptions for search |
