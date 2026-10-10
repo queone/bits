@@ -14,8 +14,5 @@
 - [Baseball](baseball.md): Why baseball is an American art form, plus one link for data hacking.
 - [Columbo](columbo.md): All 69 episodes, and how to transcode the DVD set.
 - [Star Wars Chronology](star-wars.md): The films and live-action series in story order, with release years.
-- [Apple TV Home Videos](appletv-videos.md): Play videos from a Mac through the Apple TV app.
-- [Crop Videos](crop-videos.md): Crop a widescreen clip to 4:3 with FFmpeg.
 - [Mix Music Into a Video](mix-music-video.md): Put a song under a clip's own sound with FFmpeg.
-- [Converting iPhone Ringtones](iphone-ringtones.md): M4R to MP3 and back with FFmpeg.
-- [Decrypt Disc to MKV](disc-to-mkv.md): Rip a Blu-ray or DVD to MKV, then to MP4 for Apple TV.
+- [Prompt Cards](prompt-cards.md): Shortest prompts for four retired how-tos, with the choices each must carry.

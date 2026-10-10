@@ -13,7 +13,6 @@ Every entry on one page, A to Z, with its area. Type in the search box at the to
 - [After New Atheism](society/after-new-atheism.md) (Society): The case against God was made, belief barely moved, and churches left a gap.
 - [AI](tech/ai.md) (Tech): Prompts that keep answers honest, running a model locally, and when embeddings are enough.
 - [Answer Patterns](mind/answer-patterns.md) (Mind): Four dimensions for reading what an answer is doing.
-- [Apple TV Home Videos](life/appletv-videos.md) (Life): Play videos from a Mac through the Apple TV app.
 - [Arcade](tech/arcade.md) (Tech): MAME on a desktop and on a Raspberry Pi, with the cabinet configuration.
 - [Argue in Writing, Bet on Predictions](society/argue-in-writing.md) (Society): Why writing and bets beat a stage debate.
 - [Attention](mind/attention.md) (Mind): Two ways the mind processes, feature integration, the gorilla test, and the global workspace.
@@ -37,12 +36,9 @@ Every entry on one page, A to Z, with its area. Type in the search box at the to
 - [Consciousness](mind/consciousness.md) (Mind): The easy problem, the hard problem, the answers on offer, and why I side with Dennett.
 - [Constitutional Republic](society/constitutional-republic.md) (Society): Why "republic, not democracy" is a false choice, and what is contested.
 - [Containers](tech/containers.md) (Tech): Docker installation and the commands I reach for.
-- [Converting iPhone Ringtones](life/iphone-ringtones.md) (Life): M4R to MP3 and back with FFmpeg.
-- [Crop Videos](life/crop-videos.md) (Life): Crop a widescreen clip to 4:3 with FFmpeg.
 - [Cultural Cognition](mind/cultural-cognition.md) (Mind): Reading facts through group identity, and how societies move past it.
 - [Daniel Dennett](mind/dennett.md) (Mind): Gradualism, intuition pumps, and Darwin's dangerous idea.
 - [Dealing With Difficult Personalities](society/difficult-personalities.md) (Society): Handling people in power who cannot be reasoned with.
-- [Decrypt Disc to MKV](life/disc-to-mkv.md) (Life): Rip a Blu-ray or DVD to MKV, then to MP4 for Apple TV.
 - [Desire](mind/desire.md) (Mind): A single scale from hatred to addiction.
 - [Detecting Baloney](mind/detecting-baloney.md) (Mind): Pointers for an intellectual self-defense toolkit.
 - [Devops Documentation](tech/devops-docs.md) (Tech): The four kinds of documentation and how to write them.
@@ -100,6 +96,7 @@ Every entry on one page, A to Z, with its area. Type in the search box at the to
 - [Poker](life/poker.md) (Life): Chip counts, blind schedules, and payouts for home games.
 - [Politics](society/politics.md) (Society): Reason and Compassion as the real poles, plus three smaller convictions.
 - [Privacy](tech/privacy.md) (Tech): Online basics, why we surveil, and where it becomes overreach.
+- [Prompt Cards](life/prompt-cards.md) (Life): Shortest prompts for four retired how-tos, with the choices each must carry.
 - [Pseudoscience](mind/pseudoscience.md) (Mind): Why it is bad, who is drawn to it, and what actually counters it.
 - [Reflexivity](mind/reflexivity.md) (Mind): Observing and revising your thinking, its evolved limits, and how institutions extend it.
 - [Reflexivity Curriculum](mind/reflexivity-curriculum.md) (Mind): Norms, practices, and safeguards that make reflection the default.
