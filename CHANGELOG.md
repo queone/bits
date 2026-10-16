@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 26.10.16a | Rules and Models: training against rules makes a model better, not certain |
 | 26.10.10b | AC80 adopt Govna governance files v0.74.0; semver rules scoped to semver |
 | 26.10.10a | AC79 adopt Govna governance files v0.73.0; dated release tags vYY.MM.DDa |
 | 0.110.0 | Prompt Cards reference replaces four thin media how-tos |
