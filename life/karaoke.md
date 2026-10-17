@@ -35,3 +35,4 @@ The songs I sing at [karaoke](https://en.wikipedia.org/wiki/Karaoke), grouped by
 | Kyrie | Mr. Mister | Experiment |
 | Pride and Joy | Stevie Ray Vaughan | Experiment |
 | 50 Ways to Leave Your Lover | Paul Simon | Experiment |
+| Treat Me Nice | Elvis Presley | Experiment |
