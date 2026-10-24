@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 26.10.24b | AGENTS.md Project Rules drops a rule duplicated in Base Rules |
 | 26.10.24a | AC81 adopt Govna governance files v0.81.0; agent-run release via rel keyword |
 | 26.10.17a | Karaoke adds Treat Me Nice by Elvis Presley |
 | 26.10.16a | Rules and Models: training against rules makes a model better, not certain |

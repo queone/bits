@@ -551,8 +551,6 @@ Note: the Director triggers those actions; Ratify names what is pending.
 
 ## Project Rules
 
-- Follow existing repo patterns unless an approved improvement says otherwise.
-
 ### Publishing Filter
 
 - Apply `govna/publishing-filter.md` to every entry created or edited under `life/`, `mind/`, `society/`, or `tech/`.
