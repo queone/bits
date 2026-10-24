@@ -7,11 +7,13 @@
 # Dispatch:
 #   ./build.sh                                show usage
 #   ./build.sh prep [flags] vX.Y.Z "message" stage a release
-#   ./build.sh vX.Y.Z "message"              run the release
+#   ./build.sh vX.Y.Z "message" [--yes|-y]   run the release
 set -euo pipefail
 
 _git_err=''
 _rel_tag_for_recovery=''
+_rel_assume_yes=0
+_rel_push_branch_args=(push origin)
 _prep_cl_err=''
 _prep_ie_err=''
 _prep_ctargets=''
@@ -102,14 +104,15 @@ _go_quote() {
 build_usage() {
   printf '%s\n' "$(bold "$(whi5 'Usage:')")"
   printf '  %s\n' 'build prep [flags] vX.Y.Z "release message"'
-  printf '  %s\n' 'build vX.Y.Z "release message"'
+  printf '  %s\n' 'build vX.Y.Z "release message" [--yes|-y]'
   _emit_usage_line '-h, -?, --help' 'show this help'
 }
 
 # ── release ────────────────────────────────────────────────────────────────
 
 rel_usage() {
-  printf '%s %s\n' "$(bold "$(whi5 'Usage:')")" 'rel vX.Y.Z "release message"'
+  printf '%s %s\n' "$(bold "$(whi5 'Usage:')")" 'rel vX.Y.Z "release message" [--yes|-y]'
+  _emit_usage_line '-y, --yes' 'skip the approval prompt for an agent-run release'
   _emit_usage_line '-h, -?, --help' 'show this help'
   printf '\n%s\n' 'Release message must be 80 bytes or fewer.'
 }
@@ -146,11 +149,11 @@ _recovery_error() {
   case ",$completed," in
   *", git push tag,"*)
     printf '\nrecovery: tag %s was pushed but the branch push failed\n' "$tag"
-    printf '  to retry: git push origin\n'
+    printf '  to retry: git %s\n' "${_rel_push_branch_args[*]}"
     ;;
   *", git tag,"*)
     printf '\nrecovery: tag %s exists locally but was not pushed\n' "$tag"
-    printf '  to retry push: git push origin %s && git push origin\n' "$tag"
+    printf '  to retry push: git push origin %s && git %s\n' "$tag" "${_rel_push_branch_args[*]}"
     printf '  to remove tag: git tag -d %s\n' "$tag"
     ;;
   esac
@@ -226,10 +229,31 @@ _release_validate_prepared() { # $1=tag $2=message
     { _release_refuse "CHANGELOG.md must contain the exact row | $version | $message | immediately after Unreleased" "$tag" "$message"; return 1; }
 }
 
+# _rel_refuse_detached_head — fail before the approval prompt when HEAD is
+# detached, because the branch push cannot succeed after the tag push.
+_rel_refuse_detached_head() {
+  git symbolic-ref -q HEAD >/dev/null 2>&1 && return 0
+  printf '%s\n' 'release: HEAD is detached; check out the release branch and rerun the release command' >&2
+  return 1
+}
+
+# _rel_choose_branch_push — set _rel_push_branch_args to the branch push: the
+# stack's push when the branch tracks an upstream, or a push that sets origin
+# as the upstream when it has none.
+_rel_choose_branch_push() {
+  if git rev-parse --abbrev-ref --symbolic-full-name '@{u}' >/dev/null 2>&1; then
+    _rel_push_branch_args=(push origin)
+  else
+    _rel_push_branch_args=(push -u origin HEAD)
+  fi
+}
+
 rel_run() {
   local tag="$1" message="$2" completed=''
   _rel_tag_for_recovery="$tag"
   _ensure_git_repo || return 1
+  _rel_refuse_detached_head || return 1
+  _rel_choose_branch_push
   _release_validate_prepared "$tag" "$message" || return 1
 
   printf '%s %s\n' "$(yel7 'release tag:')" "$(grn3 "$tag")"
@@ -246,11 +270,16 @@ rel_run() {
   printf -- '- git commit -m %s\n' "$(_go_quote "$message")"
   printf -- '- git tag -a %s -m %s\n' "$tag" "$(_go_quote "$message")"
   printf '%s\n' "- git push origin $tag"
-  printf '%s\n' '- git push origin'
+  printf '%s\n' "- git ${_rel_push_branch_args[*]}"
   printf '%s' "$(yel7 'Review the file list above. Proceed with release? (y/N): ')"
 
   local answer=''
-  IFS= read -r answer || true
+  if [ "$_rel_assume_yes" -eq 1 ]; then
+    answer=y
+    printf '%s\n' 'y (--yes)'
+  else
+    IFS= read -r answer || true
+  fi
   case "$answer" in y | Y) ;; *) printf 'release aborted\n' >&2; return 1 ;; esac
 
   _rel_step 'git add' "$completed" add . || return 1
@@ -261,7 +290,7 @@ rel_run() {
   completed='git add, git commit, git tag'
   _rel_step 'git push tag' "$completed" push origin "$tag" || return 1
   completed='git add, git commit, git tag, git push tag'
-  _rel_step 'git push branch' "$completed" push origin || return 1
+  _rel_step 'git push branch' "$completed" "${_rel_push_branch_args[@]}" || return 1
 }
 
 # ── release prep ────────────────────────────────────────────────────────────
@@ -488,7 +517,10 @@ build_main() {
 }
 
 rel_main() {
-  if [ "$#" -ne 2 ]; then printf 'usage: rel vX.Y.Z "release message"\n' >&2; return 2; fi
+  if [ "$#" -eq 3 ]; then
+    case "$3" in -y | --yes) _rel_assume_yes=1; set -- "$1" "$2" ;; esac
+  fi
+  if [ "$#" -ne 2 ]; then printf 'usage: rel vX.Y.Z "release message" [--yes|-y]\n' >&2; return 2; fi
   local tag message
   tag=$(_trim "$1")
   message=$(_trim "$2")

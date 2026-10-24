@@ -6,6 +6,9 @@ Use this release, pre-release, and acceptance-test reference under the authorita
 
 Run `./build.sh vX.Y.Z "release message"` to show status and planned Git steps.
 Require its confirmation prompt before `git add → commit → annotated tag → push tag → push branch`.
+Append `--yes` or `-y` to skip that prompt only for an agent-run release under `AGENTS.md` `### Agent Release`.
+Refuse a release from a detached `HEAD` before the approval prompt.
+Push the branch with `git push -u origin HEAD` when it has no upstream.
 Accept strict semver `vMAJOR.MINOR.PATCH` or the dated form `vYY.MM.DDa` as the release tag.
 
 `build.sh` is self-contained Bash 3.2+ tooling. DOC repositories do not need a compiler toolchain for release preparation or release orchestration and define no automated content-validation command.
@@ -45,7 +48,6 @@ Source axis (`[Automated]` / `[Manual]`) names who verifies. Timing axis (`[Pre-
 ## Pre-Release Checklist
 
 - Apply this checklist only to an explicit Director Package instruction for an established Ratified release batch or direct batch.
-- Apply the Package gates in `AGENTS.md` `### Four-Phase Workflow` and `### Phase-Advancement Rules` before prep.
 
 1. **Verify completion.**
    - Verify all in-scope AC work is complete.
@@ -76,7 +78,7 @@ Example release command:
 ./build.sh vX.Y.Z 'derived message'
 ```
 
-The agent never runs the release command. Only the director does.
+The Director runs the release command. The agent runs it only under `AGENTS.md` `### Agent Release`.
 
 ## CHANGELOG Conventions
 
