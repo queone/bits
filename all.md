@@ -17,7 +17,7 @@ Every entry on one page, A to Z, with its area. Type in the search box at the to
 - [Argue in Writing, Bet on Predictions](society/argue-in-writing.md) (Society): Why writing and bets beat a stage debate.
 - [Attention](mind/attention.md) (Mind): Two ways the mind processes, feature integration, the gorilla test, and the global workspace.
 - [Avoid and Practice](mind/avoid-and-practice.md) (Mind): The site's advice in one-line pairs, each linked to the entry that argues it.
-- [AWS](tech/aws.md) (Tech): Instance comparison and metadata commands.
+- [AWS](tech/aws.md) (Tech): The account shape the new sign-up creates, instance comparison, and metadata commands.
 - [Azure](tech/azure/index.md) (Tech): Entra, management hierarchy, CLI install, VMs, and PowerShell.
 - [Azure Data Factory (ADF)](tech/azure/adf/index.md) (Tech): A cloud-based data integration service that orchestrates data movement and transformation between direct data compute resources.
 - [Baseball](life/baseball.md) (Life): Why baseball is an American art form, plus one link for data hacking.

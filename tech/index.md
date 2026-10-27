@@ -6,7 +6,7 @@
 - [Ordenador](ordenador.md): Computers and AI as tools for putting life in order, and how to organize well.
 - [Written With Help](written-with-help.md): This site is written with an LLM's help, and why discounting that is preposterous.
 - [Arcade](arcade.md): MAME on a desktop and on a Raspberry Pi, with the cabinet configuration.
-- [AWS](aws.md): Instance comparison and metadata commands.
+- [AWS](aws.md): The account shape the new sign-up creates, instance comparison, and metadata commands.
 - [Azure](azure/index.md): Entra, management hierarchy, CLI install, VMs, and PowerShell.
 - [Containers](containers.md): Docker installation and the commands I reach for.
 - [Devops Documentation](devops-docs.md): The four kinds of documentation and how to write them.

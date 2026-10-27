@@ -4,6 +4,7 @@ Use this table as the record of triage verdicts on candidate entries. `publishin
 
 | Date | Verdict | Label | Detail | Entry |
 |------|---------|-------|--------|-------|
+| 2026-10-27 | Merge | AWS new sign-up: where the Free plan stops, the three-account organization, and the region guardrail | `tech/aws.md` | `tech/aws.md` |
 | 2026-10-10 | Publish | Ownership must spread when automation ends wages; basic income necessary, not sufficient | `society/`, `take`, "Owning the Machines" | `society/owning-the-machines.md` |
 | 2026-10-10 | Publish | Schneier as a thinker to follow; trust as civilization; the AI condition | `mind/`, `take`, "Bruce Schneier" | `mind/schneier.md` |
 | 2026-10-08 | Merge | Pinker dismisses when he should engage, and the bill comes due when his voice is most needed | `mind/pinker.md` | `mind/pinker.md` |
