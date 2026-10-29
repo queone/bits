@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 26.10.29b | AC84 adopt Govna governance files v0.85.0; version-only sync |
 | 26.10.29a | AC83 adopt Govna governance files v0.83.1; session start checks canon version |
 | 26.10.27a | AWS adds account setup: Free plan limits, three-account org, region guardrail |
 | 26.10.24c | AC82 adopt Govna governance files v0.81.1; rel exempt from explicit-wording rule |
