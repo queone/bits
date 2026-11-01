@@ -24,7 +24,7 @@ jobs:
       - name: Run the sweep
         run: |
           ./check.sh --all > sweep.txt 2>&1 || true
-          tail -n 1 sweep.txt
+          cat sweep.txt
       - name: Report
         if: always()
         env:
