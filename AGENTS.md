@@ -86,9 +86,10 @@ Note: these limits borrow from Simplified Technical English (ASD-STE100), and th
 - State "Govna contract loaded." before the first substantive govna-governed action of a session, and only after internalizing AGENTS.md.
 - Run `govna version` once per session, right after the "Govna contract loaded." line.
 - Compare the canon version it prints with `canon_version` in `govna/metadata.txt`.
-- Recommend `govna audit` to the Director when the installed canon version is newer.
+- Run `govna audit --check` once when the installed canon version is newer.
+- Recommend `govna audit` to the Director only when that check exits `3`.
 - Place that question at the end of the same response, before any final `Awaiting` line.
-- Skip the question when `govna` is absent, `govna version` fails, either version is unreadable, or the installed canon version is not newer.
+- Skip the question when `govna` is absent, `govna version` or `govna audit --check` fails, either version is unreadable, the installed canon version is not newer, or the check exits `0`.
 - Treat planning, editing, reviewing, command choice, and implementation work as substantive actions.
 - Check the gate set silently before any primary-repository file change: AC status, explicit authorization, scoped edits, tests in the same pass, and no agent-run commits outside `### Agent Release`.
 - Route ancillary-repository and path changes through `### Primary And Ancillary Scope`.
@@ -518,7 +519,7 @@ Note: the Director triggers those actions; Ratify names what is pending.
 - Limit each self-review heading to one sentence.
 - State the semver reason under `Verified:`.
 - State what changed after the Package evidence under `Red-teamed:`.
-- State the remaining manual check, or that none remains, under `Not checked:`.
+- State the remaining check that needs a Director action or a new Director authorization, or that none remains, under `Not checked:`.
 
 ### Completed Release
 

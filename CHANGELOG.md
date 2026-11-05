@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 26.11.05a | AC86 adopt Govna governance files v0.90.1; audit --check at start; adds IE1 |
 | 26.11.01a | AC85 sweep allowlists 4 bot-blocking hosts, logs warnings; email drops dmarc.org |
 | 26.10.29b | AC84 adopt Govna governance files v0.85.0; version-only sync |
 | 26.10.29a | AC83 adopt Govna governance files v0.83.1; session start checks canon version |
