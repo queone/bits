@@ -12,7 +12,7 @@
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
       {% if site.title and site.title != page.title %}
-      <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
+      <h1 class="text-center"><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
       {% endif %}
       <form class="text-center mb-4" action="{{ "/all.html" | relative_url }}" method="get"><input type="search" name="q" placeholder="Search entries" aria-label="Search entries" style="width:100%;max-width:24em;font-size:1em;padding:.3em .6em"></form>
 
