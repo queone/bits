@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 26.11.18d | AC88 adopt Govna governance files v0.108.0; identifier scan message corrected |
 | 26.11.18c | Every page centers the Bits title |
 | 26.11.18b | Home page centers the title, intro, area links, and About |
 | 26.11.18a | AC87 adopt Govna governance files v0.106.0; tool rule moves to Project Rules |
