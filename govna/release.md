@@ -11,7 +11,7 @@ Refuse a release from a detached `HEAD` before the approval prompt.
 Push the branch with `git push -u origin HEAD` when it has no upstream.
 Accept strict semver `vMAJOR.MINOR.PATCH` or the dated form `vYY.MM.DDa` as the release tag.
 
-`build.sh` is self-contained Bash 3.2+ tooling. DOC repositories do not need a compiler toolchain for release preparation or release orchestration and define no automated content-validation command.
+`build.sh` is self-contained Bash 3.2+ tooling. DOC repositories do not need a compiler toolchain for release preparation or release orchestration and define no automated content-validation command. Prep runs one automated check: the Markdown identifier scan of governed Markdown.
 
 Keep DOC release prep repository-wide.
 Reject CODE target selection.
@@ -22,17 +22,6 @@ DOC repositories do not provide installable utilities, so the independent
 utility-version declaration and `--version` contract does not apply to this
 release path. CODE consumers use the stack-specific adapter and validation
 rules in `govna/build-release.md`.
-
-### Build Presentation
-
-- Reuse the canonical build color policy and palette.
-- Color release status output by semantic role.
-- Emit plain output when stdout is not a terminal.
-- Emit plain output when `NO_COLOR` is set.
-- Emit plain output when `TERM=dumb`.
-- Require a 256-color-capable terminal before emitting ANSI sequences.
-- Preserve plain-text content and output streams when color is disabled.
-- Keep the self-contained build script compatible with Bash 3.2.
 
 ## Acceptance Tests
 

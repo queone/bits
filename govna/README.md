@@ -1,15 +1,13 @@
 # Docs
 
-Use this directory for the documents that explain how content work is planned, reviewed, edited, and released in this repository.
+Use this directory for the documents that explain how content work is planned, reviewed, edited, and released in this repository; the contract makes publishing ceremonies more effective and efficient.
 
-Read [`operator-contract-rationale.md`](operator-contract-rationale.md) to understand how the contract makes publishing ceremonies more effective and efficient, including why the session-entry rules work as they do. Read [`audit.md`](audit.md) to understand how `govna audit` compares repository files with Govna's embedded governance files and emits an immutable AC. An explicit agent-mediated audit request continues through immediate Operator Audit and no-edit Refine, then stops before Implement.
+Read [`audit.md`](audit.md) to understand how `govna audit` compares repository files with Govna's embedded governance files and emits an immutable AC. An explicit agent-mediated audit request continues through immediate Operator Audit and no-edit Refine, then stops before Implement.
 
-Recommended contents to add:
+## More About Govna
 
-- `ac<N>-<slug>.md` for a numbered, testable content-change contract; see `ac-template.md`
-- `editing-cycle.md` for the Draft-through-Package workflow
-- `editing-guidelines.md` for editorial and structural rules
-- `release.md` for release preparation and publication rules
-- reference notes for durable editorial decisions
+These links open current background documentation in the Govna repository. They carry no rule for this repository and do not specify its installed version.
 
-Keep these docs aligned with the repo's actual workflow and structure.
+- [Canon specification](https://github.com/queone/govna/blob/main/govna/canon-spec.md) — what `govna audit` and the build scripts do.
+- [Canon maintenance](https://github.com/queone/govna/blob/main/govna/canon-maintenance.md) — how Govna reviews a canon change before it ships.
+- [Contract rationale](https://github.com/queone/govna/blob/main/arch.md) — why the contract works as it does.

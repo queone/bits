@@ -19,19 +19,12 @@ Sections (fixed set):
 
 Rules:
 
-- Preserve each section's semantic intent across edits.
-- Add new rules under the best-fit existing section.
+- Add repository rules only under `## Project Rules`.
 - Preserve the fixed `##` section list.
-- Edit sections in place.
-- Change section order or the `##` section list only when the user explicitly requests a contract amendment.
-- Name the exact sections to change during every update.
-- Keep edits local during every update.
 - Edit this file as a governed config artifact, with rule-shaped bullets only.
-- Use `##` for top-level sections.
 - Use `###` for thematic groupings inside a section.
 - Cap header nesting at `###`.
 - Treat AGENTS.md as the authoritative source for the rules it describes.
-- Conform overlay templates and other canon files to AGENTS.md.
 
 ## Instruction Style
 
@@ -63,6 +56,7 @@ Note: prefer wording that is easiest for an LLM to follow, while staying simple 
 - Report each written deliverable with a one-paragraph chat summary plus the file path.
 - Quote at most short, targeted snippets from a written file when discussing a specific change.
 - Paste the literal output in a code block when the Director asks to see a file or command output.
+- Place any summary after the literal output instead of in its place.
 
 ### Plain Language
 
@@ -76,13 +70,37 @@ Note: prefer wording that is easiest for an LLM to follow, while staying simple 
 - Use one term for each concept.
 - Use the active voice.
 - Use the passive voice only when the actor is unknown or unimportant.
+- Keep each sentence that tells the reader to act to 20 words or fewer.
+- Keep every other sentence to 25 words or fewer.
 - Exempt code, commands, paths, identifiers, quoted text, and fixed lines that other AGENTS.md rules require from these limits.
 
 Note: these limits borrow from Simplified Technical English (ASD-STE100), and they supplement `### Plain Language` and `## Review Style` instead of replacing them.
 
+### Chat Format
+
+- Apply these rules to chat replies only.
+- Start each prose sentence on a new line.
+- Keep each prose line to about 120 characters or fewer.
+- Break a longer prose sentence at a clause boundary within the limit, such as after a comma, semicolon, or colon.
+- Break a longer prose sentence at the last space within the limit when no clause boundary fits.
+- Indent each later line of a list item to the item's text.
+- Number the items of each list that the Director may act on, such as questions, options, findings, and decisions.
+- Use the `## Review Style` finding identifiers instead of list numbers wherever Review Style assigns them.
+- Restart list numbers in each reply.
+- Leave narrative bullets unnumbered.
+- Use plain ASCII characters.
+- Show a status as `pending`, `done`, `blocked`, `-`, `[x]`, or `[ ]` instead of a decorative glyph or emoji.
+- Give one step per reply when the Director asks to go step by step.
+- Wait for the Director's result before giving the next step.
+- Extend the `### STE Replies` exemptions to these rules.
+- Exempt tables, headings, and URLs from these rules too.
+
+Note: an agent cannot see the terminal width, so a terminal narrower than 120 columns can still wrap a line inside a phrase. Sentence and clause breaks make each source line easier to read, but they cannot control those extra wraps. A renderer that joins single line breaks reflows the paragraph to the terminal width.
+
 ### Session Entry
 
 - Treat AGENTS.md as the active operating contract for this repository.
+- Read `govna/roles.md` before the first substantive govna-governed action of a session.
 - State "Govna contract loaded." before the first substantive govna-governed action of a session, and only after internalizing AGENTS.md.
 - Run `govna version` once per session, right after the "Govna contract loaded." line.
 - Compare the canon version it prints with `canon_version` in `govna/metadata.txt`.
@@ -96,12 +114,18 @@ Note: these limits borrow from Simplified Technical English (ASD-STE100), and th
 - Treat changed-content integrity, AC-template structure, Plain Language, Instruction Style, and applicable Pre-Implementation Verification as the tests-in-the-same-pass gate when a change pass creates or edits only an active AC document.
 - Resolve instruction conflicts in this order: user instruction within authorized scope, then AGENTS.md, then referenced govna docs, then model defaults.
 - Follow an explicit Director workflow override without requiring contract-amendment language.
+- Treat a Director request that differs from the recommendation as the decision.
+- Accept that request without override language.
+- Look for a way to honor that request.
+- Raise a factual correction or technical concern while honoring that request.
+- Reopen that decision only with material new evidence.
+- Decline that request only for a serious problem, such as data loss or a security risk.
 - Stop when a request lacks authorization, scope, or required context.
 - Ask for the missing authorization, scope, or context.
 
 ### Contract Integrity
 
-- Apply contract-integrity reporting when governance instructions are contradictory, circular, unexecutable, repeatedly produce a workflow loop, or present demonstrated contract-growth evidence.
+- Apply contract-integrity reporting when governance instructions are contradictory, circular, unexecutable, repeatedly produce a workflow loop, or present demonstrated rule-review evidence.
 - Define a repeated workflow loop as the same conflict forcing at least two unnecessary phase returns, correction cycles, or Director round-trips.
 - Report a directly demonstrated contradiction, circular dependency, or unexecutable instruction without waiting for repetition.
 - Require repository evidence, an observed workflow consequence, or a directly demonstrable consequence for every finding.
@@ -137,17 +161,13 @@ Note: these limits borrow from Simplified Technical English (ASD-STE100), and th
 - Prevent the governance-record rule from bypassing authorization for a governance edit.
 - Prevent contract-integrity reporting from authorizing a new AC phase, governance edit, delegation, commit, publication, or release action.
 
-### Contract Growth
+### Rule Review
 
-- Run a prospective contract-growth review during Audit or Refine when an active AC proposes governance instructions.
-- Run a measurable contract-growth review after authorized governance edits and before Implement completion.
-- Measure authorized AGENTS.md hunks against the phase-entry baseline while excluding unrelated working-tree changes.
-- Record added, removed, and net AGENTS.md line and rule-shaped-bullet counts in the closure-audit working record.
-- Prevent contract-growth measurements alone from becoming findings.
+- Run a prospective rule-review during Audit or Refine when an active AC proposes governance instructions.
+- Run a rule-review after authorized governance edits and before Implement completion.
 - Check every new or rewritten AGENTS.md rule for overlap and placement.
 - Keep shared triggers, authorization boundaries, safety constraints, and required outcomes in AGENTS.md.
 - Place rationale, examples, and domain-specific procedure in an explicitly referenced owning governance document.
-- Preserve short atomic imperative instructions as the default.
 - Prohibit general compression through compound instructions.
 - Prefer thematic `###` groupings and shared invariants over an unbounded flat instruction list.
 - Merge or retire an overlapping instruction only within authorized scope and settled semantics.
@@ -155,9 +175,15 @@ Note: these limits borrow from Simplified Technical English (ASD-STE100), and th
 - Return to Refine for an out-of-scope or decision-bearing overlap.
 - Test representative triggers, authorization boundaries, allowed actions, exceptions, and exit conditions after governance restructuring.
 - Record each governance-restructuring scenario input and expected outcome in the closure-audit record.
-- Treat any repeated rule, misplaced procedural detail, excessive flat density with operational effect, or demonstrated retrieval or execution impairment as contract-growth evidence.
+- Treat any repeated rule, misplaced procedural detail, excessive flat density with operational effect, or demonstrated retrieval or execution impairment as rule-review evidence.
 - Keep each rule in exactly one governance file.
 - Reference the owning section by heading instead of restating its rule.
+- Review each touched section for a rule to retire, merge, or enforce mechanically before adding a rule.
+- Report the review result in one line only when it finds a rule to retire, merge, or enforce mechanically.
+- Name each read trigger as a state or event that an agent can recognize without reading the target document.
+- Label every proposal that loosens an approval or scope boundary.
+- Treat a canon rule that this repository can never act on as rule-review evidence.
+- Treat a rule that slowed or misdirected the active work, with an observed consequence, as rule-review evidence.
 
 ## Approval Boundaries
 
@@ -232,12 +258,15 @@ Note: this rule does not prohibit batching independent commands.
 - Exclude documentation, generated outputs, fixtures, lockfiles, and governance templates from the count.
 - Treat changes exceeding eight counted files as presumptively AC-worthy.
 - Require an AC for architecture, schema, dependency, security, migration, external-integration, destructive, governance, or release decisions regardless of file count.
+- Ask the Director whether direct handling or an AC fits a small, bounded, low-risk governance edit when the Director has not already chosen.
 - Preserve explicit authorization, scope, documentation, and same-pass test requirements for direct handling.
 - Treat every non-trivial change outside a content entry as AC-first work unless the Director explicitly overrides it.
+- Keep related straightforward changes together in one AC.
+- Recommend an AC split only when the parts have independent objectives, risks, or release timing, or exceed practical inline capacity.
 - Describe each direct-handled companion change in the release message when the release batch already carries an AC.
 - Draft no retroactive AC for such a companion change.
 - Draft `govna/ac<N>-<slug>.md` before implementation using `govna/ac-template.md`.
-- Define scope, out-of-scope, and acceptance tests in the AC.
+- Size each AC to its change by the rules in `govna/ac-template.md`.
 
 ### Four-Phase Workflow
 
@@ -247,10 +276,11 @@ Note: this rule does not prohibit batching independent commands.
 - Pause immediately when a Director-owned decision appears.
 - Prevent automatic advancement from authorizing Implement, Ratify, Package, release preparation, publication, delegation, or commits.
 - Keep Draft outside the AC phases.
+- Remove each AC passage that fails the sizing rules in `govna/ac-template.md` before completing Draft or a Refine that changed the AC.
 - Enter Audit automatically when Draft completes the active AC with populated scope and acceptance tests.
 - Keep an unscoped stub paused until the Director scopes it.
 - Start each governed AC cycle in Audit when the AC is ready for adversarial review.
-- Challenge the AC, repository behavior, referenced documentation, scope, edge cases, omissions, and testability during Audit.
+- Challenge the AC, repository behavior, referenced documentation, scope, edge cases, omissions, testability, and restated or oversized AC text during Audit.
 - Keep Audit non-mutating.
 - Pause after Audit until the Director requests Refine unless integrated audit adoption or eligible automatic Refine entry applies.
 - Enter Refine automatically when Audit completes with only advancement-eligible findings.
@@ -263,7 +293,7 @@ Note: this rule does not prohibit batching independent commands.
 - Complete Refine without editing the AC when no Audit finding or settled Director decision requires an AC change and no Director-specific decision remains unresolved.
 - Run Pre-Implementation Verification after eligible automatic Refine completion.
 - Do not begin implementation during Refine.
-- Pause after Refine and await explicit Director implementation-ready confirmation to Implement.
+- Pause after Refine and await explicit Director implementation-ready confirmation to Implement, except for an eligible bounded completeness correction or an eligible decision re-entry.
 - Implement only the settled AC scope during Implement.
 - Return to Refine when Implement reveals a contract, scope, or Director decision change.
 - Return to Implement when Implement reveals an implementation-only correction.
@@ -285,7 +315,12 @@ Note: this rule does not prohibit batching independent commands.
 - Reset the round counter only when the Director authorizes Implement again.
 - Limit the exception to three correction rounds per Director-authorized Implement.
 - Pause for the Director before a fourth correction round.
-- Prevent the exception from authorizing initial Implement, Audit, Ratify, Package, release preparation, publication, delegation, or commits.
+- Define a decision re-entry as a return to Implement after a Refine that records only decisions the Director gave during that Implement.
+- Require the Director's message to name each change that the Refine records.
+- Require a clean Pre-Implementation Verification before a decision re-entry.
+- Re-enter Implement automatically when a decision re-entry is eligible.
+- Apply decision re-entry only after the Director authorizes Implement.
+- Prevent the exception and a decision re-entry from authorizing initial Implement, Audit, Ratify, Package, release preparation, publication, delegation, or commits.
 - Include tests, adversarial verification, and defect correction in Implement.
 - Run one exhaustive, non-mutating closure audit after Implement, validation, adversarial verification, and defect correction.
 - Keep the closure-audit working record in the active agent's session.
@@ -293,8 +328,8 @@ Note: this rule does not prohibit batching independent commands.
 - Do not create a separate closure-audit artifact.
 - Capture one deterministic Implement evidence snapshot in the closure-audit working record.
 - Complete the snapshot before Implement completion.
-- Follow `govna/editing-cycle.md` `### Implement Evidence Snapshot` for snapshot contents and dependency boundaries.
-- Follow `govna/editing-cycle.md` `### Closure Audit` for the paths, documents, and records the closure audit maps.
+- Read `govna/editing-cycle.md` `### Implement Evidence Snapshot` before capturing the snapshot.
+- Read `govna/editing-cycle.md` `### Closure Audit` before the closure audit.
 - Block Implement completion when any required implementation path is unmapped or unverified or any implementation finding remains open.
 - Record pending Director review for manual acceptance tests without treating that pending review as an implementation finding or a path gap that blocks Implement completion.
 - Return to Implement for implementation defects found by the closure audit.
@@ -346,7 +381,7 @@ Note: this rule does not prohibit batching independent commands.
 - Treat only explicit Director action language as authorization to enter the named next action.
 - Exempt integrated audit adoption, eligible automatic Refine entry, and an eligible bounded completeness correction from a fresh Refine action instruction.
 - Exempt completed-Draft automatic Audit entry from a fresh Audit action instruction.
-- Exempt only an eligible bounded completeness correction from a fresh Implement action instruction.
+- Exempt only an eligible bounded completeness correction and an eligible decision re-entry from a fresh Implement action instruction.
 - Treat standalone `Draft` or `draft` as the pre-cycle action that creates the active AC.
 - Require the Director to authorize Draft before creating the AC.
 - Start an AC cycle only after the Director identifies the AC and authorizes Audit, integrated audit adoption identifies the emitted AC, or a completed Draft identifies the active AC.
@@ -391,7 +426,7 @@ Note: this rule does not prohibit batching independent commands.
 - Report the failure output and the printed recovery command to the Director.
 - Report Package and the release result in one completion report.
 - Replace `No commit or release command executed.` and `Run below to release:` with the release result in that report.
-- Treat a successful agent-run release as a completed release under `### Completed Release`.
+- Treat a successful agent-run release as a completed release under `### Completed Release` unless `## Project Rules` name a later step that completes a release.
 
 ### Primary And Ancillary Scope
 
@@ -440,14 +475,7 @@ Note: this rule does not prohibit batching independent commands.
 - Treat each explicitly named migration destination as effective implementation scope with its routed source.
 - Treat `govna/preserve.txt` as effective implementation scope only when a resolved routing outcome requires creating or changing it.
 - Treat `CHANGELOG.md` as effective implementation scope only when a resolved legacy-phrase outcome requires removing an exact phrase.
-- Require the Director to name every migration destination.
-- Apply each resolved routing action while leaving the emitted AC stub unchanged.
 - Follow `govna/audit.md` `## Adoption procedure` for each resolved routing action.
-- Preserve the boundary heading and every line below it as repo-owned content.
-- Resolve an unresolved emitted repository check in chat.
-- Cite repository evidence when choosing `Not applicable` for the repository check.
-- Write `govna/canon-baseline.txt` from the scratch render only after every other applicable acceptance test and routing outcome passes and the resolved repository check succeeds or its `Not applicable` evidence holds.
-- Do not re-run `govna audit` as an implementation gate for the emitted AC.
 
 ## File-Change Discipline
 
@@ -479,6 +507,8 @@ Note: this rule does not prohibit batching independent commands.
 - Start a separate finding sequence for each standalone contract-integrity report.
 - Exclude acceptance tests, verification evidence, workflow mechanics, and non-finding commentary from finding identifiers.
 - Cite file paths, line numbers, and concrete behavior.
+- Open each finding above Nit with what could go wrong for the product, its users, or the work.
+- Follow each such effect with the cause, the evidence, and a recommendation or the applied correction.
 - Prioritize regressions, broken links, missing cross-references, and drift from documented behavior.
 - Treat AC-document ceremony issues as nits after implementation starts and release prep will delete the AC.
 - Prioritize defects that affect the delivered contract, implementation scope, tests, or release safety.
@@ -488,6 +518,7 @@ Note: this rule does not prohibit batching independent commands.
 - Keep completions terse with flat bullets and a final `Awaiting <specific Director-initiated next>.` line.
 - Summarize the settled AC scope in at most one line of an Implement completion report.
 - Report every change that differs from or adds to the settled AC.
+- Report the AC word count in each Draft or Refine completion that changed the AC.
 - Focus completion summaries on changed behavior, material verification, findings, corrections, residual risks, and Director decisions.
 - Suppress routine repository labels, phase labels, phase mechanics, expected skips, duplicated status, and expected no-action confirmations.
 - Report suppressed workflow details only when exceptional or actionable.
@@ -524,6 +555,7 @@ Note: the Director triggers those actions; Ratify names what is pending.
 ### Completed Release
 
 - Treat the Director's `shipped` as a completed release.
+- Treat the successful end of a `## Project Rules` step that completes a release as a completed release.
 - Run no git or gh command to confirm a completed release.
 - Acknowledge a completed release in one line.
 - Name the next one to three `plan.md` items after that line.
@@ -545,12 +577,13 @@ Note: the Director triggers those actions; Ratify names what is pending.
 - Name test identifiers, output labels, comments, and errors by behavior.
 - Reserve bare AC and AT identifiers for CHANGELOG rows, commit messages, active `govna/ac<N>-<slug>.md` documents, literal examples in `govna/ac-template.md`, and `Historical:` comments.
 - Reserve bare Class and Round identifiers for CHANGELOG rows, commit messages, and `Historical:` comments.
-- Reserve bare Part identifiers for CHANGELOG rows, commit messages, active `govna/ac<N>-<slug>.md` documents, and `Historical:` comments.
-- Reserve bare IE identifiers for CHANGELOG rows, commit messages, active `govna/ac<N>-<slug>.md` documents, `plan.md`'s own `IE<N>:` bullets, and `Historical:` comments.
-- Treat every other Markdown documentation file as out of bounds for bare AC, AT, Class, Part, Round, and IE identifiers.
+- Reserve bare Part and IE identifiers for CHANGELOG rows, commit messages, active `govna/ac<N>-<slug>.md` documents, and `Historical:` comments.
+- Allow bare IE identifiers anywhere in `plan.md`.
+- Treat root `AGENTS.md`, `README.md`, `plan.md`, `CHANGELOG.md`, and every Markdown file under `govna/` as governed Markdown.
+- Treat every other bare AC, AT, Class, Part, Round, or IE identifier in governed Markdown as out of bounds.
+- Apply no bare-identifier rule to any other Markdown file.
 - Use the `Historical:` prefix only for a relevant shipped-AC comment.
 - Delete an irrelevant shipped-AC reference.
-- Reach for `rg` (not `grep`/`ack`), `fd` (not `find`), `jq` (not `awk`/`python -c` on JSON), `sd` (not `sed -i`), and `pup` (not regex on HTML).
 - Send independent shell calls in a single message so they run in parallel.
 - Reuse content from files already in conversation context.
 - Reach for `Read` only to fetch unseen content or check for recent changes.
@@ -589,3 +622,7 @@ Note: the Director triggers those actions; Ratify names what is pending.
 
 - Keep the stated position, the publishing filter, the register update, the triage-log fill, and the same-pass proofread as the gates for a direct-handled entry.
 - Update the matching row in `mind/avoid-and-practice.md` in the same pass as any change to an entry's advice.
+
+### Command Tools
+
+- Reach for `rg` (not `grep`/`ack`), `fd` (not `find`), `jq` (not `awk`/`python -c` on JSON), `sd` (not `sed -i`), and `pup` (not regex on HTML).

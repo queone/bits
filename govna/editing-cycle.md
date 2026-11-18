@@ -8,13 +8,6 @@ The lifecycle makes recurring publishing checkpoints and their settled context r
 
 - Apply `AGENTS.md` `### Four-Phase Workflow`, `### Phase-Advancement Rules`, and `### Audit Adoption` to this cycle.
 
-## Required Artifacts
-
-- `AGENTS.md`
-- `README.md`
-- `plan.md`
-- `govna/`
-
 ## Cycle
 
 ### Implement Evidence Snapshot
@@ -46,6 +39,14 @@ The lifecycle makes recurring publishing checkpoints and their settled context r
 ## Notes
 
 - Keep roadmap decisions and follow-on `IE<N>:` items in `plan.md`.
+- Separate `plan.md` IE items with one blank line.
+- Start each IE item with `- IE<N>: `.
+- Number IE items sequentially.
+- Write an idea IE as `- IE<N>: <one-liner>`.
+- Hold an idea IE for Director discussion and the AC-ceremony evaluation in `AGENTS.md` `### AC-First Workflow`.
+- Write an AC-pointer IE as `- IE<N>: <one-liner> → govna/ac<N>-<slug>.md`.
+- Convert an idea IE to an AC-pointer IE when the Director sends it to Draft.
+- Keep the IE number through that conversion.
 - Remove an IE when rejected, retired, or shipped through its AC pointer.
 - Keep ACs in `govna/ac<N>-<slug>.md`.
 - Mark an unscoped stub in `## Summary`.

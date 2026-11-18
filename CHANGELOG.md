@@ -3,6 +3,7 @@
 | Version | Summary |
 |---------|---------|
 | Unreleased | |
+| 26.11.18a | AC87 adopt Govna governance files v0.106.0; tool rule moves to Project Rules |
 | 26.11.05a | AC86 adopt Govna governance files v0.90.1; audit --check at start; adds IE1 |
 | 26.11.01a | AC85 sweep allowlists 4 bot-blocking hosts, logs warnings; email drops dmarc.org |
 | 26.10.29b | AC84 adopt Govna governance files v0.85.0; version-only sync |
